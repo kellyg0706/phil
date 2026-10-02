@@ -5801,6 +5801,14 @@ some of the analogues (the ballroom build started in 2025, so Macron
 the post-topic analogues for the base rate and state that n. Here that
 was 0/2 (Charles Apr 2026, Beijing May 2026), Laplace 0.25, not the
 0/5 the note implied. The market's 0.315 sat nearer that honest read.
+**The same rule applies to fresh coinages (RETRO-20261002-0500).** On the
+Durant OK rally "SI" row (`25fc1343e0cd`), the one post-coinage analogue
+was the Xi state dinner (0/1), which gives Laplace 0.33. I recorded 0.68
+on riff length instead, against a 0.79 mid, and the result was No
+(CF +$17.73 on the blocked No side). Post-coinage Trump occasions are now
+0/2 on "SI". The row is a rally, but its estimate was thematic rather than
+a speaker-only count, so the No-side tally above lists it but does NOT
+count it: still 3W/1L, +$8.20, one speaker-venue-day.
 
 ## First bet in 13 days: the AfD Sachsen-Anhalt audit (DEEP-2026-08-24)
 
