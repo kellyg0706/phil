@@ -141,11 +141,17 @@ PY
   fi
   echo "model: $MODEL ($MODEL_WHY)" >&2
 
-  PROMPT="$(cat CYCLE.md)"
+  PROMPT="$(cat CYCLE.md)
+
+---
+Run exactly one cycle now, following the procedure above. Do not ask what to do."
   if [ "$REAL_MODE" -eq 1 ]; then
     if [ "$PEARL_UP" -eq 1 ] \
        && python3 core/real.py doctor 2>/dev/null | grep -q '"ready": true'; then
-      PROMPT="$(cat CYCLE.md REAL.md)"
+      PROMPT="$(cat CYCLE.md REAL.md)
+
+---
+Run exactly one cycle now, following the procedure above. Do not ask what to do."
     else
       echo "WARNING: --real requested but Pearl Connect signer not ready — running paper-only cycle" >&2
     fi
