@@ -7160,6 +7160,18 @@ family forecast-only.
     **tracked observation, 1-for-2, not a rule.** The Sep 21 Opus case:
     discounting the move was right. The Sep 29 Trump-renames-AI chain
     e22fb0445ebe: the market was right. Re-visit at the third instance.
+    **Third instance graded RETRO-20261004-2300 → RULE (scoped).**
+    Tesla Q3 deliveries e55366022abe: the book moved 0.60 → 0.91
+    overnight before the Oct 2 report, and I found no cause. I gave
+    the move partial weight (0.62 → 0.68). The market was right, at
+    +0.094 against me. Tally: market right 2 of 3. Both market-right
+    cases came within about 24h of a scheduled resolution. Rule: when the
+    price moves ≥ 0.15 against my public-record estimate, I find no cause,
+    and resolution is on a scheduled print or announcement within 72h,
+    record est at the post-move mid shaded ≤ 0.05 toward the model, and put
+    the unshaded model value in the note. Outside that window, this is
+    still a tracked observation. It applies to forecast recording only and
+    grants no bet. Re-grade after 3 more instances.
 - **Funnel row is not optional on a FULL cycle.** Two of the seven FULL
   cycles in the Sep 29 window wrote "Funnel: screened 300, escalated 15"
   into cycles.log but committed no `strategy/funnel.jsonl` row: 41b031e
