@@ -1899,7 +1899,12 @@ move as favorable or adverse.
 ## Estimation method
 
 1. Read the resolution criteria in the market description. Bet on what
-   *resolves*, not what's likely in spirit.
+   *resolves*, not what's likely in spirit. Match the poll series to the
+   denominator the question uses: a VALID-vote question takes valid-vote
+   shares, never total-vote shares (DEEP-2026-10-05: Brazil R1 row
+   4e52c227a60f fed total-vote shares into a valid-vote question, 0.45 vs
+   the corrected 0.88 on 2f6a83c8276a; the 0.45 veto counterfactual is a
+   method error, not a clean veto save).
 2. Form an independent estimate BEFORE looking hard at the market price
    (anchoring guard). Write the estimate down in the rationale.
 3. Identify the sharpest external benchmark (bookmaker odds, analyst
@@ -3579,6 +3584,24 @@ outside-view-veto line as of this update
 CF trades, 46W/61L, pnl +$77.17 ≙ +15.43u, brier_delta +0.0280, held-out
 +$106.17 (was 106 trades, 46W/60L, +$82.17 ≙ +16.4u, held-out +$111.17
 before this row).
+
+**Batch 2026-10-05 (RETRO-20261005-0540, LIGHT tick, operator machine):**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| Brazil R1 Lula 5–10% (7ae14fb4b36e) | 0.35 / 0.12 | Yes | +0.22 (ask 0.13) | No | −1.00 |
+| Brazil R1 Flávio ≥39% (4e52c227a60f), total-vote method error | 0.45 / 0.85 | No | +0.40 (ask 0.15) | Yes | −1.00 |
+
+Net this batch: **−2.00u** (0W/2L). **Totals now 108 realizable trades,
+47W/61L, net +7.59u.** Side split re-summed row-by-row: **Yes-side
+5W/23L, −12.31u**; **No-side 42W/38L, +19.90u**. Check: −12.31 + 19.90 =
+7.59 ✓. Ruling: 4e52c227a60f is counted because every settled veto row is,
+but it is a method error (total-vote shares on a valid-vote question),
+superseded by 2f6a83c8276a (0.88, market-agrees); its −1.00 is not evidence
+for or against the veto. Mechanical tool as of this update
+(`core/counterfactual.py ledger --skip-reason outside-view-veto`): 203 settled
+declined rows, 195 fillable, 80W/115L, +$99.36 at $5 flat. That basis differs
+from the 1u-per-row table above and is not reconciled here.
 
 **BACKFILL 2026-09-06 16:12Z (found by `strategy/tools/reconcile.py` on the
 16:12Z cycle): Munich 25°C same-day exact-temp weather row missing from
