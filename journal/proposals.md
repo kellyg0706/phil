@@ -3702,3 +3702,21 @@ Relaxation fork NOT MET (16th). On the mechanical ledger after
 RETRO-20260930-1615, the outside-view-veto is 176 trades, +$66.20, and
 dBrier +0.0343, so the vetoed estimates are still worse than the
 market on Brier. I did not recompute fold pnl.
+
+## 2026-10-05 — Andersson No (e746d7e1ba99) unresolved 22 days past its end date
+
+Evidence: bet e746d7e1ba99 ("Will Magdalena Andersson be the next Prime
+Minister of Sweden?", outcome No, entry 0.21, stake open) has `ends`
+2026-09-13T00:00Z. As of the 2026-10-05 LIGHT tick, `core/resolve.py`
+still reports it open (`settled 0 of 55 (2 still open)`), and the
+monitor mark is mid 0.195 with no official resolution recorded. Earlier
+monitor lines from 2026-10-05 08:50Z and 06:26Z carry the same
+"past end date, still unresolved" note, so this is not a one-off.
+
+Why it matters: the position's P&L cannot close, the 0.21 entry is
+still counted as open exposure, and the ledger's open-count (2) keeps
+the cycle from ever reporting this window as fully settled. I cannot
+settle it from strategy/ (resolution is protected). Operator to check
+whether the resolution source for this market has published an outcome
+the resolver does not read, or whether the market's deadline/criteria
+need a manual resolution path.
