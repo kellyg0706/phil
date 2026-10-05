@@ -4482,6 +4482,7 @@ RETRO-20260922-2015 for how each was found).**
 | Opus exact-Sep22 first read (`3de604a7cf7a`, wide-spread-veto) | 0.48 / 0.6855 | No | +0.127 | Yes | -5.00 |
 | Berlin Linke 5-10% margin (`3723b83673c1`, wide-spread-veto, settled 2026-09-22T02:03:42Z, graded in RETRO-20260922-0211, flagged missing by the 10:25Z TRIGGERED cycle today) | 0.40 / 0.754 | No | +0.109 | Yes | -5.00 |
 | Lowe's GAAP EPS beat (`df7062f3e89d`, wide-spread-veto, settled 2026-08-19T15:21:17Z, graded in RETRO-20260819-1522, never entered since) | 0.62 / 0.595 | Yes | -0.260 | Yes | +0.68 |
+| Alagoas Senate, Lira most votes (`6b2b6a2e1af1`, wide-spread-veto, book 0.85/0.92 spread 0.07 > 0.06, settled 2026-10-05T21:00:16Z, graded in RETRO-20261005-2106) | 0.97 / 0.885 | Yes | +0.050 | Yes | +0.43 |
 
 Net this batch: **-$9.32** (1W/2L, on rows spanning three different
 settlement dates). Mechanical ledger after these rows
@@ -4495,6 +4496,23 @@ contribution to the sums). Side split: no 9 rows/7 trades/2W-5L/-$17.74
 (adds the two new No-side losses, -$10.00, was 7/5/2W-3L/-$7.74);
 yes 8 rows/8 trades/6W-2L/-$0.25 (unchanged — Lowe's was already
 counted here).
+
+**Update 2026-10-05 (RETRO-20261005-2106, LIGHT tick, operator machine):**
+the Lira row above (own 0.97 vs book mid 0.885, ask 0.92, Yes won) was
+added in the same commit as its settlement retro. Its CF trade at the
+0.92 ask is +$0.43. Realizable edge is +0.050, which is inside the
+0.06 spread veto's own tolerance band. **Mechanical ledger after this
+row** (`core/counterfactual.py ledger --skip-reason wide-spread-veto`):
+43 settled declined forecasts, 36 fillable CF trades, 7 refused,
+22W/14L, pnl −$35.06, brier_delta −0.0092, held-out −$34.24. Side
+split: no 26 rows/22 trades/12W/10L/−$30.84; yes 17 rows/14 trades/
+10W/4L/−$4.22. **Table lag, not closed here:** this hand-kept table
+stopped at 17 settled rows (the 2026-09-22 batch above), while the
+mechanical ledger now counts 43. The other 26 wide-spread rows
+settled since then were never hand-entered, so the table's stated
+totals cannot be trusted as a running sum. Backfilling those 26 needs
+each row's record-time book, which a LIGHT tick does not re-derive;
+flagged for the next deep retro to reconcile row by row.
 
 Ruling: no boundary change at n=3 across two unrelated events plus one
 documentation-only backfill. The Lowe's row is the interesting one on
