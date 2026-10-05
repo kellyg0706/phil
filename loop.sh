@@ -192,6 +192,7 @@ Run exactly one cycle now, following the procedure above. Do not ask what to do.
   # stray credential lookup fail fast instead of hanging on a keyring prompt
   # no headless session can answer; GIT_EDITOR stops `git rebase --continue`
   # from opening an editor and blocking forever.
+  CYCLE_BASE="$(git rev-parse HEAD)"
   PHIL_PUSH_BY_LOOP=1 PHIL_LEASE="$PHIL_LEASE" \
   GIT_TERMINAL_PROMPT=0 GIT_ASKPASS=/usr/bin/true GIT_EDITOR=true \
     "${CMD[@]}" || echo "cycle $i failed; continuing"
@@ -205,6 +206,17 @@ Run exactly one cycle now, following the procedure above. Do not ask what to do.
   PROTECTED_IN_LAST_COMMITS=$(git log --oneline -5 --name-only | grep -cE '^(core/|config/|\.github/|CYCLE\.md|REAL\.md|loop\.sh|CLAUDE\.md|LICENSE|README\.md|\.gitignore)' || true)
   if [ "$PROTECTED_IN_LAST_COMMITS" -gt 0 ]; then
     echo "WARNING: protected files appear in recent commits — review manually" >&2
+  fi
+
+  # The playbook's same-commit rule: a FULL cycle's commits must append a
+  # strategy/funnel.jsonl line. The agent has skipped it while still writing
+  # the funnel prose into cycles.log (2026-09-12/13: 7 of 9 cycles;
+  # 2026-10-05 00:55Z and 01:40Z), and nothing noticed until a later audit.
+  # Checked against the cycle's own commits, not strategy/tools/reconcile.py,
+  # because the agent may edit that tool.
+  if git diff "$CYCLE_BASE" HEAD -- journal/cycles.log | grep -q '^+.*(FULL cycle' \
+     && git diff --quiet "$CYCLE_BASE" HEAD -- strategy/funnel.jsonl; then
+    echo "WARNING: this FULL cycle wrote no strategy/funnel.jsonl line — backfill it (see strategy/tools/reconcile.py)" >&2
   fi
 
   # Push from this shell, not from the agent. The credential helper is
