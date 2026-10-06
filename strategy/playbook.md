@@ -7311,6 +7311,14 @@ resolved No.
   beyond it. Parcl's October set was not listed on gamma at 00:25Z. If it
   appears, the zero-crossing rule and the $10 family cap apply as
   written.
+  Settled RETRO-20261006-0900: the '7' leg LOST (final count 6), -$5.00.
+  USGS weekly family bets 1W/1L, net -$4.38. Modelling note (n=2,
+  directional only): both settled weeks came in at or under the recent
+  5-week rate (~0.86/day), and the 365d rate (1.32/day) overshot both.
+  When the rate inputs disagree on the window mean, lead with the recent
+  rate and report the 365d value as the sensitivity check. Floor-edge
+  bucket bets: one loss erases about 8 floor-edge wins on the
+  favourite side, so the deep retro should weigh that asymmetry.
 - **BanRep Sep ladder, tails over-weighted (RETRO-20260930-2215).** 3 of
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
