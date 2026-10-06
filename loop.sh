@@ -162,10 +162,14 @@ Run exactly one cycle now, following the procedure above. Do not ask what to do.
   # step 9 and its rebase path mandate exactly these commands, and a
   # permission-blocked "checkout -B" strands the cycle's commits on a
   # detached HEAD (2026-08-28).
+  # strategy/tools/* (operator, 2026-10-06): the agent's own helpers (quote, devig,
+  # usgs_count, ...) were permission-blocked on this machine, so cycles fell back to
+  # WebFetch or vetoed as unvalidated. Allowed on purpose, knowing the agent writes them.
   CMD=(claude -p "$PROMPT" --model "$MODEL"
        --allowedTools "Read" "Glob" "Grep" "WebSearch" "WebFetch"
          "Edit" "Write" "Task"
-         "Bash(python3 core/*)" "Bash(git add:*)" "Bash(git commit:*)"
+         "Bash(python3 core/*)" "Bash(python3 strategy/tools/*)"
+         "Bash(git add:*)" "Bash(git commit:*)"
          "Bash(git rev-parse:*)" "Bash(git log:*)" "Bash(git diff:*)"
          "Bash(git status:*)" "Bash(git symbolic-ref:*)"
          "Bash(git merge-base:*)" "Bash(git rev-list:*)"
