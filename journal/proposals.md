@@ -3720,3 +3720,9 @@ settle it from strategy/ (resolution is protected). Operator to check
 whether the resolution source for this market has published an outcome
 the resolver does not read, or whether the market's deadline/criteria
 need a manual resolution path.
+
+Update 2026-10-06 23:31Z (LIGHT tick): still open, now 23 days past
+`ends`. `resolve.py` settled 0 ledger bets this tick (`1 still open`
+in the ledger line is this bet), and score.py's monitor still marks it
+"PAST END DATE" at mid 0.205. The symptom is unchanged and has not
+self-resolved over the last 24h. Same operator question as above.
