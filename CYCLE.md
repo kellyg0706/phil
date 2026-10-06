@@ -304,7 +304,13 @@ Every invocation runs as one of three ticks:
    `--edge-class` is the playbook edge class the bet claims — score.py now
    splits brier_delta by it, so classify honestly, not aspirationally.
    Respect rejections — they are protected-cap enforcement, not errors to fix.
-7. **Log**: append one line to `journal/cycles.log`:
+7. **Log**: on a FULL or TRIGGERED cycle, FIRST append this cycle's line to
+   `strategy/funnel.jsonl` (fields and skip-reason rules: playbook "Funnel
+   instrumentation"; write `"researched": []` if nothing was researched).
+   The funnel prose in cycles.log does not replace it, and `loop.sh` warns
+   when a FULL cycle's commits add no funnel line (operator, 2026-10-06:
+   skipped on 4 FULL cycles in two days). THEN append one line to
+   `journal/cycles.log`:
    `<UTC ISO> cycle done: settled N, placed M, cash $X` (from ledger status).
    On a TRIGGERED cycle the detail that follows opens with
    `(TRIGGERED cycle: <key>` before anything else, so the tick type stays
