@@ -4795,6 +4795,33 @@ restarted but no qualifying official statement; no second Millennium
 claim) - the veto kept both off the ledger. The two No-side wins are
 near-certain-No rows with thin payoff.
 
+**2026-10-07 20:3xZ update (FULL cycle, operator machine; 1
+`outside-view-veto` + 1 `wide-spread-veto` row settled, see
+RETRO-20261007-2030.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| Hormuz zero-transit by Oct31 (`d910eebe71cd`) | 0.38 / 0.21 | Yes | +0.150 (ask 0.23) | Yes | +16.74 |
+| Nets/Hornets Odd, junk book (`73d6767c5387`, wide-spread-veto) | 0.50 / 0.225 | Yes | +0.070 (ask 0.43) | No | -5.00 |
+
+Outside-view-veto mechanical ledger after this row
+(`core/counterfactual.py ledger --skip-reason outside-view-veto`): 207 rows
+/ 199 trades / 146 events / 81W-118L / +$101.10 / dBrier +0.0359 /
+held-out +$109.10. Side split: no 141/133/59W-74L/+$81.33; yes
+66/66/22W-44L/+$19.77. Check: 81.33 + 19.77 = 101.10. The last snapshot in
+this section was 10-01 (193 rows). The rows that settled between then and
+now are in the totals but were not hand-entered here. `reconcile` lists 27
+unentered rows, and that backlog goes to the deep retro.
+Wide-spread-veto ledger: 48 rows / 38 trades / 10 refused / 22W-16L /
+-$45.06 / dBrier +0.0023 / held-out -$44.80. Side split: no 28/23/12W-11L/
+-$35.84; yes 20/15/10W-5L/-$9.22. Check: -35.84 + -9.22 = -45.06.
+
+Ruling: no boundary change. The Hormuz veto row won big. The veto fired
+because the self-built dispersion failed carve-out gate 2, and that reason
+stands: the zero came from an AIS-gap-shaped day, not a modelled traffic
+stop. The parity row's dBrier is against a junk mid (bid 0.02 on a coin
+flip), so it says nothing about calibration.
+
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
 The veto on judgment estimates with claimed edge > 0.10 stays. This fork
@@ -7323,6 +7350,17 @@ resolved No.
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
   a second central-bank ladder with the same shape before acting.
+  **Second instance, RULE (scoped), RETRO-20261007-2030:** RBI Oct 7
+  (+25bp) lost 3 of 4 rows to the mid the same way. Hold sat above the
+  market (0.21 and 0.12 vs 0.18 and 0.09) and the modal +25 sat below it
+  (0.75 vs 0.80). Rule: on a central-bank decision ladder where a DATED
+  poll or survey majority names the modal move, record the modal leg at
+  or above the market mid, and the off-modal legs at or below it. Shading
+  against the market needs a dated contrary source (a central-bank
+  statement after the poll, or a data print after the poll). "Poll share
+  is not probability" alone does not justify it. This sets where the
+  estimate is anchored, not an edge claim. Ladder bets stay under the
+  existing econ-rates gates. Re-grade at the fourth settled ladder.
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
