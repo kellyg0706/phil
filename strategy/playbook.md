@@ -61,6 +61,14 @@ Rank every candidate by WHY the market should be wrong, strongest first:
    something beyond the headline (revision risk, resolver read), not the
    crowd being slow; the NG win (`2dc417ed68f6`) was the opposite shape,
    an already-final official settlement print.
+   **Converse, thin books (RETRO-20261008-0055, n=1):** a THIN book (liq
+   under ~$1k) NOT reacting to an in-window incident is not evidence of how
+   the resolver will read that incident. `d9dd9101b0c6` (Iran targets an
+   Arab country by Sep 30, liq $299) shaded own 0.10 below mid 0.135 on
+   "book stayed low, so the Kurdistan drone strikes are excluded"; the
+   market resolved Yes after two UMA disputes. On an `ambiguous-resolution`
+   row, record own at or above the mid unless a sourced reading of the
+   rules (not book silence) puts it lower.
    **Bracket-sibling verification / immediate-post-release-book trap
    (2026-09-11, RETRO-20260911-1244):** for a bracket-set market (CPI/PPI/
    GDP style, multiple binary legs on one release), once
