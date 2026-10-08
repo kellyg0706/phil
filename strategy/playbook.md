@@ -1629,6 +1629,17 @@ Prefer, in order:
      outcome-uninformative — with no directional signal there is no
      foregone-edge claim either way on a coin-flip-priced market.
      Market-confirms tally unchanged at n≈6, zero foregone edge.
+   - **Short surprise histories do not override a high beat price
+     (RETRO-20261008-1720, n=2).** HD 65aea7cd91f4 (own 0.68 vs 0.81) and
+     PEP 99f242585ce5 (own 0.57 vs 0.86) both set own well under the book
+     from a 7-8 quarter surprise-size count against a line above the
+     drifted consensus, and both resolved Yes (PEP core 2.34 vs line
+     2.32). The veto kept both off the ledger (CF -$5 each). Method: when
+     the fixed line sits above current consensus, a <=8-quarter count of
+     surprise sizes is too small to price the bar. Don't set own more
+     than about 0.10 under a book >=0.80 on that count alone; record the
+     count in the note and treat the gap as market-agrees unless a named
+     signal (guidance cut, pre-announcement, peer miss) backs it.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
