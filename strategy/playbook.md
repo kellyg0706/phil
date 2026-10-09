@@ -6778,6 +6778,19 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | Volynets–Birrell (`b5774501ec4c`) | single-book devig 0.636 | 0.68 | toward market consensus | worse (+0.058) |
 | SPY LOW $760 (`23a99c8fe4e8`) | touch.py 0.118 | 0.08 | **measured** ES overnight print | better (−0.0075) |
 | Bondar–Ruse (`8785a067de69`, added RETRO-20260926-0615) | single-book devig 0.591 | 0.60 | toward market consensus | worse (+0.011) |
+| Khamenei 0-4 Oct 2-9 (`4de33c23cc8e`, added RETRO-20261009-1603) | all-windows bootstrap 0.776 | 0.50 (note only, not recorded) | hour-aligned bootstrap + recent-72h (diurnal account) | better (−0.358, raw lost the mid by +0.117) |
+
+**Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
+The Khamenei row was a defective input, not a shade. Its last-7-day
+xtracker hourly posts all fell in a 09-16Z band. The remaining window
+(06-16Z) covered that whole band, so the all-windows bootstrap, which
+mostly samples dead overnight hours, overstated P(0 more). Rule for
+post-count rows: when >=80% of the account's last-7-day hourly posts
+fall in a band of <=8 UTC hours, record the hour-aligned bootstrap.
+This applies even when aligned n<20. If aligned n<5, record a Poisson
+read from the band's hourly rate x the band hours left. Put all-windows
+in the note as "all-windows view: X". Recording only; category bar and
+wide-spread veto unchanged.
 
 Unmeasured shades: 0 for 4 independent events (sign test p≈0.06
 one-sided, small n, but the direction has never flipped). Update
