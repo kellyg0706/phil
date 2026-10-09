@@ -1640,6 +1640,15 @@ Prefer, in order:
      than about 0.10 under a book >=0.80 on that count alone; record the
      count in the note and treat the gap as market-agrees unless a named
      signal (guidance cut, pre-announcement, peer miss) backs it.
+     **Graded, named-signal side (RETRO-20261009-1332, n=1):** DAL
+     c396e2805e25 (line 2.05 above every dated Oct-8 consensus 1.76-1.96,
+     named signal = fuel-driven consensus cut below the guide low end) set
+     own 0.21 vs mid 0.255 and resolved No — own ahead of the mid. Its
+     predecessor 60a796dd0742 (0.40 vs 0.37, built on UNDATED consensus
+     snapshots spanning 1.97-2.25) was on the wrong side. Rule: when
+     consensus snapshots disagree by more than ~0.15/share, date each one
+     and re-pull the latest on report eve before forming the estimate;
+     an undated spread that wide is not a benchmark.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
