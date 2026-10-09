@@ -6779,6 +6779,8 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | SPY LOW $760 (`23a99c8fe4e8`) | touch.py 0.118 | 0.08 | **measured** ES overnight print | better (−0.0075) |
 | Bondar–Ruse (`8785a067de69`, added RETRO-20260926-0615) | single-book devig 0.591 | 0.60 | toward market consensus | worse (+0.011) |
 | Khamenei 0-4 Oct 2-9 (`4de33c23cc8e`, added RETRO-20261009-1603) | all-windows bootstrap 0.776 | 0.50 (note only, not recorded) | hour-aligned bootstrap + recent-72h (diurnal account) | better (−0.358, raw lost the mid by +0.117) |
+| Trump Truth Oct 2-9 (`bb494218de6b`, `8176007881d6`, added RETRO-20261009-1833) | all-windows bootstrap 0.690 / 0.202 | 1.00 / 0.00 (note only) | recent-72h windows (early Oct 3-4 bursts not repeated) | better (−0.096, −0.041); raw still beat the mid (−0.035, −0.030) |
+| Musk tweets Oct 2-9 (`6cbddebe8130`, `996eb2f884b0`, added RETRO-20261009-1833) | all-windows bootstrap 0.111 / 0.237 | 0.268 / 0.232 (note only) | recent-72h windows (last 24h ran 130 posts) | worse (+0.060, −0.002); raw beat the mid (−0.068, −0.013) |
 
 **Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
 The Khamenei row was a defective input, not a shade. Its last-7-day
@@ -6794,7 +6796,12 @@ wide-spread veto unchanged.
 
 Unmeasured shades: 0 for 4 independent events (sign test p≈0.06
 one-sided, small n, but the direction has never flipped). Update
-RETRO-20260926-0615: 0 for 5 (p≈0.03 one-sided). The one shade
+RETRO-20260926-0615: 0 for 5 (p≈0.03 one-sided). Update
+RETRO-20261009-1833: 1 for 7 (Trump Oct 2-9 recency shade won, Musk
+Oct 2-9 recency shade lost; the same recent-72h read pointed opposite
+ways on two accounts in one week, so recency is not a reliable
+signal). The table now holds 9 independent events, so the ≥ 8 re-grade
+below is DUE at the next deep retro. The one shade
 grounded in a measured, quoted input helped. **General rule (replaces
 the four per-category copies, which stay as the evidence log):** when a
 row has a named mechanical or benchmark read (touch.py, a bootstrap, a
