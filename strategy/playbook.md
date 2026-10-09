@@ -7416,3 +7416,13 @@ resolved No.
   whose spread is >= 0.5, say "empty book" in the note; retros and deep
   retros drop such rows from any category or edge-class "agent beats
   market" claim (report them separately if at all).
+- **Stream-sum chart races: extrapolate measured trends, never assumed
+  ones (RETRO-20261009-1658).** Kidman #2 weekly 669a9cfcdb4e: own 0.72
+  vs mid 0.958, Yes, dBrier +0.0766. I assumed Kidman flat and Swift
+  -3%/day. The Oct 7 actuals were Kidman +6% (4th straight rise) and
+  Swift -9%. Rule: on a weekly-chart position race, fit each song's
+  day-on-day trend from its own last 3-4 kworb dailies and project the
+  remaining days on that trend. A flattening or reversal needs a dated
+  cause. A record-time gap against a market that is pricing visible
+  momentum is model error until proven otherwise. n=1: this is a
+  recording rule, it grants no bet, and music-chart stays veto-bound.
