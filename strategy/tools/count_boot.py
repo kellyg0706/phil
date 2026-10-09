@@ -26,10 +26,13 @@ def main(argv):
     hit = lambda s: lo <= s <= hi  # noqa: E731
     now_hod = (first_hod + n) % 24
     aligned = [s for i, s in enumerate(sums) if (first_hod + i) % 24 == now_hod]
-    recent = sums[max(0, n - 72):]
+    # window starts in the last 72h of the series; when hours_left > 72 no
+    # window fits there, so fall back to the latest window (fixed 2026-10-09:
+    # slicing by n instead of len(sums) gave an empty list and a crash).
+    recent = sums[max(0, n - 72):] or sums[-1:]
     print(f"total so far={sum(h)} hours observed={n} now_hod={now_hod}")
     print(f"all     n={len(sums)} P={sum(map(hit, sums)) / len(sums):.3f} "
-          f"mean_add={sum(sums) / len(sums):.1f}")
+          f"mean_add={sum(sums) / len(sums):.1f} max_add={max(sums)}")
     if aligned:
         print(f"aligned n={len(aligned)} sums={aligned} "
               f"P={sum(map(hit, aligned)) / len(aligned):.3f}")
