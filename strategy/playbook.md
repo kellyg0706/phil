@@ -3123,17 +3123,22 @@ same direction as the pooled touch-family reads elsewhere in this file).
 No ruling change: still forecast-only / `unvalidated-method`. Re-grade
 when n crosses ~15.
 
-**Equity-close tally (new cell, RETRO-20261009-2115):** single-session
-close brackets / above-X rows priced with a driftless normal on sourced
-realized vol. score.py equity-close n=7, dBrier **-0.0231** (slightly
-ahead). Oct 9 settles: GOOGL 345-350 +0.0335, GOOGL 340-345 +0.0088, AAPL
->335 +0.0046, AAPL 330-335 -0.1759 (book 0.60/0.69, wide-spread veto). The
-gain sits on wide/stale mids, so it is not yet a fillable edge. Forecast-only
-unchanged. Re-grade at n >= 15, splitting spread <= max_spread rows from
-wider ones. Category hygiene: single-stock touch rows go under
-`equity-touch`; NVDA HIGH 236 `78f4d3163304` was filed `stock-touch`
-(-0.4016 vs a stale 0.685 gamma mid on a 0.39/0.98 book) and stays out of
-both tallies as a stale-comparator case.
+**Equity-close tally (RETRO-20261009-2115, refreshed RETRO-20261009-2203):**
+single-session close brackets / above-X rows priced with a driftless normal
+on sourced realized vol. score.py equity-close n=9, dBrier **-0.0404**
+(ahead, pulled further from -0.0231 at n=7). Oct 9 settles: GOOGL 345-350
++0.0335, GOOGL 340-345 +0.0088, AAPL >335 +0.0046, AAPL 330-335 -0.1759
+(book 0.60/0.69, wide-spread veto), GOOGL 350-355 -0.1017 (book 0.09/0.28,
+no-edge), AAPL 335-340 -0.1001 (book 0.12/0.42, wide-spread veto). The first
+four's gain sat on wide/stale mids; the last two sat on normal-spread books
+(0.19, 0.30) that were simply slow to catch up to the sourced-vol read —
+first sign the edge isn't purely a bad-comparator artifact, but still not
+enough n to call it fillable. Forecast-only unchanged. Re-grade at n >= 15,
+splitting spread <= max_spread rows from wider ones. Category hygiene:
+single-stock touch rows go under `equity-touch`; NVDA HIGH 236
+`78f4d3163304` was filed `stock-touch` (-0.4016 vs a stale 0.685 gamma mid
+on a 0.39/0.98 book) and stays out of both tallies as a stale-comparator
+case.
 
 **2026-09-21 20:44Z update (RETRO-20260921-2044; far-barrier split added):**
 `8d1eb46b7c32` (ETH reach $2,800, own 0.25 vs mid 0.155) settled WON, dBrier
