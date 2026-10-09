@@ -3113,6 +3113,16 @@ measured print (SPY LOW $760 `23a99c8fe4e8`, ES overnight + RTH-only
 window, 0.118 -> 0.08) helped by 0.0075. equity-touch now n=2, dBrier
 +0.163: forecast-only, no bets.
 
+**Tally refresh, RETRO-20261009-1931 (n=2 -> n=9, stale for 7 settled
+rows):** STRC $100 (-0.0191), GOOGL HIGH 360 (-0.0406), AAPL HIGH 340
+(-0.0166), MU HIGH 1110 (+0.1135), EWY HIGH 189 (+0.0094), EWY HIGH 190
+(+0.0514), and ABNB HIGH 166 (-0.0741, measured-vol touch.py read beat
+the market) all settled since without updating this cell. equity-touch
+now n=9, mean dBrier **+0.039** (own slightly behind market, small-n,
+same direction as the pooled touch-family reads elsewhere in this file).
+No ruling change: still forecast-only / `unvalidated-method`. Re-grade
+when n crosses ~15.
+
 **2026-09-21 20:44Z update (RETRO-20260921-2044; far-barrier split added):**
 `8d1eb46b7c32` (ETH reach $2,800, own 0.25 vs mid 0.155) settled WON, dBrier
 -0.1515. Listed, NOT counted: its note sweeps sigma 50-90%, no measured
