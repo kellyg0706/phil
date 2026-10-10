@@ -4877,6 +4877,43 @@ stands: the zero came from an AIS-gap-shaped day, not a modelled traffic
 stop. The parity row's dBrier is against a junk mid (bid 0.02 on a coin
 flip), so it says nothing about calibration.
 
+**2026-10-10 18:2xZ update (LIGHT tick, operator machine; 3
+`outside-view-veto` + 1 `wide-spread-veto` row settled, all on the same
+MrBeast wk1 video-views pace-projection chain, see RETRO-20261010-1824.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| MrBeast wk1 215-223M, 00:53Z read (`97d89c3f32c6`) | 0.18 / 0.31 | No | +0.120 | Yes | -5.00 |
+| MrBeast wk1 207-215M, 00:53Z read (`18a8cbbaf334`, wide-spread-veto) | 0.81 / 0.665 | Yes | +0.120 | No | -5.00 |
+| MrBeast wk1 215-223M, 03:22Z read (`aee4459194a6`) | 0.08 / 0.175 | No | +0.060 | Yes | -5.00 |
+| MrBeast wk1 207-215M, 03:22Z read (`f0b93b900f04`) | 0.91 / 0.815 | Yes | +0.050 | No | -5.00 |
+
+All four counterfactual trades LOST (-$20.00 total on this chain). The
+model's pace-projection method assumed an overnight diurnal slowdown that
+never happened — measured pace rose through the day (532k/h ->
+724k/h) — so every early-window read sat on the wrong side until two
+consecutive reads agreed (08:26Z, 13:22Z), by which point the forecasts were
+no longer vetoed (market-agrees) and carried no counterfactual duty. Both
+gates correctly kept capital off the mid-flight method.
+
+Outside-view-veto mechanical ledger after these rows
+(`core/counterfactual.py ledger --skip-reason outside-view-veto`): 213 rows
+/ 205 trades / 82W-123L / +$78.56 / dBrier +0.0383 / held-out +$86.56. Side
+split: no 146/138/60W-78L/+$63.79; yes 67/67/22W-45L/+$14.77. Check:
+63.79 + 14.77 = 78.56. video-views subclass now 5 rows/5 trades/1W-4L/
+-$13.10/dBrier +0.1098. The last hand-entered snapshot in this section was
+10-07 (207 rows); rows settled between then and now beyond the three
+entered here are in the mechanical totals but not hand-entered — backlog
+goes to the deep retro per the existing convention.
+Wide-spread-veto ledger (`core/counterfactual.py ledger --skip-reason
+wide-spread-veto`): 53 rows / 43 trades / 24W-19L / -$42.85 / dBrier
++0.0091 / held-out -$37.59. Side split: no 29/24/13W-11L/-$28.34; yes
+24/19/11W-8L/-$14.51. Check: -28.34 + -14.51 = -42.85.
+
+Ruling: no boundary change. Four losses avoided on one chain reinforces
+(does not newly establish) the standing read that both gates are net
+positive against a self-modeled, still-converging method.
+
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
 The veto on judgment estimates with claimed edge > 0.10 stays. This fork
