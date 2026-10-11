@@ -96,3 +96,9 @@ hour. You are not placing bets and you are not the researcher.
 
 Sub-daily crypto up/down markets are banned upstream and should never reach
 me. If one does, that is a scan bug worth a line in the reason.
+
+Head-to-head markets name their outcomes after the teams or players
+("MOUZ" / "Vitality", "Tommy Paul" / "Valentin Vacherot"), not "Yes" / "No".
+Copy the keys of `prob` from that market's own outcome list every time. On
+2026-10-11 12:22Z two batches (out-11.json, out-15.json) answered 15 such
+markets with Yes/No keys and the collector dropped all 15 as malformed.
