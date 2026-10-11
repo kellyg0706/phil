@@ -4944,6 +4944,38 @@ Wide-spread-veto ledger: 54 rows / 43 trades / 24W-19L / -$42.85 / dBrier
 Ruling: no boundary change. Fifth straight counterfactual loss for a
 vetoed video-views pace projection.
 
+**2026-10-11 22:0xZ update (LIGHT tick, operator machine; 1
+`outside-view-veto` + 1 `wide-spread-veto` row settled on the sibling
+MrBeast Gaming day-1 20-22.5m market 5420203, resolved No, see
+RETRO-20261011-2205 — closes the "still owed" item from
+RETRO-20261011-2115.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| MrBeast Gaming day-1 20-22.5m, 09:53Z one-read pace (`9eac18d0eeb2`) | 0.74 / 0.4805 | Yes | +0.191 | No | -5.00 |
+| MrBeast Gaming day-1 20-22.5m, 16:01Z counter read (`ad1e171c1290`, wide-spread-veto) | 0.12 / 0.001 | Yes | refused (entry 0.001 outside [0.02, 0.95]) | No | 0.00 |
+
+Same chain, same single-pace-read cause as the sibling bracket, now
+confirmed on the complementary estimates: the 0.889m/h read that put the
+17.5-20m row at 0.25 symmetrically put this row's 09:53Z estimate at
+0.74, and both lost to the same underlying fact (count stopped at
+19.96m, inside the 17.5-20m bracket, not this one).
+
+Outside-view-veto mechanical ledger after this row
+(`core/counterfactual.py ledger --skip-reason outside-view-veto`): 215 rows
+/ 207 trades / 82W-125L / +$68.56 / dBrier +0.0409 / held-out +$76.56. Side
+split: no 147/139/60W-79L/+$58.79; yes 68/68/22W-46L/+$9.77. Check:
+58.79 + 9.77 = 68.56. video-views subclass now 7 rows/7 trades/1W-6L/
+-$23.10/dBrier +0.1690.
+Wide-spread-veto ledger: 55 rows / 43 trades / 24W-19L / -$42.85 / dBrier
++0.0093 / held-out -$37.59 (one more row, no new trade). Side split: no
+30/24/13W-11L/-$28.34; yes 25/19/11W-8L/-$14.51. Check: -28.34 + -14.51 =
+-42.85.
+
+Ruling: no boundary change. Sixth and seventh straight counterfactual
+loss/refusal for this vetoed video-views pace projection method — both
+brackets of the three-timestamp chain are now fully settled and agree.
+
 **Day-1 view brackets: what the resolver reads (n=1, market 5420202,
 RETRO-20261011-2115).** The public watch counter showed 19,964,475 at the
 24h mark (16:00:02Z Oct 11) and crossed 20m within minutes after it; the
