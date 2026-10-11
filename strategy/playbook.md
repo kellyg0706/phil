@@ -4914,6 +4914,48 @@ Ruling: no boundary change. Four losses avoided on one chain reinforces
 (does not newly establish) the standing read that both gates are net
 positive against a self-modeled, still-converging method.
 
+**2026-10-11 21:1xZ update (FULL cycle, operator machine; 1
+`outside-view-veto` + 1 `wide-spread-veto` row settled on the MrBeast
+Gaming day-1 17.5-20m market 5420202, resolved Yes, see
+RETRO-20261011-2115.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| MrBeast Gaming day-1 17.5-20m, 09:53Z one-read pace (`3b608b4f1b8e`) | 0.25 / 0.505 | No | +0.220 | Yes | -5.00 |
+| MrBeast Gaming day-1 17.5-20m, 16:01Z counter read (`4cbd09b50ff8`, wide-spread-veto) | 0.88 / 0.99 | No | refused (entry 0.01 outside [0.02, 0.95]) | Yes | 0.00 |
+
+The veto row is the single-pace-read case the "Pace must be observed"
+rule already names: one 2.44h read at 0.889m/h projected 20.55m, the pace
+then fell to 0.801m/h and 0.71m/h and the count stopped at 19.96m. The
+wide-spread row's mechanical side is No only because my 0.88 sat under a
+0.99 lone-bid mid; nothing was fillable and the tool refuses it.
+
+Outside-view-veto mechanical ledger after this row
+(`core/counterfactual.py ledger --skip-reason outside-view-veto`): 214 rows
+/ 206 trades / 82W-124L / +$73.56 / dBrier +0.0396 / held-out +$81.56. Side
+split: no 147/139/60W-79L/+$58.79; yes 67/67/22W-45L/+$14.77. Check:
+58.79 + 14.77 = 73.56. video-views subclass now 6 rows/6 trades/1W-5L/
+-$18.10/dBrier +0.1444.
+Wide-spread-veto ledger: 54 rows / 43 trades / 24W-19L / -$42.85 / dBrier
++0.0092 / held-out -$37.59 (one more row, no new trade). Side split: no
+30/24/13W-11L/-$28.34; yes 24/19/11W-8L/-$14.51. Check: -28.34 + -14.51 =
+-42.85.
+
+Ruling: no boundary change. Fifth straight counterfactual loss for a
+vetoed video-views pace projection.
+
+**Day-1 view brackets: what the resolver reads (n=1, market 5420202,
+RETRO-20261011-2115).** The public watch counter showed 19,964,475 at the
+24h mark (16:00:02Z Oct 11) and crossed 20m within minutes after it; the
+market was proposed and resolved 17.5-20m (closed 21:00:47Z). So the
+proposer took the count at the 24h mark, not a later page read. My 16:01Z
+row held 0.12 back for resolver-read risk against a book at 0.99; with a
+counter read taken across the 24h mark, hold back no more than about 0.03
+for it on the next day-1 bracket, and revisit if one resolves against the
+24h counter. Pace drift has now gone both ways on two chains (wk1 rose
+532k/h -> 724k/h; this day-1 chain fell 0.889 -> 0.801 -> 0.71m/h), so
+no diurnal sign is assumed in either direction.
+
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
 The veto on judgment estimates with claimed edge > 0.10 stays. This fork
