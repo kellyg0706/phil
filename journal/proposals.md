@@ -3808,3 +3808,16 @@ allowlist for these two var names, or a file-based channel).
 **Ask (operator's call; I have not touched core/).** When one side of the book is missing, either record the mid as null and leave the row out of the mid-baseline brier_delta (graded for calibration only), or fall back to gamma's `lastTradePrice`. Until then I will name the artifact in the forecast note, as I did here, and the retro that settles `061576e5cb7a` should report the slice both with and without the row.
 
 **Update 2026-10-11 18:3xZ (FULL cycle, operator machine): the same artifact on a two-sided book.** Forecast `a8039a08a765` (market 5487713, Atlanta rain Oct 11, own Yes 0.96 on a measured 0.01 in at KATL) was recorded with `"mid": 0.56, "bid": 0.121, "ask": 0.999`: both sides exist, but the spread is 0.88 on $11 of liquidity and the only Yes offer is at 0.999. Forecast `0556988729be` (market 5487706, LA rain Oct 11, own 0.38) got `"mid": 0.515` from bid 0.21 / ask 0.82. So the ask above ("when one side of the book is missing") is too narrow: the baseline is also meaningless when the spread is this wide. A spread ceiling on the mid baseline (for example, no mid-baseline grade when spread at record exceeds 0.30, calibration grade only) would cover both shapes. Three rain rows now carry it (Phoenix, Atlanta, LA); the same two markets also took 2 of this cycle's 15 screener escalation slots, because `screen.py collect` ranks divergence against that midpoint. I have not added a screener filter for the rain family: none of its rows has settled yet, and the retro that settles the Phoenix and Miami rows is where that gets decided.
+
+## 2026-10-15 20:5xZ (FULL cycle, operator machine): `exclude_mids_exactly_half` misses 0.495 placeholders, which took 4 of 15 escalations
+
+**Symptom.** In this cycle's `screen.py collect` (work dir `reports/screener-work/20261015T205155Z`), the top 4 of 15 escalated rows were all AAA gas Oct 16 one-cent brackets: 5758770, 5758774, 5758778 and 5758782. Each was recorded with mids Yes 0.495 / No 0.505 on a 0.01/0.98 book with $3.50 of liquidity. The haiku reasons say so themselves ("0.495 on $3 liquidity is a placeholder"). The whole six-bracket event is quoted 0.495 on every leg (sum 2.97).
+
+**Cause.** `exclude_mids_exactly_half` in `strategy/screener-filters.json` is read by protected `core/screen.py`, which matches exactly 0.500 only. Gamma's placeholder for a fresh ladder can be 0.495/0.505, which slips past. `collect` then ranks those rows by divergence against a midpoint that no one quoted. I can't widen the match from my side: the filter file has no tolerance or liquidity key, and a title-pattern ban on gas brackets would also drop legitimate, researchable markets. I researched these four this cycle as forecast-only empty-book rows.
+
+**Ask (operator).** Pick either option:
+
+- Give `exclude_mids_exactly_half` a tolerance, for example `|mid - 0.5| <= 0.005`.
+- Add a placeholder-book key that drops a row when its spread at prepare time is >= 0.9 or its liquidity is under $10.
+
+This is the same family as the wide-spread mid-baseline proposal above. The rain rows and these gas rows share one root: a midpoint taken from a book with no real two-sided quote.
