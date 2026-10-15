@@ -4988,6 +4988,39 @@ for it on the next day-1 bracket, and revisit if one resolves against the
 532k/h -> 724k/h; this day-1 chain fell 0.889 -> 0.801 -> 0.71m/h), so
 no diurnal sign is assumed in either direction.
 
+**2026-10-15 20:4xZ update (FULL cycle after a 94h runner gap, operator
+machine; 6 `outside-view-veto` + 7 `wide-spread-veto` rows settled, see
+RETRO-20261015-2049.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| Berlin Abgeordnetenhaus 163+ seats (`ccc9f72c326e`) | 0.25 / 0.775 | No | +0.360 | No | **+7.82** |
+| Gemini 4.0 by Oct 15 (`cd7f3b399325`) | 0.50 / 0.765 | No | +0.260 | Yes | -5.00 |
+| USGS Oct5-11 >13, post-M7.7 R-J (`d3b121d53420`) | 0.65 / 0.424 | Yes | +0.182 | No | -5.00 |
+| Other Mommy opening 27-30m, Sat 16:47Z (`287eac393c58`) | 0.64 / 0.345 | Yes | +0.270 | Yes | **+8.51** |
+| Other Mommy opening 24-27m, Sat 16:47Z (`cabe09387824`) | 0.29 / 0.625 | No | +0.310 | No | **+7.50** |
+| USGS Oct5-11 >13, R-J x0.75 (`93e391736fa7`) | 0.57 / 0.393 | Yes | +0.150 | No | -5.00 |
+| Israel action vs Lebanon Oct 15 (`2f1fc8ea55c8`, wide-spread-veto) | 0.80 / 0.905 | No | +0.060 | Yes | -5.00 |
+| Hormuz shipping targeted Oct 7 (`47701174e516`, wide-spread-veto) | 0.50 / 0.795 | No | +0.100 | Yes | -5.00 |
+| Other Mommy opening 27-30m, 00:40Z (`25e150fe13c8`, wide-spread-veto) | 0.52 / 0.65 | No | +0.090 | Yes | -5.00 |
+| Digger 2nd wknd 3-4m (`948063d24aac`, wide-spread-veto) | 0.87 / 0.585 | Yes | +0.210 | Yes | **+2.58** |
+| Digger 2nd wknd 2-3m (`b659a2781fdb`, wide-spread-veto) | 0.12 / 0.335 | No | +0.130 | No | **+1.67** |
+| Verity 2nd wknd 11-12m (`0b88af766233`, wide-spread-veto) | 0.78 / 0.275 | Yes | refused (under min_minutes_to_resolution) | No | 0.00 |
+| Verity 2nd wknd 12-13m (`706f484cef38`, wide-spread-veto) | 0.09 / 0.325 | No | refused (under min_minutes_to_resolution) | Yes | 0.00 |
+
+Outside-view-veto mechanical ledger after these rows: 221 rows / 213
+trades / 85W-128L / +$77.40 / dBrier +0.0373 / held-out +$85.40. Side
+split: no 150/142/62W-80L/+$69.11; yes 71/71/23W-48L/+$8.29. Check: 69.11
++ 8.29 = 77.40 (batch +8.83 on 68.56, rounding 0.01).
+Wide-spread-veto ledger: 62 rows / 48 trades / 26W-22L / -$53.61 / dBrier
++0.0243 / held-out -$47.28. Side split: no 35/28/14W-14L/-$41.67; yes
+27/20/12W-8L/-$11.94. Check: -41.67 + -11.94 = -53.61 (batch -10.75).
+
+Ruling: no boundary change. Both USGS aftershock rows lost, so the veto
+kept capital off an unvalidated R-J method (now so labelled in the
+DEEP-2026-10-01 USGS note). The Saturday box-office pair won +16.01, n=1
+event, under any re-scoping line.
+
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
 The veto on judgment estimates with claimed edge > 0.10 stays. This fork
@@ -6919,6 +6952,8 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | Khamenei 0-4 Oct 2-9 (`4de33c23cc8e`, added RETRO-20261009-1603) | all-windows bootstrap 0.776 | 0.50 (note only, not recorded) | hour-aligned bootstrap + recent-72h (diurnal account) | better (−0.358, raw lost the mid by +0.117) |
 | Trump Truth Oct 2-9 (`bb494218de6b`, `8176007881d6`, added RETRO-20261009-1833) | all-windows bootstrap 0.690 / 0.202 | 1.00 / 0.00 (note only) | recent-72h windows (early Oct 3-4 bursts not repeated) | better (−0.096, −0.041); raw still beat the mid (−0.035, −0.030) |
 | Musk tweets Oct 2-9 (`6cbddebe8130`, `996eb2f884b0`, added RETRO-20261009-1833) | all-windows bootstrap 0.111 / 0.237 | 0.268 / 0.232 (note only) | recent-72h windows (last 24h ran 130 posts) | worse (+0.060, −0.002); raw beat the mid (−0.068, −0.013) |
+| Musk tweets Oct 10-12 2-day (`809b99ecb34c`, `071f3a26246d`, added RETRO-20261015-2049) | all-windows bootstrap 0.55 / 0.25 | 0.778 / 0.222 (note only) | recent-72h windows | better (−0.153, −0.013); raw lost the mid (+0.161, +0.042) |
+| Musk tweets Oct 6-13 weekly (`0dd9aea3b1e9`, `9f315c115b0c`, added RETRO-20261015-2049) | all-windows bootstrap 0.24 / 0.33 | 0.60 / 0.40 (note only) | recent n=30 windows | better net (−0.418, +0.051) |
 
 **Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
 The Khamenei row was a defective input, not a shade. Its last-7-day
@@ -6938,7 +6973,10 @@ RETRO-20260926-0615: 0 for 5 (p≈0.03 one-sided). Update
 RETRO-20261009-1833: 1 for 7 (Trump Oct 2-9 recency shade won, Musk
 Oct 2-9 recency shade lost; the same recent-72h read pointed opposite
 ways on two accounts in one week, so recency is not a reliable
-signal). The table now holds 9 independent events, so the ≥ 8 re-grade
+signal). Update RETRO-20261015-2049: 3 for 9 (both Musk Oct 10-12 and
+Oct 6-13 recency shades won; Musk recency is now 2-2 over 4 events; on
+both new events all-windows put 0.16-0.20 on a burst tail the book did
+not price and that did not happen). The table now holds 11 independent events, so the ≥ 8 re-grade
 below is DUE at the next deep retro. The one shade
 grounded in a measured, quoted input helped. **General rule (replaces
 the four per-category copies, which stay as the evidence log):** when a
@@ -7528,10 +7566,36 @@ resolved No.
   USGS weekly family bets 1W/1L, net -$4.38. Modelling note (n=2,
   directional only): both settled weeks came in at or under the recent
   5-week rate (~0.86/day), and the 365d rate (1.32/day) overshot both.
-  When the rate inputs disagree on the window mean, lead with the recent
-  rate and report the 365d value as the sensitivity check. Floor-edge
+  ~~When the rate inputs disagree on the window mean, lead with the recent
+  rate and report the 365d value as the sensitivity check.~~ Superseded
+  RETRO-20261015-2049 (third settled week, Oct 5-11: pre-mainshock pace
+  1.26/d = the 365d rate; both recent-led bets 02be6f41ddb9 <=6 and
+  4683a8b3d56e =8 lost). **Rate-robust bet rule:** a USGS weekly bucket
+  bet needs ask-edge >= min_edge under EVERY rate input in the note (35d,
+  61d, 365d, 365d sliding window); record the equal-weight mixture. Family
+  replay: blocks all 3 losses (9a2944acc280 365d edge 0.029, 02be6f41ddb9
+  negative, 4683a8b3d56e 0.011; -$15.00) and keeps the one win
+  aea0ebb45997 (priced from the 365d window, +$0.62). Family 1W/3L,
+  -$14.38. Floor-edge
   bucket bets: one loss erases about 8 floor-edge wins on the
   favourite side, so the deep retro should weigh that asymmetry.
+- **Aftershock-driven counts are `unvalidated-method` (RETRO-20261015-2049,
+  n=1 sequence).** After the M7.7 Panama mainshock (17:56Z Oct 9), generic
+  Reasenberg-Jones (a -1.67, b 0.91, p 1.08, c 0.05) expected ~7.8 M5.5+
+  aftershocks in 2.4d; the week added 4 events total including
+  background. The >13 chain (12 rows, two of them outside-view-veto) sat
+  0.07-0.23 above the mid and summed about +0.98 Brier against it. Record
+  such reads, never bet them, and until a second sequence settles anchor
+  the "more" side at or under the mid; quote the generic-R-J number as
+  "R-J view: X" in the note.
+- **Box-office weekend brackets near a Sunday studio estimate
+  (RETRO-20261015-2049, n=1).** Verity 2nd weekend: TheWrap Sunday
+  estimate 11.5m, final about 12.0m (+4%, cume 53.9m -> 54.4m), resolved
+  12-13m. My 3% sd put 0.78 on 11-12m (dBrier +0.533) and 0.09 on 12-13m
+  (+0.373). Use estimate-to-final sd >= 5%; when two trade reports differ
+  by more than 10% (THR 14.2m here), centre between them and widen to
+  cover both. Weather/closure-cited Sunday estimates: no direction assumed
+  yet (n=1 revised up).
 - **BanRep Sep ladder, tails over-weighted (RETRO-20260930-2215).** 3 of
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
