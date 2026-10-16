@@ -1933,6 +1933,17 @@ move as favorable or adverse.
    4e52c227a60f fed total-vote shares into a valid-vote question, 0.45 vs
    the corrected 0.88 on 2f6a83c8276a; the 0.45 veto counterfactual is a
    method error, not a clean veto save).
+   **Brazil 2026 runoffs (RETRO-20261016-1700):** Rio governor R1 had
+   Datafolha Sep22-24 runoff Paes 54-38 and Quaest Sep25-28 first round
+   Paes 34 / Ruas 25. The result was Ruas 49.3 / Paes 42.7 valid. Paes got
+   about his polled share, and Ruas (PL) took nearly all the undecided and
+   minor-candidate vote. My 0.89/0.80 rows matched the market and both
+   lost. For the Oct 25 runoffs, do not price off pre-R1 runoff polls.
+   Start from the R1 valid-vote result, compare each pollster's final R1
+   numbers with that result, and before using a post-R1 poll, check
+   whether its pollster understated the PL candidate. Also read the
+   court/annulment path: Ruas won with no runoff after the TSE annulled
+   Garotinho's 274k votes (Oct 8), which none of my rows considered.
 2. Form an independent estimate BEFORE looking hard at the market price
    (anchoring guard). Write the estimate down in the rationale.
 3. Identify the sharpest external benchmark (bookmaker odds, analyst
@@ -5020,6 +5031,28 @@ Ruling: no boundary change. Both USGS aftershock rows lost, so the veto
 kept capital off an unvalidated R-J method (now so labelled in the
 DEEP-2026-10-01 USGS note). The Saturday box-office pair won +16.01, n=1
 event, under any re-scoping line.
+
+**2026-10-16 17:0xZ update (FULL cycle, operator machine; 2
+`outside-view-veto` + 1 `wide-spread-veto` rows settled, see
+RETRO-20261016-1700.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| GTA VI Launch Trailer day-1 20-40m, 8.85h pace read (`79abf565e7a6`) | 0.86 / 0.825 | Yes | +0.030 | Yes | **+1.02** |
+| GTA VI Launch Trailer day-1 40-60m, 8.85h pace read (`d418fff2085a`) | 0.09 / 0.1205 | No | +0.020 | No | **+0.62** |
+| Seahawks-Broncos "Safety" (`bf1a512b5975`, wide-spread-veto) | 0.96 / 0.725 | Yes | +0.010 | Yes | **+0.26** |
+
+Outside-view-veto mechanical ledger after these rows: 223 rows / 215
+trades / 87W-128L / +$79.04 / dBrier +0.0369. Side split: no
+151/143/63W-80L/+$69.73; yes 72/72/24W-48L/+$9.31. Check: 69.73 + 9.31 =
+79.04 (batch +1.64 on 77.40).
+Wide-spread-veto ledger: 63 rows / 49 trades / 27W-22L / -$53.35 / dBrier
++0.0228. Side split: no 35/28/14W-14L/-$41.67; yes 28/21/13W-8L/-$11.68.
+Check: -41.67 + -11.68 = -53.35 (batch +0.26).
+
+Ruling: no boundary change. First wins for a vetoed video-views pace
+projection after seven straight losses, but both edges were 0.02-0.03,
+under min_edge anyway, so the veto cost almost nothing either way.
 
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
