@@ -3150,6 +3150,13 @@ single-stock touch rows go under `equity-touch`; NVDA HIGH 236
 `78f4d3163304` was filed `stock-touch` (-0.4016 vs a stale 0.685 gamma mid
 on a 0.39/0.98 book) and stays out of both tallies as a stale-comparator
 case.
+Refresh RETRO-20261016-2116: n=10, dBrier **-0.0666**. META 710-720
+`980e6e782552` (own 0.36, mid 0.657, book 0.614/0.70, spread 0.086, so
+inside max_spread) settled LOST with a close of 709.33, dBrier -0.302. It
+is the third normal-spread row where the book was slow against the
+sourced-vol read (META traded 716 and was sliding at record time). The
+siblings (700-710, 720-730, >730) and AMZN 250-255 have not settled yet.
+Still forecast-only. Re-grade at n >= 15 with the spread split.
 
 **2026-09-21 20:44Z update (RETRO-20260921-2044; far-barrier split added):**
 `8d1eb46b7c32` (ETH reach $2,800, own 0.25 vs mid 0.155) settled WON, dBrier
