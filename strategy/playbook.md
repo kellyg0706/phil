@@ -3165,6 +3165,18 @@ a ~0.07 tool read. **Late-session far-barrier rule:** when less than half a
 session remains and the barrier is more than 1 sd of the remaining-time move
 away, record the driftless tool number unrounded. Any shade goes in the
 note, per the shading rule above.
+Refresh RETRO-20261016-2349: n=14, dBrier **-0.0566**. The two AMZN/META
+Oct 12-16 weekly-close siblings settled: AMZN 250-255 `18f848c95260` (own
+0.62, mid 0.715, book 0.66/0.79 wide) WON with a dBrier of +0.0632 — a
+normal-spread-adjacent book that was simply right, the second row this week
+where the book beat the sourced-vol read rather than lagging it. META
+700-710 `43b371c12908` (own 0.22, mid 0.128, book 0.041/0.197, wide-spread
+veto) also WON, dBrier -0.1522 — a wide, stale-looking book badly underpriced
+the tail the sourced-vol read gave more weight to. Net the pair is a wash
+in direction (one to the market, one to us) but the second row's size pulls
+the running average down slightly (-0.0586 -> -0.0566). Still forecast-only,
+one settle short of the pre-registered n >= 15 re-grade with the spread
+split.
 
 **2026-09-21 20:44Z update (RETRO-20260921-2044; far-barrier split added):**
 `8d1eb46b7c32` (ETH reach $2,800, own 0.25 vs mid 0.155) settled WON, dBrier
