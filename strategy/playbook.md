@@ -3157,6 +3157,14 @@ is the third normal-spread row where the book was slow against the
 sourced-vol read (META traded 716 and was sliding at record time). The
 siblings (700-710, 720-730, >730) and AMZN 250-255 have not settled yet.
 Still forecast-only. Re-grade at n >= 15 with the spread split.
+Refresh RETRO-20261016-2210: n=12, dBrier **-0.0586**. META >730
+`aa84d892d775` (-0.117, revised away, book 0.49/0.84) and 720-730
+`d0f584ed844a` (-0.047, book 0.10/0.49) were both gains on wide books. The
+>730 re-read `239d2f98a8f2` (0.10 vs mid 0.03, +0.009) was rounded UP from
+a ~0.07 tool read. **Late-session far-barrier rule:** when less than half a
+session remains and the barrier is more than 1 sd of the remaining-time move
+away, record the driftless tool number unrounded. Any shade goes in the
+note, per the shading rule above.
 
 **2026-09-21 20:44Z update (RETRO-20260921-2044; far-barrier split added):**
 `8d1eb46b7c32` (ETH reach $2,800, own 0.25 vs mid 0.155) settled WON, dBrier
