@@ -6137,6 +6137,26 @@ on riff length instead, against a 0.79 mid, and the result was No
 a speaker-only count, so the No-side tally above lists it but does NOT
 count it: still 3W/1L, +$8.20, one speaker-venue-day.
 
+**trump-mention forecast stream at n=15 (RETRO-20261017-0135).** The
+GA-rally "Trump Account"/"TrumpRX" row (`747bf220cdbf`, own 0.06 vs mid
+0.085, 0 of 5 recent rally transcripts) resolved No, dBrier -0.0036. That
+takes the category to n=15, dBrier -0.0227 (own beats mid), 11 of 15
+resolved Yes. Split by the direction of my disagreement: rows where own
+was ABOVE mid, n=7, summed dBrier -0.364 (mean -0.052; 6 won, the one
+loss a 0.30-vs-0.25 row). Rows where own was at or BELOW mid, n=8, summed
++0.023 (mean +0.003). So the edge in this stream comes entirely from
+"the transcript base rate reads higher than the price". My downward shades
+add nothing. This is forecast-only evidence. n=7 on the useful side is
+under the bar, and several of those rows come from the same rally days. No
+rule change: the base-rate gate and the spread veto stay as they are.
+Pre-registered: when above-mid trump-mention rows reach n>=12 across at
+least 4 distinct rally days with mean dBrier <= -0.03, a deep retro checks
+which block (gate, spread, or edge floor) stopped each one. That retro
+decides whether a sourced Yes-side bet on evergreen rally vocabulary
+should get its own carve-out. Downward shades below mid in this category
+get recorded as `market-agrees` unless a transcript count supports them
+(the TrumpRX 0/5 did).
+
 ## First bet in 13 days: the AfD Sachsen-Anhalt audit (DEEP-2026-08-24)
 
 The 2026-08-24 03:11Z cycle placed de95e5168de3 ($5 No @0.66, edge 0.05,
