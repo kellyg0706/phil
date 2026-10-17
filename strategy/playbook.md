@@ -3035,7 +3035,13 @@ observed pace" means two dated reads of the same source at least ~3h
 apart; with one read, the row is still `no-anchor`/veto territory. Also
 measured: RYD (returnyoutubedislikeapi) lagged the YouTube watch page by
 only ~19k views at 20:20Z Sep25, so a RYD read stamped with its fetch time
-counts as a dated read when YouTube 429s.
+counts as a dated read when YouTube 429s. Clarified RETRO-20261017-1915
+(93da63daa37b, MrBeast wk2 270-280M, own 0.40 vs mid 0.69, resolved Yes,
+dBrier +0.264): two step-counter reads minutes apart are ONE read, not an
+observed pace (a 10-min 128k/h window under-read a video that held ~173k/h).
+And when a modelled path straddles a bracket edge (there 269.5-270.9M vs
+270M), the honest number sits near 0.5 -- do not shade it off a single
+noisy read.
 
 **2026-09-04 update (LIGHT tick 06:29Z, settled by resolve.py; 4 rows,
 two OpenAI Astra release-timeline markets, two sequential snapshots
@@ -5080,6 +5086,22 @@ Check: -41.67 + -11.68 = -53.35 (batch +0.26).
 Ruling: no boundary change. First wins for a vetoed video-views pace
 projection after seven straight losses, but both edges were 0.02-0.03,
 under min_edge anyway, so the veto cost almost nothing either way.
+
+**2026-10-17 19:1xZ update (FULL cycle, operator machine; 1
+`outside-view-veto` row settled, see RETRO-20261017-1915.)**
+
+| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
+|---|---|---|---|---|---|
+| MrBeast plN7JMbadRg wk2 270-280M, 10-min counter pace (`93da63daa37b`) | 0.40 / 0.69 | No | +0.240 | Yes | -5.00 |
+
+Outside-view-veto mechanical ledger after this row: 224 rows / 216
+trades / 87W-129L / +$74.04 / dBrier +0.0379 / held-out +$82.04. Side
+split: no 152/144/63W-81L/+$64.73; yes 72/72/24W-48L/+$9.31. Check: 64.73
++ 9.31 = 74.04 (batch -5.00 on 79.04). video-views subclass now 10 rows/10
+trades/3W-7L/-$26.45/dBrier +0.1429.
+
+Ruling: no boundary change. The veto saved $5 on a pace read that broke
+the "Pace must be observed" rule (one 10-minute window), now clarified there.
 
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
