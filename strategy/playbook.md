@@ -5087,22 +5087,6 @@ Ruling: no boundary change. First wins for a vetoed video-views pace
 projection after seven straight losses, but both edges were 0.02-0.03,
 under min_edge anyway, so the veto cost almost nothing either way.
 
-**2026-10-17 19:1xZ update (FULL cycle, operator machine; 1
-`outside-view-veto` row settled, see RETRO-20261017-1915.)**
-
-| Row | est vs mkt | Side | Realizable edge | Result | CF P&L |
-|---|---|---|---|---|---|
-| MrBeast plN7JMbadRg wk2 270-280M, 10-min counter pace (`93da63daa37b`) | 0.40 / 0.69 | No | +0.240 | Yes | -5.00 |
-
-Outside-view-veto mechanical ledger after this row: 224 rows / 216
-trades / 87W-129L / +$74.04 / dBrier +0.0379 / held-out +$82.04. Side
-split: no 152/144/63W-81L/+$64.73; yes 72/72/24W-48L/+$9.31. Check: 64.73
-+ 9.31 = 74.04 (batch -5.00 on 79.04). video-views subclass now 10 rows/10
-trades/3W-7L/-$26.45/dBrier +0.1429.
-
-Ruling: no boundary change. The veto saved $5 on a pace read that broke
-the "Pace must be observed" rule (one 10-minute window), now clarified there.
-
 ## Outside-view-veto relaxation fork (pre-registered, DEEP-2026-09-08, per operator note 2026-09-07 ~20:50Z)
 
 The veto on judgment estimates with claimed edge > 0.10 stays. This fork
