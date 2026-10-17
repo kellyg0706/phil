@@ -7715,3 +7715,14 @@ resolved No.
   cause. A record-time gap against a market that is pricing visible
   momentum is model error until proven otherwise. n=1: this is a
   recording rule, it grants no bet, and music-chart stays veto-bound.
+- **AAA daily-level brackets: measured drift and a sourced sd
+  (RETRO-20261017-1555).** Oct 16 ladder (35ccefb3e91e, 0159ff1ef976,
+  9aa25735c98b): own 0.70 on 4.33x, and it settled 4.3271. I used a
+  -0.1c/day mean (one up-tick) against a measured 7-day trend of
+  -0.38c/day, and an unsourced sd of 0.45c. The realized moves were -0.73c
+  and then -1.86c. Rule: the next-day mean is the measured 7-day trend
+  unless a dated cause says otherwise (same class as the stream-race
+  rule). The sd comes from at least 14 AAA daily diffs. Until that series
+  exists, record as `unvalidated-method` and cap any single 1-cent bucket
+  at 0.5. Empty books (0.01/0.98) get no edge claim. n=1 draw; this is a
+  recording rule and grants no bet.
