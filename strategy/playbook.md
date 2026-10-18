@@ -7595,6 +7595,21 @@ Parcl, USGS M5.5+, PortWatch chokepoint MA. Hormuz uses the same layer
 but the zero-transit rows are min-touch on daily counts, not the MA, so
 the match check does not carry over to them.
 
+**Hormuz weekly-SUM brackets matched (2026-10-18 20:0xZ, FULL cycle,
+operator).** "How many ships transit the Strait of Hormuz week of <Mon>?"
+resolves on the SUM of PortWatch daily `n_total` Mon-Sun. Match: Oct 5-11
+layer sum 29 -> "25-29" resolved Yes (closed Oct 14, so publication lag
+~3 days and the set resolves ~Wed). `strategy/tools/portwatch.py <port>
+<start>` prints the latest rows, rolling N-day sums and bracket
+frequencies (curl/python -c are gated on the operator machine). Pricing
+note: on Oct 11 20:00Z, with zero days of the week published, the book had
+the true bucket at 0.30 and 20-24 at 0.29, so its pre-publication skew
+carried no visible AIS edge (n=1). First read, all forecast-only: 20-24
+`b9e16d98ab23` and 30-34 `47da267a8561` vetoed (>0.10 vs a book leaning
+low on war news), <20 `e60555418ea6` wide-spread-veto. Grade the low-side
+skew when the Oct 12-18 set settles; a second matched week is needed
+before any leg is betable under the first-contact family cap.
+
 ## Forecast hygiene: supersede the stale sibling in the same cycle (2026-09-30 18:15Z, LIGHT retro)
 
 When research on one market leads me to write that an open forecast on
