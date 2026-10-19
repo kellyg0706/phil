@@ -415,6 +415,16 @@ the same 0.09 estimate read as a 0.05 No-side "edge" on a $683 book, the
 exact shape this rule declines. Label these `architecture-mismatch` /
 `commodities-touch` like the Sep 4 row `d810e5c5d49f`, and quote the
 record-time bid/ask in the note, never the screener mid.
+RETRO-20261019-2050: `0a5ceb0e8ca2` (SPY > $765 Oct 19, est 0.78 vs book
+0.892/0.893, settled Yes) is a further miss in the same direction. The raw
+Brownian read was 0.68-0.72, and even after shading toward the market the
+estimate stayed 0.11 below it (dBrier +0.037). The mechanical CF ledger for
+`architecture-mismatch` (n=25) has the below-market side (question-frame
+`no`, 14 rows) at dBrier +0.0396 and 0W/6L fillable, while the above-market
+side is -0.0232. So when the naive vol model sits under the book on these
+rows, the book is the better estimate: start from the record-time mid and
+move off it only on a named fact the book can't yet price (a print, a halt).
+Vol-model distance alone does not move the estimate.
 
 ## Funnel instrumentation (DEEP-2026-08-05, operator mandate)
 
