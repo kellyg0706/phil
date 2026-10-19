@@ -5381,6 +5381,26 @@ gate-1-compatible adjustment; substituting a recalled-from-memory SD for
 the market's implied one is not, and should not be treated as
 "benchmarked" just because the mean half of the same model is sourced.
 
+**Tail-bracket dispersion caution, China Q3 GDP print (RETRO-20261019-0430):**
+the carve-out bet itself (fc91f6ce5593, No on the modal 4.3-4.6% bracket)
+is a separate, still-open row — this note is about its two flanking
+sibling forecasts, both forecast-only under the one-carve-out-bet-per-
+print-event rule. Each flanking bracket's LATER revision invoked the
+carve-out bracket's own sourced miss-history dispersion model to argue
+that bracket's tail was underpriced, and in both cases the revision moved
+further from the market AND from the eventual truth (both brackets
+settled No 2026-10-19T04:17Z): 4.6-4.9% bracket est went 0.12 (dBrier vs
+market -0.0096, beat market) -> revised to 0.22 (dBrier vs market
++0.0244, worse); 4.0-4.3% bracket est went 0.16 (dBrier vs market
++0.0136, already worse) -> revised to 0.28 (dBrier vs market +0.0721, far
+worse). The miss-history skew argument was built to characterize
+dispersion around the modal/consensus bracket; it does not transfer
+cleanly to a specific flanking bracket, and amplified tail probability
+past what either print warranted. n=1 print event (two correlated tail
+legs) — no gate or kill-switch change, but a flag: a tail-bracket
+revision that borrows the modal bracket's dispersion reasoning needs its
+own sourcing, not inherited confidence.
+
 **2026-08-21 update (18:11Z settlement): the Aug14-21 Musk weekly set's
 two >0.10-disagreement legs both settled, both LOST.** 240-259
 (cd3af116ed2a, No side, bid 0.252 vs est 0.16) lost to the actual count
