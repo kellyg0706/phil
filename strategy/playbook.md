@@ -5401,6 +5401,21 @@ legs) — no gate or kill-switch change, but a flag: a tail-bracket
 revision that borrows the modal bracket's dispersion reasoning needs its
 own sourcing, not inherited confidence.
 
+**Carve-out kill-switch tally, event #1 (RETRO-20261019-0713):** the
+carve-out bet on this same China Q3 GDP print, fc91f6ce5593 (No on the
+modal 4.3-4.6% bracket, the carve-out's first live invocation), settled
+**LOST** (-$5.00, -1.00u) — the print landed Yes, inside the bracket the
+market was already confident in. Running total toward the pre-registered
+kill switch (reverts at 4 settled EVENTS or 6 settled BETS, whichever
+first): **1 event, 1 bet, 0W/1L, net -1.00u.** On this same print, the
+bet's own two forecast revisions (02c1548b1e31 est 0.58, 70119ad917bc
+est 0.55) both landed behind the market's dBrier, and the later,
+more-elaborated revision was further behind than the earlier, naive one
+— the identical shape flagged for the flanking brackets above. No gate
+or kill-switch change at n=1 event, but record this count at every future
+carve-out settlement so the 4-event/6-bet threshold doesn't require a
+ledger search to track.
+
 **2026-08-21 update (18:11Z settlement): the Aug14-21 Musk weekly set's
 two >0.10-disagreement legs both settled, both LOST.** 240-259
 (cd3af116ed2a, No side, bid 0.252 vs est 0.16) lost to the actual count
