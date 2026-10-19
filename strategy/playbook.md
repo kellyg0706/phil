@@ -7782,3 +7782,17 @@ resolved No.
   exists, record as `unvalidated-method` and cap any single 1-cent bucket
   at 0.5. Empty books (0.01/0.98) get no edge claim. n=1 draw; this is a
   recording rule and grants no bet.
+  **Update (RETRO-20261019-1643, n=2 on the rule itself):** Oct 19 ladder
+  (202b4f22a42b/e5a92c0011cc/73501f7b8f00/841a73362c5c, superseded by
+  44788d32f487/7b13b265fdf2 once the print was known) applied the rule
+  correctly — mean = measured 7-day trend (-0.85c/day) — and still missed:
+  AAA went 4.2988 (Oct 18) -> 4.2953 (Oct 19), a -0.35c diff, smaller than
+  the trend-implied mean rather than bigger as in the Oct 16 case. The
+  known daily-diff series is now -0.73c, -1.86c, -0.97c, -0.35c (n=4 of
+  the 14 needed before an sd can be sourced) and has swung from
+  bigger-than-trend to smaller-than-trend across these two retros — the
+  series looks high-variance in both directions, not just underestimated
+  magnitude as the Oct 16 retro alone suggested. No rule change: the trend
+  convention and the 0.5 cap are still the right call (they kept every
+  inner-bracket estimate in the 0.43-0.46 range despite the miss) — this
+  is tracking toward n=14, not a correction.
