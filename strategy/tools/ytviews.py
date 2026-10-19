@@ -40,7 +40,22 @@ p.add_argument("video_id")
 p.add_argument("--channel")
 p.add_argument("--poll", type=int, default=0, help="extra watch reads after the first")
 p.add_argument("--interval", type=float, default=30.0, help="seconds between polled reads")
+p.add_argument("--list", action="store_true", help="list the channel feed's entries (needs --channel; video_id ignored)")
 a = p.parse_args()
+
+if a.list:
+    # "Next video" markets name no video id; the feed's newest entry is the
+    # candidate (2026-10-19: needed for the MrBeast day-2 bracket, curl gated).
+    xml = get(f"https://www.youtube.com/feeds/videos.xml?channel_id={a.channel}")
+    for entry in xml.split("<entry>")[1:]:
+        vid = re.search(r"<yt:videoId>([^<]+)</yt:videoId>", entry)
+        pub = re.search(r"<published>([^<]+)</published>", entry)
+        t = re.search(r"<title>([^<]*)</title>", entry)
+        v = re.search(r'<media:statistics views="(\d+)"', entry)
+        views = f"{int(v.group(1)):,}" if v else "?"
+        print(f"{now()} {vid.group(1) if vid else '?'} published {pub.group(1) if pub else '?'} "
+              f"rss-views {views} {t.group(1) if t else ''}")
+    raise SystemExit
 
 if a.poll:
     # The public counter moves in steps (2026-10-10: +13 over 4 min, then +45k
