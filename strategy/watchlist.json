@@ -57,9 +57,19 @@
     "Amended 2026-09-21 02:3xZ (TRIGGERED cycle, cloud): raised the core PCE (3938031) move_threshold 0.05 -> 0.10. Three fires on this exact key in three days (Sep18 15:22Z +0.070, Sep20 12:52Z -0.050, Sep21 02:37Z -0.065), each individually researched (WebSearch/WebFetch) and each confirmed no dated news catalyst -- the observed CLOB spread on this token has run 0.01-0.10 across the same window, i.e. within spread-noise range of the 0.05 threshold on a thin ($660 liquidity) book. 0.10 still catches a real consensus-forming move (a genuine settle-on-3.3 signal implies a much larger repricing toward the extremes) while filtering the bid/ask wobble this item has fired on three times running for zero bets.",
     "Amended 2026-09-24 07:4xZ (TRIGGERED cycle, cloud): pruned the SNB Sep24 calendar entry and its paired price_move (market 4443883) -- the decision is out (SNB's own press release, pre_20260924: policy rate held at 0%, matching the no-change Yes side exactly). No-side edge already exhausted pre-print (CLOB bid 0.999, no ask); nothing left to watch for on this market.",
     "Amended 2026-09-30 00:5xZ (TRIGGERED cycle: pricemove:3938031, cloud): pruned five watch.py-reported expired price_moves, all Sep 20/21-election items whose positions have since settled (23e40bbbccc5 lost, 9074e3f2fd49 won, 475edf2e2654 won, 7ec71e307f12 lost -- MV CDU, Russia UR sweep, Russia turnout, Berlin Linke) plus the Xi-visit market-agrees entry (forecast 65f80b2eb530, past its Sep25 expiry, no reversal ever fired). Also pruned the UMich Sep25 calendar entry (forecast 3904e426ee6d settled WON, already graded). This tick's trigger, the core-PCE (3938031) price move, is the fourth fire on this key: mid spiked 0.73->0.955 over 00:44-00:51Z then reverted to 0.85 by 00:52Z (prices-history 1min bars) -- a thin-book print, not a sustained repricing, same pattern as the three Sep18/20/21 fires that motivated the 0.05->0.10 threshold raise. Left the threshold as-is: the entry expires at 12:00Z today (12.5h left, then the paired BEA calendar entry takes over at the actual release), too little runway left to be worth re-tuning.",
-    "Amended 2026-10-10 00:4xZ (FULL cycle, operator machine): pruned the core PCE price_move (3938031, expired Sep 30 12:00Z) and the BEA Aug PCE calendar entry (window passed Sep 30; bet 8894592b953a settled WON and was graded) -- both sat expired for ten days against this file's own PRUNE rule. Added one calendar entry for the Sep CPI print (two open ladder forecasts from Oct 7). No price_moves added: the three open positions are either dead on the count (USGS <=6 and =8, mids 0.005/0.02) or long past their catalyst (Andersson PM)."
+    "Amended 2026-10-10 00:4xZ (FULL cycle, operator machine): pruned the core PCE price_move (3938031, expired Sep 30 12:00Z) and the BEA Aug PCE calendar entry (window passed Sep 30; bet 8894592b953a settled WON and was graded) -- both sat expired for ten days against this file's own PRUNE rule. Added one calendar entry for the Sep CPI print (two open ladder forecasts from Oct 7). No price_moves added: the three open positions are either dead on the count (USGS <=6 and =8, mids 0.005/0.02) or long past their catalyst (Andersson PM).",
+    "Amended 2026-10-19 11:5xZ (FULL cycle, operator machine): pruned the expired BLS Sep CPI calendar entry (window passed Oct 14). Added a price move and a calendar entry for 'Paris curfew by October 19?' (5847926, forecast 2c27350c55af own 0.45 vs mid 0.2725, wide-spread-veto on a 0.13 spread). The deciding fact is a Paris police-prefecture order after PM Lecornu asked prefects for localized curfews from tonight; officials said the map would come this afternoon. If an all-ages order covering part of the City of Paris is published and the ask still leaves ask-edge >= 0.30, the info-race wide-book exception applies. A minors-only order resolves No under the rules. Deadline 21:59Z."
   ],
-  "price_moves": [],
+  "price_moves": [
+    {
+      "market_id": "5847926",
+      "token_id": "4128972586857672619659938190935591098652901631913258146301299766362668437264",
+      "label": "Paris curfew by October 19? (Yes token) - official curfew for any part of the City of Paris announced by 23:59 Paris time Oct 19; minors-only curfews excluded. Forecast 2c27350c55af own 0.45.",
+      "move_threshold": 0.15,
+      "window_min": 30,
+      "expires": "2026-10-19T22:00:00Z"
+    }
+  ],
   "new_market": {
     "enabled": true,
     "min_liquidity": 5000,
@@ -67,9 +77,9 @@
   },
   "calendar": [
     {
-      "label": "BLS September 2026 CPI (12:30Z, date inferred from the market end date Oct 15 03:59Z - confirm on bls.gov before relying on it) - monthly-inflation ladder event 1005014: open forecasts 6d8ce681bf62 (0.5 Yes 0.38) and 4c905fe12f6f (0.7 Yes 0.11), Cleveland nowcast MoM 0.53 unchanged on 10/09; grade the nowcast-centred Gaussian (sd 0.09 unsourced) against the PM ladder 0.4/0.5/0.6/0.7 = 0.075/0.375/0.335/0.165",
-      "fire_at": "2026-10-14T12:30:00Z",
-      "window_min": 45
+      "label": "Paris curfew map (5847926, forecast 2c27350c55af own 0.45): check prefecturedepolice.interieur.gouv.fr and Paris press for a prefectoral curfew order covering any part of the City of Paris (Chatelet/Halles/Republique named as possible). Note whether it applies to everyone or to minors only (minors-only resolves No). Re-quote both tokens.",
+      "fire_at": "2026-10-19T14:30:00Z",
+      "window_min": 60
     }
   ]
 }
