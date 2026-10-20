@@ -1659,6 +1659,19 @@ Prefer, in order:
      consensus snapshots disagree by more than ~0.15/share, date each one
      and re-pull the latest on report eve before forming the estimate;
      an undated spread that wide is not a benchmark.
+     **Symmetric extension (RETRO-20261020-1310, n=3 now):** the rule
+     holds on the Yes side too. MSCI 7dcd5503937b set own 0.50 vs ask
+     0.45 from a 10-quarter count (7/10 beats >=2.2pct) against a line
+     5.12 sitting ~2pct above the 5.02-5.03 consensus, while the last 6
+     quarters ran 3/6 -- the recent window already sat at the book. It
+     printed 5.11 and lost -$5. That makes surprise-count deviations from
+     the book 0-for-3 when the line sits above consensus (HD, PEP on the
+     No side via CF; MSCI on the Yes side, real). Rule: on an
+     above-consensus line, a surprise-size count with no named signal
+     does not move own off the book in EITHER direction; when the full
+     history and the recent window (last ~6 quarters) disagree, take the
+     recent window, and if that lands within 0.05 of the book, record
+     market-agrees, not bet.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
