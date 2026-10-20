@@ -7098,6 +7098,7 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | Musk tweets Oct 2-9 (`6cbddebe8130`, `996eb2f884b0`, added RETRO-20261009-1833) | all-windows bootstrap 0.111 / 0.237 | 0.268 / 0.232 (note only) | recent-72h windows (last 24h ran 130 posts) | worse (+0.060, −0.002); raw beat the mid (−0.068, −0.013) |
 | Musk tweets Oct 10-12 2-day (`809b99ecb34c`, `071f3a26246d`, added RETRO-20261015-2049) | all-windows bootstrap 0.55 / 0.25 | 0.778 / 0.222 (note only) | recent-72h windows | better (−0.153, −0.013); raw lost the mid (+0.161, +0.042) |
 | Musk tweets Oct 6-13 weekly (`0dd9aea3b1e9`, `9f315c115b0c`, added RETRO-20261015-2049) | all-windows bootstrap 0.24 / 0.33 | 0.60 / 0.40 (note only) | recent n=30 windows | better net (−0.418, +0.051) |
+| Musk tweets Oct 13-20 weekly (`86f0e7918ca5`, added RETRO-20261020-1825) | all-windows bootstrap 0.482 | 0.52 (RECORDED, rule breach) | recent-72h windows (0.938) | worse (+0.038); raw beat the mid (−0.062) |
 
 **Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
 The Khamenei row was a defective input, not a shade. Its last-7-day
@@ -7120,7 +7121,9 @@ ways on two accounts in one week, so recency is not a reliable
 signal). Update RETRO-20261015-2049: 3 for 9 (both Musk Oct 10-12 and
 Oct 6-13 recency shades won; Musk recency is now 2-2 over 4 events; on
 both new events all-windows put 0.16-0.20 on a burst tail the book did
-not price and that did not happen). The table now holds 11 independent events, so the ≥ 8 re-grade
+not price and that did not happen). Update RETRO-20261020-1825: 3 for
+10 (Musk Oct 13-20 recency shade, wrongly recorded in est_prob, cost
++0.038 vs raw; Musk recency now 2-3). The table now holds 12 independent events, so the ≥ 8 re-grade
 below is DUE at the next deep retro. The one shade
 grounded in a measured, quoted input helped. **General rule (replaces
 the four per-category copies, which stay as the evidence log):** when a
