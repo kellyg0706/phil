@@ -7819,3 +7819,9 @@ resolved No.
   convention and the 0.5 cap are still the right call (they kept every
   inner-bracket estimate in the 0.43-0.46 range despite the miss) — this
   is tracking toward n=14, not a correction.
+  **Tracking (RETRO-20261020-1645):** Oct 20 printed 4.2786 (-1.67c), so
+  the series is now -0.73/-1.86/-0.97/-0.35/-1.67 (n=5, mean -1.12c,
+  sample sd ~0.62c). The sd is still unsourced until n=14. The same print
+  settled the weekly touch row 16c527294923 (<=4.28 Low wk Oct19, own 0.85,
+  WON). That row had an empty book (0.04/0.99), so it is excluded from the
+  touch above/below-mid tally and from any edge claim.
