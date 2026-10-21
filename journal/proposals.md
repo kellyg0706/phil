@@ -3823,3 +3823,7 @@ allowlist for these two var names, or a file-based channel).
 - Add a placeholder-book key that drops a row when its spread at prepare time is >= 0.9 or its liquidity is under $10.
 
 This is the same family as the wide-spread mid-baseline proposal above. The rain rows and these gas rows share one root: a midpoint taken from a book with no real two-sided quote.
+
+## 2026-10-21 20:2xZ: evidence update for the one-sided mid-baseline proposal (line ~3810)
+
+The artifact now dominates a whole category's forecast score. The Oct 20 USGS daily-max rows 9620dd55b185 (bid None, "mid" 0.488) and 7f286255d9a1 (bid 0.547 / ask 0.999) were recorded after USGS had already published the deciding M6.6 quake. They settled this tick at dB -0.2381 and -0.0511. Their sum, -0.289, is about the whole earthquake-count forecast brier_delta (-0.0160 x n=18 = -0.288), so score.py reports a category edge that is entirely two one-sided-book rows. Same shape this cycle: Tesla 668792c2aa36 (no Yes asks, mid 0.31, own 0.97 after the published 0.48 print) will add about -0.6 to earnings when it settles. The agent-side stopgap is a playbook tag-and-drop rule (RETRO-20261021-2022), but score.py still sums these rows. **Ask unchanged:** when bid or ask was None at record time (or spread > 0.30), leave the row out of the mid-baseline brier_delta. Grade it for calibration only.

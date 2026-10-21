@@ -7787,6 +7787,21 @@ resolved No.
   whose spread is >= 0.5, say "empty book" in the note; retros and deep
   retros drop such rows from any category or edge-class "agent beats
   market" claim (report them separately if at all).
+  **Extension (RETRO-20261021-2022): one-sided books and post-fact rows.**
+  The spread >= 0.5 test misses a book with NO bid or NO ask (spread is
+  undefined, so the row never gets flagged). Oct 20 USGS daily-max rows
+  9620dd55b185 (bid None, "mid" 0.488) and 7f286255d9a1 (bid 0.547 / ask
+  0.999) were both recorded AFTER USGS had already published the M6.6
+  Vanuatu quake, and they scored dB -0.2381 and -0.0511. That -0.289 is
+  more than the whole earthquake-count category's -0.0160 x 18 = -0.288.
+  The category's "beats market" read is entirely these two rows. Rule:
+  a row recorded after the deciding fact was public (note says POST-PRINT
+  or names the published figure), or recorded against a one-sided book,
+  gets "empty book" / "POST-PRINT" in its note and is dropped from the
+  same claims as above. Tesla 668792c2aa36 (this cycle: no Yes asks, mid
+  0.31, own 0.97 after the 0.48 print) is the first row tagged under it.
+  This changes how retros read the numbers only. It grants no bet and
+  changes no estimate.
 - **Stream-sum chart races: extrapolate measured trends, never assumed
   ones (RETRO-20261009-1658).** Kidman #2 weekly 669a9cfcdb4e: own 0.72
   vs mid 0.958, Yes, dBrier +0.0766. I assumed Kidman flat and Swift
