@@ -7828,3 +7828,12 @@ resolved No.
   settled the weekly touch row 16c527294923 (<=4.28 Low wk Oct19, own 0.85,
   WON). That row had an empty book (0.04/0.99), so it is excluded from the
   touch above/below-mid tally and from any edge claim.
+  **Tracking (RETRO-20261021-1602):** Oct 21 printed 4.2644 (-1.42c), so
+  the series is now -0.73/-1.86/-0.97/-0.35/-1.67/-1.42 (n=6, mean -1.17c,
+  sample sd ~0.58c). Still short of n=14. Unlike Oct 16 (missed by
+  magnitude) and Oct 19 (missed in direction), this is the first instance
+  where the trend-centered pre-print estimate (mean -0.89c/day off Oct 20,
+  giving the 4.2600-4.2699 bucket the highest est at 0.43 under the 0.5
+  cap) actually landed on the winning bucket. No rule change: still
+  tracking toward n=14, and the 0.5 cap plus `unvalidated-method` tag did
+  their job regardless of outcome (RETRO-20261021-1602).
