@@ -64,4 +64,15 @@ def queries(now, min_end, horizon, args, protected):
         #    markets currently, so not included — revisit if that changes.)
         {**base, "_label": "econ-tag", "tag_id": 100328, "order": "volume24hr",
          "ascending": "false"},
+
+        # 5. Earnings-beat markets (playbook preference #1), same asymmetric
+        #    no-floor logic as query 4. tag_id 1013 = "Earnings" (read off
+        #    SSNC 5778465's tags 2026-10-22). Evidence for adding it: the
+        #    2026-10-22 19:3xZ scan pooled 1239 candidates and ZERO earnings
+        #    markets while `tags.py check 1013` listed 81 live ones; SSNC
+        #    ($101 liquidity, $337 vol24h) and every other beat market
+        #    falls under queries 1-3's floors, so the post-close race slot
+        #    found its candidate only through an old forecast row.
+        {**base, "_label": "earnings-tag", "tag_id": 1013, "order": "endDate",
+         "ascending": "true"},
     ]
