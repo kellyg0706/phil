@@ -5306,6 +5306,12 @@ hold:
    was unreachable (a recorded property-2 failure), does NOT qualify —
    this is the UMich lesson (0/2, −2.00u): property-2 failure at
    forecast time predicts veto-was-right at settlement.
+   **Tracking (RETRO-20261023-1655):** the Oct UMich 46.0-48.9 bracket
+   (forecast-only, vetoed, id 2642673fd28c, own 0.60 vs mid 0.485) settled
+   WON — a counter-example to "veto-was-right," the first in this shape
+   since the 0/2 at enactment. n=1 against n=2; far short of reopening
+   gate 2, which needs sourced dispersion, not a better record on an
+   unsourced one. No change.
 3. **Band 0.10–0.20 only.** Disagreement above 0.20 stays vetoed
    outright — the counterfactual ledger's worst losses all live there.
 4. **Standard floors unchanged** (min_edge, max_spread, flat $5), and
@@ -7860,3 +7866,21 @@ resolved No.
   cap) actually landed on the winning bucket. No rule change: still
   tracking toward n=14, and the 0.5 cap plus `unvalidated-method` tag did
   their job regardless of outcome (RETRO-20261021-1602).
+  **Tracking (RETRO-20261023-1655, LIGHT tick):** Oct 22 printed 4.2701
+  (+0.57c) and Oct 23 printed 4.2926 (+2.25c), so the series is now
+  -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/+0.57/+2.25 (n=8, mean -0.52c,
+  sample sd ~1.37c — more than double the ~0.58c read at n=6). The Oct 23
+  pre-print forecasts (made Oct 22 19:42Z) used a flat `sd 0.9c` guess
+  centered at 4.272 and put only 0.02 on the eventual winning 4.29+
+  bucket; the actual +2.25c move had a dated cause (WTI +3.6% intraday,
+  two straight up days) the same way Oct 16's miss did not. This is the
+  second big up-swing after four down-swings and confirms the series is
+  still high-variance in both directions, not converging yet — still
+  short of n=14, no rule change, and the `unvalidated-method` tag plus
+  0.5 cap (now applied explicitly to the Oct 24 ladder) are doing their
+  job. The five POST-PRINT supersessions that same morning (reading the
+  AAA print directly before the 10:00 ET resolver deadline) scored
+  near-zero Brier by construction and are excluded from any "gas-price
+  beats market" claim per the earthquake-count POST-PRINT rule above —
+  the category's n=17 brier_delta=-0.1532 this tick is mostly those five
+  rows, not pre-print skill.
