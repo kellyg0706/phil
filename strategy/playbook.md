@@ -7773,6 +7773,14 @@ resolved No.
   is not probability" alone does not justify it. This sets where the
   estimate is anchored, not an edge claim. Ladder bets stay under the
   existing econ-rates gates. Re-grade at the fourth settled ladder.
+  **Third ladder (RETRO-20261023-1330): CBR Oct 23, hold at 14.00%.**
+  The rows that followed the rule beat the mid: cut 0.08 vs 0.10
+  (-0.0036), and the cut-No bet at 0.89 vs 0.82 (-0.0168, won +$1.02).
+  The pre-poll cut row at 0.13 vs 0.115 lost to the mid (+0.0037), and
+  so did the modal no-change row at 0.89 vs 0.90 (+0.0021), which broke
+  the rule by 0.01. Tally: 3 ladders, and the direction holds. Recording
+  the modal leg even 0.01 under the mid costs Brier, so record it at the
+  mid or above, not "about at" it.
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
