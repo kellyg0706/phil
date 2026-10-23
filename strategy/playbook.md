@@ -7081,6 +7081,12 @@ rule predicted:
   forecast's pre-registered check. The freed slots go to the holding
   cells above or to an unresearched category. Research priority only,
   no gate change; revisit when postcount delta turns ≤ 0 at n ≥ 50.
+  *Tracking (RETRO-20261023-1835):* revisit check run at **n=75,
+  +0.0249**. Still > 0, so the bar and the one-family cap hold. Rows far
+  from the close keep losing (Musk Oct16-23 260-279 at 55h: own 0.08 vs
+  mid 0.135, settled Yes, +0.098). Rows near the close tie the mid.
+  Don't read a slow recent pace as evidence a burst regime ended: the
+  last 55h ran ~2.0/h against the recorded 1.3/h shade.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
