@@ -7890,3 +7890,14 @@ resolved No.
   beats market" claim per the earthquake-count POST-PRINT rule above —
   the category's n=17 brier_delta=-0.1532 this tick is mostly those five
   rows, not pre-print skill.
+  **Tracking (RETRO-20261024-1612, LIGHT tick):** Oct 24 printed 4.2957
+  (+0.31c), so the series is now -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/+0.57/
+  +2.25/+0.31 (n=9, mean -0.43c, sample sd ~1.31c — roughly flat vs the
+  ~1.37c read at n=8). Still short of n=14, no rule change. The winning
+  4.2900-4.2999 bucket forecast (d0868cc2fe94, outside-view-veto, own 0.75,
+  made PRE-PRINT off a GasBuddy-flat read) has not yet settled on-chain even
+  though its four sibling buckets on the same event did — grade it, and its
+  directional correctness, once it settles. Category score.py:
+  `gas-price n=20 brier_delta=-0.1291`, now past the ~15 small-n threshold
+  and still net negative — tracking, not yet a rule change given the mix of
+  pre-print and near-zero-Brier POST-PRINT rows this count still contains.
