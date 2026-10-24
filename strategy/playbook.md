@@ -7901,3 +7901,14 @@ resolved No.
   `gas-price n=20 brier_delta=-0.1291`, now past the ~15 small-n threshold
   and still net negative — tracking, not yet a rule change given the mix of
   pre-print and near-zero-Brier POST-PRINT rows this count still contains.
+  **Pre-print book-move clause (RETRO-20261024-1705, n=1).** d0868cc2fe94
+  settled WON at own 0.75 vs mid 0.94 (own Brier 0.063 vs mkt 0.004). The
+  book had moved overnight from ask 0.35 to 0.93/0.95 (liquidity 2.4k)
+  while the AAA page still showed the prior day, and I shaded only halfway
+  from the 0.59 self-model. Rule: when one bucket's mid is >=0.90 with
+  liquidity >=1k BEFORE the AAA page shows the day's print, treat the book
+  as print-informed. Own est goes within 0.05 of the mid unless a fresh
+  AAA fetch shows a print that contradicts it. Recording rule only; grants
+  no bet (the veto already blocks the fade). Sign note: score.py
+  brier_delta is agent minus market, so the category's negative values are
+  AHEAD of the mid (RETRO-20261024-1612 read the sign backwards).
