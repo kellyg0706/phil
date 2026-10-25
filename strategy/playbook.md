@@ -1564,6 +1564,10 @@ brier_delta +0.0838 on n=35. A primary-source check (news page, models page)
 still runs, but only a POSITIVE finding (the launch is live, or an official
 date) moves est_prob off the mid. "Not out yet" earlier on the day moves
 nothing. Re-grade the shade views at n=8.
+Live tally (RETRO-20261025-0640): 3 distinct markets settled with a shade
+view (002fc923637a, d77c0f595344, 611ea71494f5), and the shade beat the mid
+on all 3. All three are rungs of one Fable 5.2+ launch event, against the
+two launch events the rule was built on, so the rule stays until n=8.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
