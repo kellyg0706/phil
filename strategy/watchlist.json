@@ -59,17 +59,10 @@
     "Amended 2026-09-30 00:5xZ (TRIGGERED cycle: pricemove:3938031, cloud): pruned five watch.py-reported expired price_moves, all Sep 20/21-election items whose positions have since settled (23e40bbbccc5 lost, 9074e3f2fd49 won, 475edf2e2654 won, 7ec71e307f12 lost -- MV CDU, Russia UR sweep, Russia turnout, Berlin Linke) plus the Xi-visit market-agrees entry (forecast 65f80b2eb530, past its Sep25 expiry, no reversal ever fired). Also pruned the UMich Sep25 calendar entry (forecast 3904e426ee6d settled WON, already graded). This tick's trigger, the core-PCE (3938031) price move, is the fourth fire on this key: mid spiked 0.73->0.955 over 00:44-00:51Z then reverted to 0.85 by 00:52Z (prices-history 1min bars) -- a thin-book print, not a sustained repricing, same pattern as the three Sep18/20/21 fires that motivated the 0.05->0.10 threshold raise. Left the threshold as-is: the entry expires at 12:00Z today (12.5h left, then the paired BEA calendar entry takes over at the actual release), too little runway left to be worth re-tuning.",
     "Amended 2026-10-10 00:4xZ (FULL cycle, operator machine): pruned the core PCE price_move (3938031, expired Sep 30 12:00Z) and the BEA Aug PCE calendar entry (window passed Sep 30; bet 8894592b953a settled WON and was graded) -- both sat expired for ten days against this file's own PRUNE rule. Added one calendar entry for the Sep CPI print (two open ladder forecasts from Oct 7). No price_moves added: the three open positions are either dead on the count (USGS <=6 and =8, mids 0.005/0.02) or long past their catalyst (Andersson PM).",
     "Amended 2026-10-19 11:5xZ (FULL cycle, operator machine): pruned the expired BLS Sep CPI calendar entry (window passed Oct 14). Added a price move and a calendar entry for 'Paris curfew by October 19?' (5847926, forecast 2c27350c55af own 0.45 vs mid 0.2725, wide-spread-veto on a 0.13 spread). The deciding fact is a Paris police-prefecture order after PM Lecornu asked prefects for localized curfews from tonight; officials said the map would come this afternoon. If an all-ages order covering part of the City of Paris is published and the ask still leaves ask-edge >= 0.30, the info-race wide-book exception applies. A minors-only order resolves No under the rules. Deadline 21:59Z.",
-    "Amended 2026-10-19 14:4xZ (FULL cycle, operator machine): Paris 14:30Z calendar re-check done in-cycle -- no Paris zone list or prefectoral order published yet (sortiraparis 15:56 Paris time, Orange 12:55, Xinhua); Yes mid rose 0.27 -> 0.46, so it is now market-agrees against own ~0.45-0.50; replaced the spent calendar entry with a 17:30Z re-check. Added a BoC Oct hike price move for open position f52cd5a57e1c after the soft Sep CPI print (all three core measures undershot; re-check forecast 1d58967e64f9 own 0.22 vs mid 0.33)."
+    "Amended 2026-10-19 14:4xZ (FULL cycle, operator machine): Paris 14:30Z calendar re-check done in-cycle -- no Paris zone list or prefectoral order published yet (sortiraparis 15:56 Paris time, Orange 12:55, Xinhua); Yes mid rose 0.27 -> 0.46, so it is now market-agrees against own ~0.45-0.50; replaced the spent calendar entry with a 17:30Z re-check. Added a BoC Oct hike price move for open position f52cd5a57e1c after the soft Sep CPI print (all three core measures undershot; re-check forecast 1d58967e64f9 own 0.22 vs mid 0.33).",
+    "Amended 2026-10-25 00:5xZ (FULL cycle, operator machine): pruned the Paris curfew price_move (5847926, expired Oct 19 22:00Z) and its 17:30Z calendar re-check (window passed Oct 19) -- both sat expired for five days against the PRUNE rule."
   ],
   "price_moves": [
-    {
-      "market_id": "5847926",
-      "token_id": "4128972586857672619659938190935591098652901631913258146301299766362668437264",
-      "label": "Paris curfew by October 19? (Yes token) - official curfew for any part of the City of Paris announced by 23:59 Paris time Oct 19; minors-only curfews excluded. Forecast 2c27350c55af own 0.45.",
-      "move_threshold": 0.15,
-      "window_min": 30,
-      "expires": "2026-10-19T22:00:00Z"
-    },
     {
       "market_id": "2941849",
       "token_id": "49179626323744581929644494169891661533632485652774477888051528768583009370807",
@@ -84,11 +77,5 @@
     "min_liquidity": 5000,
     "keywords": []
   },
-  "calendar": [
-    {
-      "label": "Paris curfew map (5847926, forecast 2c27350c55af own 0.45): check prefecturedepolice.interieur.gouv.fr and Paris press for a prefectoral curfew order covering any part of the City of Paris (Chatelet/Halles/Republique named as possible). Note whether it applies to everyone or to minors only (minors-only resolves No). Re-quote both tokens.",
-      "fire_at": "2026-10-19T17:30:00Z",
-      "window_min": 60
-    }
-  ]
+  "calendar": []
 }
