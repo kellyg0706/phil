@@ -1990,6 +1990,19 @@ move as favorable or adverse.
    next Brazilian election with a right/left final-poll gap gets a fresh,
    undiscounted read off the polls as given — no directional shade either
    way absent a sourced, multi-election base rate.
+   **Poll credibility weighting (RETRO-20261026-0537, Serbia parliamentary
+   election):** blending `3d517af05bf6` (Vučić/SNS most seats) averaged in
+   a poll the row's own rationale flagged as "pro-govt-accused" alongside
+   two more credible polls that disagreed with it; the flagged poll was
+   narrated as suspect but not actually downweighted, and the blend landed
+   on the side that poll favored (Students List won instead). Writing a
+   credibility caveat next to a source is not a substitute for making it
+   change the number: when a source carries a stated bias/credibility
+   problem, its weight in the blend must drop toward zero, not stay equal
+   to the credible sources — if removing it would flip the blended
+   direction, that is the sign the caveat was cosmetic. This is a method
+   fix, not a new directional prior (n=1); it does not say incumbents are
+   overrated, only that flagged-but-unweighted sources are a bug.
 2. Form an independent estimate BEFORE looking hard at the market price
    (anchoring guard). Write the estimate down in the rationale.
 3. Identify the sharpest external benchmark (bookmaker odds, analyst
