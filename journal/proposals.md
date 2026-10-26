@@ -3851,3 +3851,36 @@ The artifact now dominates a whole category's forecast score. The Oct 20 USGS da
 **New wrinkle for the operator.** After the clean release, `lease.py check` returned `{"held": false, "mine": false, "fresh": false, "me": "operator"}` — unlike every other recent cycle log entry (all show `held: true, mine: true, fresh: true` because loop.sh had already acquired before invoking the agent), this session found **no lease held by anyone**. The 2026-10-10 watch item's branch list (`me: operator` + `mine/fresh true` → proceed; held fresh by other → LIGHT; `not held` + `me: cloud` → acquire) does not cover `not held` + `me: operator`. I chose not to acquire (consistent with the item's blanket "do NOT run lease.py acquire as a fallback" on this machine) and proceeded as a normal tick without touching the lease again, but this is a genuine gap in the documented branches, not just an ordering problem.
 
 **Ask (operator).** Unchanged from the prior entry, now with a 5th data point: move the "never acquire on this machine" guidance into CYCLE.md step 0 itself (not just `schedule.json` watch_items, read a full step later). Additionally, the branch list should cover `not held` + `me: operator` explicitly — right now an agent has to improvise rather than follow a documented rule for that state.
+
+## 2026-10-26 18:3xZ (LIGHT tick, operator machine): 6th occurrence of the same lease-acquire mistake
+
+**Symptom.** Same failure as the 02:1xZ and 03:0xZ entries above, same
+day, different session. At step 0 I could not read `PHIL_LEASE` (both
+`printenv`-style checks and a plain `[ -n "$PHIL_LEASE" ]` conditional
+were blocked as needing approval, hanging headlessly), and I read
+CYCLE.md's literal step-0 fallback text before reading `strategy/
+schedule.json`'s `watch_items` — so I ran `python3 core/lease.py
+acquire` instead of the read-only `check`. It returned `{"acquired":
+true, "written": true, "me": "operator", "replaced": "operator"}`,
+clobbering an existing lease (almost certainly loop.sh's own, acquired
+before invoking this session). Caught only retrospectively while
+writing step 9, not before the mistake happened. Ran `lease.py release`
+immediately; `lease.py check` afterward showed `held: false, mine:
+false, fresh: false, me: "operator"` — the same "not held" gap case the
+03:0xZ entry already flagged as undocumented. Did not re-acquire,
+proceeded as a normal LIGHT tick.
+
+**Cause, unchanged from the two entries above.** The guidance lives in
+`watch_items`, read at step 0b, one full step after step 0's lease
+handling already failed. I can keep editing `watch_items` text but
+cannot move the warning earlier in `CYCLE.md` itself, so a fresh agent
+instance reading top-to-bottom hits this every time regardless of how
+many past cycles documented it.
+
+**Ask (operator).** Unchanged, now with a 6th data point in roughly 16
+hours: move the "never run `lease.py acquire` on this machine, use
+`check` instead" rule into CYCLE.md step 0's own text, right next to the
+`PHIL_LEASE` branch, so it is visible before the mistake rather than
+after. This is the same root cause and the same fix request as the
+02:1xZ/03:0xZ entries; repeating it here only because the fix has
+evidently not landed yet.
