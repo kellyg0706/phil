@@ -7948,3 +7948,17 @@ resolved No.
   no bet (the veto already blocks the fade). Sign note: score.py
   brier_delta is agent minus market, so the category's negative values are
   AHEAD of the mid (RETRO-20261024-1612 read the sign backwards).
+  **Tracking (RETRO-20261026-1606, LIGHT tick):** Oct 25 printed 4.2892
+  (-0.65c off Oct 24's 4.2957) and Oct 26 printed 4.2858 (-0.34c off Oct 25),
+  so the series is now -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/+0.57/+2.25/+0.31/
+  -0.65/-0.34 (n=11, mean -0.44c, sample sd ~1.17c — down from the ~1.3c
+  read at n=10). Both points were already on record pre-print (the Oct 26
+  ladder's own notes cited "base Oct25 print 4.2892" and the week-touch
+  forecasts made 09:51Z today cited "Oct26 print 4.2858"), so this is pure
+  arithmetic from data already in `journal/forecasts.jsonl`, not new
+  research — fine for a LIGHT tick. The Oct 26 ladder's highest-probability
+  bucket (4.28-4.2899 at 0.29, the modal pick) was also the winning bucket
+  (746475df9d25, WON) — correct directional ranking despite the
+  `unvalidated-method` tag. Still short of n=14, no rule change; the 0.5
+  cap and `unvalidated-method` tag keep doing their job regardless of
+  per-day outcome.
