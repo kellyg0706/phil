@@ -1971,6 +1971,25 @@ move as favorable or adverse.
    whether its pollster understated the PL candidate. Also read the
    court/annulment path: Ruas won with no runoff after the TSE annulled
    Garotinho's 274k votes (Oct 8), which none of my rows considered.
+   **Presidential runoff correction (RETRO-20261026-0353, settled
+   2026-10-26T03:12-03:17Z):** the Rio governor lesson above generalized
+   "PL/right candidate beats final polls by sweeping undecideds" into a
+   standing right-lean prior, applied again here (`e73da232eca4`/`8ee0868cc79b`
+   notes: "R1 polls understated PL... right-lean polling-error prior").
+   Six of six final-week national polls bar one (Datafolha, Quaest,
+   PoderData, AtlasIntel, Futura; only Vox had Lula ahead) plus aggregators
+   had Flávio +1.3 to +2 valid-vote pts; own estimate shaded further right
+   off the 2018/2022 precedent to Flávio 0.78 / Lula 0.22, market agreed at
+   0.80/0.20. Lula WON. The down-ballot (Rio) and national-executive
+   (presidential) races broke in OPPOSITE directions on the same
+   "PL outperforms final polls" prior — one data point each way, not yet a
+   pattern either direction. Stop treating "Brazilian final-week polls
+   understate the right" as a standing directional prior; it is race- and
+   level-dependent (down-ballot vs. national, gubernatorial vs.
+   presidential) and n=1 in each direction gives no basis to pick one. The
+   next Brazilian election with a right/left final-poll gap gets a fresh,
+   undiscounted read off the polls as given — no directional shade either
+   way absent a sourced, multi-election base rate.
 2. Form an independent estimate BEFORE looking hard at the market price
    (anchoring guard). Write the estimate down in the rationale.
 3. Identify the sharpest external benchmark (bookmaker odds, analyst
