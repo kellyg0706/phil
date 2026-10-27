@@ -1608,6 +1608,11 @@ Prefer, in order:
      consensus direction, or (ii) a threshold sitting far outside the
      analyst range while PM lags near base rates. Absent those, log
      "market confirms, no edge" once and let the cooldown hold it.
+     **Shape (ii) ledger tally (RETRO-20261027-1251):** 1W/0L — ARCC
+     (`53a30d6263d0`) No @0.84, threshold 0.49 above 0.48 consensus plus a
+     6-quarter no-≥2c-beat record, won +0.95. n=1; keep the evidence bar
+     (threshold above consensus AND a multi-quarter record of not clearing
+     it), not the shape label alone.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
