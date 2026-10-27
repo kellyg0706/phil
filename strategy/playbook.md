@@ -7978,3 +7978,25 @@ resolved No.
   `unvalidated-method` tag. Still short of n=14, no rule change; the 0.5
   cap and `unvalidated-method` tag keep doing their job regardless of
   per-day outcome.
+  **Tracking (RETRO-20261027-1615, LIGHT tick):** Oct 27 printed 4.2661
+  (-1.97c, the largest down-move so far). The series is now -0.73/-1.86/
+  -0.97/-0.35/-1.67/-1.42/+0.57/+2.25/+0.31/-0.65/-0.34/-1.97 (n=12, mean
+  -0.57c, sample sd ~1.20c). Still short of n=14. The Oct 27 ladder had
+  model mean 4.2818 and put 0.156 on <4.27, shaded to only 0.18 (1b0972baed7e).
+  The book had <4.27 at bid 0.51 / ask 0.92, mid 0.715, 24h volume 347, and
+  the book was right. Ladder dB +0.61; gas-price forecasts went from n=33
+  -0.1038 to n=40 -0.0715.
+  **Two-sided-book shading clause (RETRO-20261027-1615; n=2 book-right
+  with a real bid: d0868cc2fe94 and 1b0972baed7e; n=1 me-right on an empty
+  book: the Oct 26 4.30x 0.48 book).** Pre-print, when a bucket has a real
+  bid >= 0.40 AND 24h volume >= 100, and my model disagrees with its mid by
+  more than 0.30, the recorded est moves at least halfway to the mid. The
+  only exception is a dated source I can cite that the book could not have
+  seen. Empty books (no bid, or bid < 0.10) keep the Oct 17 no-edge-claim
+  treatment and do not trigger this clause. This is a recording rule and
+  grants no bet; the `unvalidated-method` veto stands. Re-grade after the
+  next 3 qualifying rows.
+  To-test (not a rule): on the next FULL-cycle gas ladder, read GasBuddy's
+  live national-average figure directly instead of pop-weighting state
+  daily changes. On Oct 26 the pop-weight implied about -0.6c and the print
+  was -1.97c. The hypothesis is that the book reads a leading national feed.
