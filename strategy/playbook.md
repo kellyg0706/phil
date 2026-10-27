@@ -1681,6 +1681,17 @@ Prefer, in order:
      history and the recent window (last ~6 quarters) disagree, take the
      recent window, and if that lands within 0.05 of the book, record
      market-agrees, not bet.
+     **Scope widened (RETRO-20261027-1343, 0-for-4 now):** IVZ
+     14e294d47086 set own 0.65 vs mid 0.54 on a line 0.74 sitting AT the
+     0.73-0.75 consensus, from one prior quarter's +9c beat. It printed
+     0.72 and resolved No (CF Yes -5.00 USD; the wide-spread veto kept it
+     off the ledger). Apply this rule to lines at OR above consensus, and
+     don't count a single prior quarter's beat size as a named signal.
+     Counterpoint, same slate: KO 4ff9de41fc11 set own 0.65 vs mid 0.77
+     on a NAMED reason (the 0.88 aggregator consensus looked stale, and a
+     0.91 line likely encoded a fresher one). It printed exactly 0.91 and
+     resolved No, so own was ahead of the mid. Named-signal deviations stay
+     allowed.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
