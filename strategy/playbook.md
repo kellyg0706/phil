@@ -7902,6 +7902,15 @@ resolved No.
   as a sensitivity, and when the book disagrees with a reading that leans
   on a `pt`-only row, anchor on the reading without it. Recording rule
   only, no bet.
+  **Sibling leg (RETRO-20261027-2330):** the "= 4" leg e4c200b1f384
+  (own 0.38 vs mid 0.208, wide-spread-veto) used the same read and lost.
+  dB was +0.1011, and the veto saved a $5 CF loss (Yes ask 0.314).
+  The error cost about +0.36 across the two legs, because the mass a
+  `pt` row adds to N+1 is taken from N. The pre-week Oct 19 Poisson legs
+  (0/1/2/"=3", all near the mid) netted about +0.01, so the method was
+  fine. Only the in-week `pt` read failed. When a `pt`-only row decides
+  the count, re-record every affected leg from the `us`-only count, not
+  just the modal leg.
 - **Empty-book forecast rows are excluded from edge claims
   (RETRO-20261001-2015).** Yen intervention cbcbeb568399 scored -0.131
   vs a 0.375 "mid" that was bid 0.01 / ask 0.74 on $11 liquidity. That
