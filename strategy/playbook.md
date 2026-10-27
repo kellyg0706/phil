@@ -1706,6 +1706,17 @@ Prefer, in order:
      0.91 line likely encoded a fresher one). It printed exactly 0.91 and
      resolved No, so own was ahead of the mid. Named-signal deviations stay
      allowed.
+     **0-for-6, both sides (RETRO-20261027-2240):** V 029934731482 set own
+     0.88 vs mid 0.795 from a 4-quarter beat count against a 3.50 line
+     that equalled the HIGHER consensus snapshot (Chartmill 3.50; Benzinga
+     3.43). It printed 3.48 and resolved No. NXPI 2ae0c223a2ea set own 0.45
+     vs mid 0.715 from a 7-quarter count of beats over the guide midpoint.
+     It printed 4.20 against a 4.18 line and resolved Yes. The veto saved
+     the CF No at 0.32, -5.00 USD. Both prints landed within 2c of the line.
+     Method clause: when consensus snapshots disagree, measure the line
+     against the LOWER one. A beat count moves own off the book only if
+     a typical beat clears the line by at least one more typical beat from
+     that lower base. Otherwise, record market-agrees.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
