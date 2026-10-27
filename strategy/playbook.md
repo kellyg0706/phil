@@ -1613,6 +1613,20 @@ Prefer, in order:
      6-quarter no-≥2c-beat record, won +0.95. n=1; keep the evidence bar
      (threshold above consensus AND a multi-quarter record of not clearing
      it), not the shape label alone.
+     **Post-print info-race timing (2026-10-27 20:1xZ, n=4 markets, one
+     slate):** on the Oct 27 after-close slate, all four (V 5778660, HOOD
+     5778642, CSGP 5778605, CZR 5778606) printed No. The 8-Ks hit EDGAR's
+     current-8-K feed at 16:05-16:06 EDT, and by the first book read about
+     8 minutes later every book was ~0.995 No with UMA already `proposed`.
+     WebSearch had not indexed any of the releases by then, and the IR
+     pages returned 403 or rendered client-side. The EDGAR atom feed
+     (`browse-edgar?action=getcurrent&type=8-K&output=atom`) was the
+     only primary source that worked. Implication: a cycle that reaches
+     the print by WebSearch is too late, and a pre-print estimate is the
+     only forecast that slate can carry. Do not plan a cycle around
+     "wait for the print, then bet" unless it can read EDGAR at the
+     release minute. Even then n=4 says the book is gone within ~8
+     minutes. Measure it again before relying on it.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
