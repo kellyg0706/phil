@@ -7139,6 +7139,15 @@ rule predicted:
   mid 0.135, settled Yes, +0.098). Rows near the close tie the mid.
   Don't read a slow recent pace as evidence a burst regime ended: the
   last 55h ran ~2.0/h against the recorded 1.3/h shade.
+  *Tracking (RETRO-20261027-1845):* **n=82, +0.0194**. Still > 0, so the
+  bar and the cap hold. Musk Oct 20-27 is the second far-from-close loss:
+  the 30h rows lost to the mid by +0.037, mostly the all-windows 0.49 on
+  340-359 against a mid of 0.13 that priced the slow pace and was right.
+  The 25h rows beat the mid (-0.059). They would have beaten it by more
+  (-0.088) without the recorded slow-regime shade, which was the second
+  recorded-shade breach of DEEP-2026-09-26. The trap: once count_boot has
+  the new count print, the slow hours are already in the read. Re-applying
+  the slow pace as a shade counts the same hours twice.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
@@ -7163,6 +7172,7 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | Musk tweets Oct 10-12 2-day (`809b99ecb34c`, `071f3a26246d`, added RETRO-20261015-2049) | all-windows bootstrap 0.55 / 0.25 | 0.778 / 0.222 (note only) | recent-72h windows | better (−0.153, −0.013); raw lost the mid (+0.161, +0.042) |
 | Musk tweets Oct 6-13 weekly (`0dd9aea3b1e9`, `9f315c115b0c`, added RETRO-20261015-2049) | all-windows bootstrap 0.24 / 0.33 | 0.60 / 0.40 (note only) | recent n=30 windows | better net (−0.418, +0.051) |
 | Musk tweets Oct 13-20 weekly (`86f0e7918ca5`, added RETRO-20261020-1825) | all-windows bootstrap 0.482 | 0.52 (RECORDED, rule breach) | recent-72h windows (0.938) | worse (+0.038); raw beat the mid (−0.062) |
+| Musk tweets Oct 20-27 weekly 25h rows (`b5d0c83dab98`, `2d01bf29f1fa`, `6bfd94d058f1`, added RETRO-20261027-1845) | count_boot all 0.02 / 0.63 / 0.36 | 0.12 / 0.55 / 0.28 (RECORDED, second rule breach) | slow-regime persistence (+7 in 4.5h, already inside count_boot) | worse (+0.028 net); raw beat the mid (−0.088) |
 
 **Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
 The Khamenei row was a defective input, not a shade. Its last-7-day
@@ -7187,7 +7197,10 @@ Oct 6-13 recency shades won; Musk recency is now 2-2 over 4 events; on
 both new events all-windows put 0.16-0.20 on a burst tail the book did
 not price and that did not happen). Update RETRO-20261020-1825: 3 for
 10 (Musk Oct 13-20 recency shade, wrongly recorded in est_prob, cost
-+0.038 vs raw; Musk recency now 2-3). The table now holds 12 independent events, so the ≥ 8 re-grade
++0.038 vs raw; Musk recency now 2-3). Update RETRO-20261027-1845: 3 for
+11 (Musk Oct 20-27 recorded slow-regime shade cost +0.028 vs raw; Musk
+recency now 2-4; the 30h note-only recency view was right, which is the
+note-not-est_prob split working as designed). The table now holds 13 independent events, so the ≥ 8 re-grade
 below is DUE at the next deep retro. The one shade
 grounded in a measured, quoted input helped. **General rule (replaces
 the four per-category copies, which stay as the evidence log):** when a
