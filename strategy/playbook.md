@@ -7879,6 +7879,18 @@ resolved No.
   4/4 legs beat the mid, -0.0242 combined. Edges were 0.02-0.03, under
   min_edge, correctly skipped. One event: keep using the method for
   forecasts; no betting change until a second settled ladder agrees.
+- **USGS counts and magnitudes: count `us`-network solutions only
+  (RETRO-20261027-2100, n=1).** USGS M6.5+ Oct19-25 "= 3" 471fcd11d837:
+  own 0.40 vs mid 0.685, resolved Yes, dB +0.2608, the category's worst
+  latest row. I counted a PTWC-only row (pt26293000, Vanuatu Oct 20,
+  Mi 6.6) as likely to stand. It was reviewed as us6000u3jl at mww 6.3,
+  and two `pt` duplicates of the Bonin quake vanished. Rule: a `pt`-only
+  Mi/Mwp row is provisional. It can sit 0.3 or more above its reviewed
+  mww, and `pt` copies with no `us` id are not separate events. Build the
+  count or max from `us`-net rows, report the with-`pt` count in the note
+  as a sensitivity, and when the book disagrees with a reading that leans
+  on a `pt`-only row, anchor on the reading without it. Recording rule
+  only, no bet.
 - **Empty-book forecast rows are excluded from edge claims
   (RETRO-20261001-2015).** Yen intervention cbcbeb568399 scored -0.131
   vs a 0.375 "mid" that was bid 0.01 / ask 0.74 on $11 liquidity. That
