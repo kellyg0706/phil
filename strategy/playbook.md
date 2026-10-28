@@ -7951,6 +7951,17 @@ resolved No.
   counter-instance. The BoC read was 11-12 days out and won, but in the
   other shape (PM below futures). Tally 1W/1L, so still no 72h rule.
   Re-grade at the sixth settled ladder.
+  **Fifth ladder, plus scope extension (RETRO-20261028-2024): FOMC Oct 28
+  hold, 2 dissents.** The modal no-change leg was recorded at 0.92, under
+  the 0.9335 mid, from a week-stale FedWatch read of about 0.83. It lost
+  (+0.0020). A futures read older than the book is not a dated contrary
+  source. **Scope now includes dissent-count ladders:** when dated
+  previews name the modal count (WTOP 2-3, Natixis 3 here), record the
+  modal count at or above the mid and the off-modal counts at or below
+  it. My raw judgmental model put its mode at 0 dissents, which no dated
+  source supported. The three legs that broke the rule (0, 1, and modal
+  2) all lost to the mid, and the two that followed it (3, 4+) beat it.
+  Family net +0.032. The rule is now 5 of 5 ladders.
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
