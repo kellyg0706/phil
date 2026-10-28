@@ -1641,6 +1641,21 @@ Prefer, in order:
      either sign" took own 0.73 under the 0.755 mid. It printed Yes (dB
      +0.013). Net -0.006 for the pair. Keep the mark model, and do not
      shade below the mid for a mark of unknown sign. Recount at n>=6.
+     **A line at the good end of the company's own guide is not a ceiling
+     (RETRO-20261028-2250, n=1 bet):** TDOC (`6636ee2bdad4`, No @0.68,
+     -5.00) bet that GAAP EPS would not clear -0.21, the top of the Q3
+     guide (-0.30 to -0.20), using Q2's -0.21 on the same range plus Q3
+     seasonality. The 8-K printed **-0.15**. Ad and marketing spend fell
+     44M USD YoY, which more than covered a 3pct revenue decline. Q2 had
+     already landed at the guide top, so the guide top was the modal
+     outcome, not a cap. Method: when the most recent quarter printed at
+     or above the guide's good end, do not treat guide position alone as
+     edge for "won't clear". It needs a named signal against the quarter
+     (a guide cut, rising opex, a peer miss). Check the opex trend in the
+     last 10-Q before calling seasonality. Same row: the book moved
+     0.32->0.43 Yes pre-print with no fact found, and the re-check shaded
+     only 0.04 toward it (`99e772f851e7`). The drift was right. Recount
+     at n>=3 guide-edge bets.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
