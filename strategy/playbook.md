@@ -6325,6 +6325,28 @@ Laplace 0.143, vs mid 0.18, resolved Yes, +0.138. Lubbock "Transgender 7+"
 `dc46252a6112`, 1/3, Laplace 0.40, mid 0.405, recorded 0.38 (a shade the
 count did not support), resolved Yes, +0.030.
 
+**Tracker at n=32 (RETRO-20261028-0600).** score.py trump-mention
+forecasts n=32, dBrier -0.0090. The Lubbock foreign/tech rows (AI, SI,
+Hormuz above mid; Russia below) all resolved No. Above-mid is now n=16,
+summed -0.485, mean -0.0303, inside the trigger bar by 0.0003. At/below-mid
+is n=16, summed +0.197, mean +0.0123. Lubbock split 10 rows cleanly by
+topic (domestic/culture all Yes, foreign/tech all No), so rows from one
+rally day are strongly correlated. The owed deep retro clusters by rally
+day before it rules.
+
+**Yes-side word-market bet PAUSE (RETRO-20261028-0600).** Lifetime
+Yes-side ledger bets on say-the-word + trump-mention markets are 0W/5L,
+-$25.00 (`2659709d25f9`, `e77eef5d06ad`, `5886cf8c42b7`, `3704ba650a69`,
+`66812792fad3`). Expected wins were 2.86 at my estimates and 2.47 at the
+entry asks, so P(0/5) is 0.007 and 0.021. The 2026-09-25 "diagnosed
+cause" ruling came at 0W/4L. Since then the first post-gate bet, built on
+a sourced resolver base rate, has lost too. **Rule:** place no new Yes-side
+ledger bet on a word-mention market until a deep retro lifts this pause.
+Keep recording forecasts at honest estimates with skip reason
+`word-yes-pause`. To lift it, the deep retro must show a Yes-side method
+whose settled forecast rows beat the ASK on Brier, not just the mid.
+No-side bets are unaffected (separate tally above).
+
 ## First bet in 13 days: the AfD Sachsen-Anhalt audit (DEEP-2026-08-24)
 
 The 2026-08-24 03:11Z cycle placed de95e5168de3 ($5 No @0.66, edge 0.05,
