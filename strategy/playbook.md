@@ -1627,6 +1627,20 @@ Prefer, in order:
      "wait for the print, then bet" unless it can read EDGAR at the
      release minute. Even then n=4 says the book is gone within ~8
      minutes. Measure it again before relying on it.
+     **GAAP lines at holders of large private/public stakes (RETRO-20261028-2204,
+     n=2 forecasts):** when the GAAP line sits above the operating run-rate,
+     model the quarter's non-operating marks explicitly (quarter-end price
+     of listed stakes x shares held, after tax), and give a "remeasurement
+     on an unconfirmed private round" path only the weight a dated,
+     confirmed Q-period transaction supports. GOOGL (`e585d8ee6252`, line
+     3.10): the SPCX mark-down model said base ~2.3-2.5 and the only Yes
+     path was an Anthropic remeasurement with no confirmed Q3 round. GAAP
+     printed 2.12 (OI&E -8.2B per the 8-K exhibit). own 0.22 beat the mid
+     0.26 (dB -0.019), and the unconfirmed-round path was the excess
+     weight. MSFT (`8a7dabd5ad5f`, line 4.82): shading for marks "of
+     either sign" took own 0.73 under the 0.755 mid. It printed Yes (dB
+     +0.013). Net -0.006 for the pair. Keep the mark model, and do not
+     shade below the mid for a mark of unknown sign. Recount at n>=6.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
