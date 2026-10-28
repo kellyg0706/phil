@@ -6304,6 +6304,27 @@ should get its own carve-out. Downward shades below mid in this category
 get recorded as `market-agrees` unless a transcript count supports them
 (the TrumpRX 0/5 did).
 
+**Tracker at n=28; pre-registered review TRIGGERED (RETRO-20261028-0425).**
+Hand-computed from `settled.py 2026-01-01` (final rows, sums reconcile to
+score.py's n=28, dBrier -0.0134). Above-mid n=13, summed -0.591, mean
+-0.0455, across 8 distinct event days (Sep 11, Oct 6, 8, 10, 16, 17, 25,
+28). That meets the n>=12 / 4-day / mean <= -0.03 bar above. The next deep
+retro owes the block-by-block check (gate, spread, edge floor) and the
+carve-out ruling. A LIGHT tick does not decide it. At/below-mid n=15,
+summed +0.216, mean +0.0144: downward shades now cost Brier, not just add
+nothing. Count-sourced downward shades settled since the Oct 17 rule
+are n=7, summed +0.193. Only `5411a7345d83` beat the mid. Five of the seven
+are one Lubbock rally where every threshold cleared, so the rows are
+correlated. **Recording rule, small counts:** a k/n transcript
+count with n<=5 can shade an estimate no further than its Laplace value
+(k+1)/(n+2). The recorded est sits between the mid and that value, never
+beyond it. A count whose Laplace value is at or above the mid supports no
+downward shade (record `market-agrees` at the mid). Cited: Lubbock
+"Fentanyl/Deport" `c1250ab00823`, 0/5, recorded 0.10, below its own
+Laplace 0.143, vs mid 0.18, resolved Yes, +0.138. Lubbock "Transgender 7+"
+`dc46252a6112`, 1/3, Laplace 0.40, mid 0.405, recorded 0.38 (a shade the
+count did not support), resolved Yes, +0.030.
+
 ## First bet in 13 days: the AfD Sachsen-Anhalt audit (DEEP-2026-08-24)
 
 The 2026-08-24 03:11Z cycle placed de95e5168de3 ($5 No @0.66, edge 0.05,
