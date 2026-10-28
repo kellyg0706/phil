@@ -7241,6 +7241,7 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | Musk tweets Oct 6-13 weekly (`0dd9aea3b1e9`, `9f315c115b0c`, added RETRO-20261015-2049) | all-windows bootstrap 0.24 / 0.33 | 0.60 / 0.40 (note only) | recent n=30 windows | better net (−0.418, +0.051) |
 | Musk tweets Oct 13-20 weekly (`86f0e7918ca5`, added RETRO-20261020-1825) | all-windows bootstrap 0.482 | 0.52 (RECORDED, rule breach) | recent-72h windows (0.938) | worse (+0.038); raw beat the mid (−0.062) |
 | Musk tweets Oct 20-27 weekly 25h rows (`b5d0c83dab98`, `2d01bf29f1fa`, `6bfd94d058f1`, added RETRO-20261027-1845) | count_boot all 0.02 / 0.63 / 0.36 | 0.12 / 0.55 / 0.28 (RECORDED, second rule breach) | slow-regime persistence (+7 in 4.5h, already inside count_boot) | worse (+0.028 net); raw beat the mid (−0.088) |
+| Musk tweets Oct 26-28 2-day 90-114 (`48d5bfdd36ee`, added RETRO-20261028-1850) | count_boot aligned 0.500/0.462, all 0.512/0.536 | 0.48 recorded; recent-72h 0.922/0.960 (note only) | recent-72h windows | better (about −0.267 vs raw); raw lost the mid (+0.130) |
 
 **Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
 The Khamenei row was a defective input, not a shade. Its last-7-day
@@ -7268,7 +7269,12 @@ not price and that did not happen). Update RETRO-20261020-1825: 3 for
 +0.038 vs raw; Musk recency now 2-3). Update RETRO-20261027-1845: 3 for
 11 (Musk Oct 20-27 recorded slow-regime shade cost +0.028 vs raw; Musk
 recency now 2-4; the 30h note-only recency view was right, which is the
-note-not-est_prob split working as designed). The table now holds 13 independent events, so the ≥ 8 re-grade
+note-not-est_prob split working as designed). Update RETRO-20261028-1850: 4 for
+12 (Musk Oct 26-28 2-day note-only recency view 0.94 vs recorded raw 0.48,
+resolved Yes, recency about −0.267 vs raw; Musk recency now 3-4). For the
+deep re-grade to test (not a rule, n=3 vs n=2): Musk recency won on the
+short windows (Oct 10-12, Oct 20-27 30h view, Oct 26-28) and lost on the
+7-day weeklies (Oct 2-9, Oct 13-20), so horizon may be the split. The table now holds 14 independent events, so the ≥ 8 re-grade
 below is DUE at the next deep retro. The one shade
 grounded in a measured, quoted input helped. **General rule (replaces
 the four per-category copies, which stay as the evidence log):** when a
