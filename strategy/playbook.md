@@ -7926,6 +7926,25 @@ resolved No.
   the rule by 0.01. Tally: 3 ladders, and the direction holds. Recording
   the modal leg even 0.01 under the mid costs Brier, so record it at the
   mid or above, not "about at" it.
+  **Fourth ladder, re-grade done (RETRO-20261028-1620): BoC Oct 28, +25bp
+  hike.** The rule is kept, now 4 of 4. Rule-breaking rows lost to the
+  mid: hike at 0.68 vs 0.69 (+0.0063), and hike at 0.78 vs 0.83
+  (+0.0200, shaded for soft jobs and core CPI that printed before the
+  call flip). The rule-following no-change row at 0.28 vs 0.30 beat it
+  (-0.0107). Two clarifications, n=1 each:
+  (1) **Modal flip.** When dated bank calls or swaps flip after a
+  central-bank statement (Macklem, Oct 17-18), the rule applies to the
+  NEW modal from the first dated flip. Data printed before the flip is
+  not a contrary source.
+  (2) **A dated OIS/futures read counts as a dated contrary source.** When
+  the PM book lags it, anchor at the OIS number. Do not shade below it
+  toward an undated venue page or the economist consensus. The bet
+  f52cd5a57e1c was recorded at 0.27 against OIS at 0.32-0.37, and it hit
+  (WON +21.04, dB -0.1273).
+  The RBA 4ed738b2045b ">72h futures read" observation now has a
+  counter-instance. The BoC read was 11-12 days out and won, but in the
+  other shape (PM below futures). Tally 1W/1L, so still no 72h rule.
+  Re-grade at the sixth settled ladder.
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
@@ -8102,3 +8121,12 @@ resolved No.
   live national-average figure directly instead of pop-weighting state
   daily changes. On Oct 26 the pop-weight implied about -0.6c and the print
   was -1.97c. The hypothesis is that the book reads a leading national feed.
+  **Tracking (RETRO-20261028-1620, LIGHT tick):** Oct 28 printed 4.247
+  (-1.91c). The series is now -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/+0.57/
+  +2.25/+0.31/-0.65/-0.34/-1.97/-1.91 (n=13, mean -0.67c, sample sd
+  ~1.21c). The pre-print state pop-weight read (-2.1c, mean ~4.245) hit
+  the print within 0.2c, its first close hit (n=1 vs the Oct 26 miss).
+  But the 1.0c sd was too wide. Both ladder legs lost to a sharper book
+  (<4.25 at 0.75 vs 0.885, and 4.25-4.2599 at 0.17 vs 0.07). Neither met
+  the 0.30 two-sided-book threshold, so that clause stays at n=2. No rule
+  change before n=14.
