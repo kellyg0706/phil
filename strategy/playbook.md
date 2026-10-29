@@ -6363,6 +6363,20 @@ topic (domestic/culture all Yes, foreign/tech all No), so rows from one
 rally day are strongly correlated. The owed deep retro clusters by rally
 day before it rules.
 
+**"AI" on midterm rallies: resolver base rate 2/8, last 6 = 0/6
+(RETRO-20261029-0340).** The six rallies from AL Oct 2 to Chillicothe OH
+Oct 28 all resolved No on "AI"/"Artificial Intelligence". The only Yes
+results were Dalton GA Oct 16 and Clemson SC Oct 21. The SI coinage is
+the likely cause. My above-mid AI reads went 0/3 (`b1f886808146` 0.50,
+`4500adb189c3` 0.45, `afe65f7a10ef` 0.27). The one below-mid read
+(`59d311caa21d` 0.15 vs 0.17) won by -0.0064. **Citation rule:** an
+AI-on-rally row cites the last-6 count (Laplace 0.125) as its small-count
+anchor. An above-mid read must name why this rally differs, such as a
+tech or AI-themed venue or a scheduled AI announcement. The market
+already sits at 0.17-0.19, so most of the decay is priced. This is one
+word, so it stays a citation rule and not a gate. Recount at the next 4
+AI rows.
+
 **Yes-side word-market bet PAUSE (RETRO-20261028-0600).** Lifetime
 Yes-side ledger bets on say-the-word + trump-mention markets are 0W/5L,
 -$25.00 (`2659709d25f9`, `e77eef5d06ad`, `5886cf8c42b7`, `3704ba650a69`,
