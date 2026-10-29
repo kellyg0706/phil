@@ -1763,6 +1763,26 @@ Prefer, in order:
      of the line. When this clause yields market-agrees, record own at the
      book mid. A shade with no named signal is the same move off the book
      that the rule forbids, just smaller.
+     **Two named-signal tests (RETRO-20261029-1323):** TW 63110934781b
+     and 9b1023e3f320 put own at 0.22 and 0.15, against a 0.345 mid. The
+     lines were 1.04 and 1.05. Both sat ABOVE the full consensus range of
+     0.99-1.02, and above the lower 0.99 snapshot plus the largest beat in
+     21 quarters (+4c). The print was 1.02, so both resolved No (dB
+     -0.071 and -0.097). The outside-view veto cost two CF No wins. Named
+     signal: a line beyond (lower consensus + historical max surprise)
+     may move own toward No. **Timeshare/VOI names (HGV, VAC, TNL):**
+     HGV b904c5f580fe put own at 0.32 against a 0.485 mid on a 1.13 line.
+     The print was 4.03 adjusted. That included a 3.76/share net
+     construction RECOGNITION on the Hawaii project, whose deferral the
+     Q2 release disclosed (-0.35/share in Q2 alone). It resolved Yes (dB
+     +0.197; the sibling 104a560ee873 came in at +0.101). Underlying
+     operations missed (about 0.27 ex-recognition), so the read was right
+     and the accounting swamped it. Rule: before forming an estimate on a
+     timeshare EPS line, read the last 10-Q's cumulative net construction
+     deferral and the project's completion date. If a deferral balance
+     larger than about 0.25/share could recognize in-quarter, the Yes tail
+     is unbounded and the estimate cannot sit below the mid. If the
+     balance or the timing is unknown, record market-agrees at the mid.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
