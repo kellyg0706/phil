@@ -1755,6 +1755,14 @@ Prefer, in order:
      against the LOWER one. A beat count moves own off the book only if
      a typical beat clears the line by at least one more typical beat from
      that lower base. Otherwise, record market-agrees.
+     **Market-agrees means own AT the mid (RETRO-20261029-1236):** CAT
+     ba0d4f57e9f2 applied this clause correctly (line 7.15 = higher
+     snapshot, lower 6.86-7.03; skip market-agrees), but still set own
+     0.80, 0.045 under the 0.845 mid, with no named signal. It printed 7.20
+     and resolved Yes, for dB +0.016. That makes the 6th known print within ~5c
+     of the line. When this clause yields market-agrees, record own at the
+     book mid. A shade with no named signal is the same move off the book
+     that the rule forbids, just smaller.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
