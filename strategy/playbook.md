@@ -8256,3 +8256,22 @@ resolved No.
   (<4.25 at 0.75 vs 0.885, and 4.25-4.2599 at 0.17 vs 0.07). Neither met
   the 0.30 two-sided-book threshold, so that clause stays at n=2. No rule
   change before n=14.
+  **n=14 RULING (RETRO-20261029-1645).** Oct 29 printed 4.2258 (-2.13c).
+  Series: -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/+0.57/+2.25/+0.31/-0.65/
+  -0.34/-1.97/-1.91/-2.13, n=14, mean -0.78c, sample sd **1.22c**.
+  (1) The sourced unconditional sd is **1.2c/day**, scaled by sqrt(days)
+  for longer horizons. It replaces every guessed sd (0.45/0.9/1.0c). A
+  pre-print GasBuddy read may narrow it only with a dated source quoted in
+  the note (the conditional sd has n=2 and is not sourced). (2) The 0.5
+  single-bucket cap is lifted for ladders that use the sourced sd.
+  (3) `unvalidated-method` STAYS until 5 PRE-PRINT ladders recorded with
+  the 1.2c sd settle and are graded against a two-sided book. The
+  category's -0.0513 (n=44) includes post-print rows and empty-book
+  placeholder mids, so it does not validate the method. (4) **Weekly
+  AAA touch rows need drift.** touch.py is driftless. Record the touch
+  estimate from the measured 7-day trend plus the 1.2c sd, and put
+  touch.py's number beside it in the note. Evidence: both week-of-Oct-26
+  Low rows under-called in the trend direction (d90ea7993bdb 4.26 at 0.38,
+  44538fe4e812 4.24 at 0.12, both won). A drift-aware read for the 4.24
+  row gives about 0.19 vs touch.py's 0.117. This is a recording rule and
+  grants no bet.
