@@ -1602,6 +1602,14 @@ Prefer, in order:
      found" as benchmark-unreachable by default for GAAP-threshold beat
      markets, the same as a basis mismatch — don't fall back to the
      non-GAAP consensus as a stand-in.
+     **Same error after the print (RETRO-20261029-2220, SBUX
+     `6ade97f8ece3`):** own 0.45 Yes vs mid 0.075 came from the adjusted
+     beat (0.85 vs 0.65) against a **GAAP 0.72** line. It resolved No, dB
+     +0.197, the worst row on the slate. Only the outside-view veto kept it
+     from being a bet. If the release is already out and the book sits far
+     from the headline beat or miss, assume the book has read the basis
+     you did not. Find the diluted GAAP EPS in the release (or call it
+     benchmark-unreachable) before recording any estimate.
    - **"Consensus clears the threshold" is not an edge when PM already
      prices it ≥~0.80** (CRCL 0.845, OXY 0.91): the market has the same
      consensus. The tradeable shapes are (i) PM price *contradicting* the
@@ -1665,6 +1673,17 @@ Prefer, in order:
      0.32->0.43 Yes pre-print with no fact found, and the re-check shaded
      only 0.04 toward it (`99e772f851e7`). The drift was right. Recount
      at n>=3 guide-edge bets.
+     **Guide-edge forecast tally (RETRO-20261029-2220): 3/3 cleared the
+     good end.** TDOC bet above, plus two Oct 29 forecasts. RBLX
+     (`20bdadcf3595`, line = best end of the net-loss guide, Q2 beat its
+     best end by 24pct): own 0.78 Yes vs mid 0.545, Yes, dB -0.159. REAL
+     (`41ddb91a54b6`, line 0.00 = top of the guide-implied -0.01 to 0.00):
+     own 0.45 Yes vs mid 0.58, leaning No on "guide-implied at or under the
+     line", Yes, dB +0.126. Only RBLX was a bet-sized edge and it was
+     unbettable (0.19/0.90). Method: "guide-implied per-share at or under
+     the line" is not a named signal against the quarter. Without a guide
+     cut, rising opex, or a peer miss, put own at or above the mid when the
+     line sits at the guide's good end. Bets still n=1, so do not size up.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
