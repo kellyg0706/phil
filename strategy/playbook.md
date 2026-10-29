@@ -1783,6 +1783,24 @@ Prefer, in order:
      larger than about 0.25/share could recognize in-quarter, the Yes tail
      is unbounded and the estimate cannot sit below the mid. If the
      balance or the timing is unknown, record market-agrees at the mid.
+     **Shade check and the GAAP-guide signal (RETRO-20261029-1415):** ICE
+     b92916347a96 put own at 0.64 against a 0.715 mid. The line was 1.98,
+     equal to the HIGHER snapshot. Lower 1.93 plus a typical beat landed
+     exactly on the line, which makes market-agrees. My own note also
+     carried UPSIDE evidence (Q3 ADV +31pct YoY). The print was 2.02, so
+     it resolved Yes, for dB +0.048. MA 6a142fe3ab7d printed 5.31 against
+     a 5.32 line. That brings at- or above-consensus prints within ~5c of
+     the line to 8. Rule: before recording any own that differs from the
+     mid, name the downward (or upward) signal in the note. If the note's
+     own evidence points the opposite way, own goes to the mid.
+     Accepted named signal: FCN d48f561edc3a put own at 0.20 against a
+     0.345 mid on a GAAP 2.77 line. That line sat above the
+     FY-GAAP-guide-implied per-quarter range (FY guide minus H1 GAAP, then
+     divided by 2, came to 2.40-2.70). The print was 2.35 after 46M of
+     special charges, so it resolved No, for dB -0.079. Lines beyond a
+     mechanically implied range are now 3-for-3 (TW x2, FCN). GAAP lines
+     also carry a one-sided special-charge downside that adjusted lines
+     don't.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
