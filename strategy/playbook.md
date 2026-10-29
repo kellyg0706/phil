@@ -1613,6 +1613,15 @@ Prefer, in order:
      6-quarter no-≥2c-beat record, won +0.95. n=1; keep the evidence bar
      (threshold above consensus AND a multi-quarter record of not clearing
      it), not the shape label alone.
+     **Stale-line variant (RETRO-20261029-0427, n=1 forecast):** a beat
+     line set against an older estimate date can outlive a fiscal-calendar
+     change or spin-off. FDX (`36f7d480b243`, slug dated 09-16, line 4.05)
+     actually reported Oct 28, ex-Freight on a new calendar, against a
+     3.31-3.56 consensus. own 0.10 Yes vs a 0.02/0.51 book (mid 0.265),
+     resolved No. Check the slug date against the actual report date and
+     re-derive consensus for THAT quarter. The dB vs mid (-0.060) is
+     inflated by a placeholder-wide mid, and neither side's ask had edge,
+     so this is forecast-only evidence. It is not a bet case.
      **Post-print info-race timing (2026-10-27 20:1xZ, n=4 markets, one
      slate):** on the Oct 27 after-close slate, all four (V 5778660, HOOD
      5778642, CSGP 5778605, CZR 5778606) printed No. The 8-Ks hit EDGAR's
