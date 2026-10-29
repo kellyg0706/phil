@@ -7346,6 +7346,17 @@ The next deep retro to see ≥ 8 independent events re-grades this rule. If
 shades are winning by then, relax it. This changes recording, not bet
 eligibility: every existing gate still decides whether a row can bet.
 
+**RETRO-20261029-0656: series-winner futures with no book benchmark.**
+When the odds key is unavailable, the named read for a best-of-N series
+futures row is a per-game series model: a home/away win probability per
+game, compounded over the remaining schedule, written in the note. It is
+not a "price at the top of the usual range" haircut. Evidence: Brewers WS
+`d5bde9b3f1f8` recorded 0.62 against a 0.6425 mid on that haircut alone,
+resolved Yes, dBrier +0.0166. `8088eeb94b01` recorded the per-game model
+mix (0.84 against a 0.833 mid), resolved Yes, dBrier -0.0023. This is n=1
+per method and one event, so it is a citation rule, not a gate. A haircut
+without a model goes in the note as "shade view: X".
+
 ## DEEP-2026-09-16: position-holding re-check bias, pre-registered as a graded pattern
 
 RETRO-20260915-2015's second finding, hardened from a loose flag into
