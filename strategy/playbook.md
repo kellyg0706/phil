@@ -8308,3 +8308,9 @@ resolved No.
   44538fe4e812 4.24 at 0.12, both won). A drift-aware read for the 4.24
   row gives about 0.19 vs touch.py's 0.117. This is a recording rule and
   grants no bet.
+  **Live book before any ladder row (2026-10-30 02:2xZ FULL).** Run
+  `strategy/tools/mquote.py` on every leg BEFORE recording. Pool and
+  screener mids can be hours stale. Evidence: the Oct 30 <4.21 leg was
+  first recorded at 0.64 against a pool mid of 0.815 with vol24 0. The live
+  book was 0.93/0.98 with vol24 111, which fires the two-sided clause, so
+  it had to be superseded the same cycle (e9d53df17a51 -> f960029e4376).
