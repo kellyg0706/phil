@@ -1820,6 +1820,15 @@ Prefer, in order:
      mechanically implied range are now 3-for-3 (TW x2, FCN). GAAP lines
      also carry a one-sided special-charge downside that adjusted lines
      don't.
+     **Yes-side mirror, provisional (RETRO-20261030-1325, n=1):** CL
+     6e72822888ca put own at 0.28 against a 0.21 mid on a 0.96 line that
+     sat at the top of the analyst range. The named signal was H1 base-EPS
+     YoY growth (+7-8%) applied to the prior-year quarter (0.91 x 1.07 =
+     0.974). The print was 0.97, so it resolved Yes, for dB -0.106. A
+     run-rate applied to the year-ago quarter counts as a named mechanical
+     signal toward Yes. It allows a move off the book, and the note must
+     show the arithmetic. It does not support a bet until 3 graded cases
+     exist.
 2. **Soccer daily match markets** — resolve at final whistle. Research: recent
    form, injuries/rotation news, home/away splits, league table stakes,
    odds at conventional bookmakers (the sharpest available benchmark — if
