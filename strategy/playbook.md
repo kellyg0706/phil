@@ -7890,6 +7890,15 @@ family forecast-only.
   benchmark for StatCan monthly GDP brackets. Any directional tilt layered
   on top (the Jul "tilt up" from the wholesale revision) is unvalidated:
   cap it at 0.05 of bracket mass until it has its own graded evidence.
+  **Second settlement (RETRO-20261030-1510): Aug 2026, flash +0.2, print
+  0.0, error -0.2.** Bet 174834e301b9 (0.0-0.1 No, own 0.75 vs ask 0.67)
+  LOST -5. The modal sibling 0099d7339e6b (0.2-0.3 at 0.62 vs mid 0.385) had
+  dB +0.236; the veto saved 1.00u. The 16-month error table (print minus
+  flash) is 0 x4, +0.1 x6, -0.1 x2, +0.2, -0.2 x2, -0.3: P(print = flash
+  or flash+0.1) = 10/16, and P(print 0.1-0.2 below flash) = 4/16. Tilt
+  tally: 1 for 2 (Jul up: wrong direction, immaterial; Aug down: right
+  direction, the cap was too small). Keep the 0.05 cap and re-grade at
+  n=4 tilts.
 
 ## DEEP-2026-09-30 rulings
 
