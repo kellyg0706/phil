@@ -5619,6 +5619,19 @@ legs) — no gate or kill-switch change, but a flag: a tail-bracket
 revision that borrows the modal bracket's dispersion reasoning needs its
 own sourcing, not inherited confidence.
 
+**GDP flash / timely-GDP dispersion floor (RETRO-20261030-1430, provisional,
+n=2 independent events):** when a GDP YoY bracket ladder's centre is MY OWN
+aggregation of monthly or flash components (IGAE+IOAE, country flashes into
+an EZ figure, StatCan flash into a monthly print), use sd >= 0.4pp YoY. If
+that centre sits more than 0.2pp from a consensus or nowcast quoted at
+research time, centre the distribution on the midpoint of the two, not on
+my number. Evidence: EZ/Germany Q3 (one correlated draw, error ~0.25-0.3,
+above centre); Mexico Q3 timely (centre 3.6 from IGAE, quoted consensus
+~3.4 and nowcast 3.2, print 3.2, below centre; own >=3.5 0.58 vs mid 0.09,
+dB +0.33). The errors run in both directions, so this is a dispersion fix,
+not a lean. Re-grade on the next GDP flash round (US Q3 advance, UK Q3).
+Drop it if two straight flashes land within 0.15 of an un-floored centre.
+
 **Carve-out kill-switch tally, event #1 (RETRO-20261019-0713):** the
 carve-out bet on this same China Q3 GDP print, fc91f6ce5593 (No on the
 modal 4.3-4.6% bracket, the carve-out's first live invocation), settled
