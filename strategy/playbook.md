@@ -6437,6 +6437,20 @@ topic (domestic/culture all Yes, foreign/tech all No), so rows from one
 rally day are strongly correlated. The owed deep retro clusters by rally
 day before it rules.
 
+**Tracker at n=34 (RETRO-20261030-0129).** score.py trump-mention
+forecasts n=34, dBrier -0.0118. Rock Hill SC "Fentanyl/Deport"
+(`fe7bc5f93553`) was a downward shade, own 0.18 vs mid 0.375, anchored
+on a resolver count of 1/7 (the one Yes was the Lubbock border venue).
+It resolved No, dB -0.108, the largest downward-shade win in the stream.
+The outside-view veto (edge vs mid 0.195) and the spread veto both
+blocked it, so the No side at 0.72 missed about +1.94 USD. Count-based
+shades with n>=7 resolver outcomes have held up. The n<=5 transcript
+shades are what failed. **Stale tally flag:** the No-side boundary tally
+above stops at RETRO-20261002-0500 (3W/1L), but forecasts.jsonl holds
+24 settled word-market outside-view-veto rows. The owed deep retro
+rebuilds it from `core/counterfactual.py ledger` before the keep/loosen
+call.
+
 **"AI" on midterm rallies: resolver base rate 2/8, last 6 = 0/6
 (RETRO-20261029-0340).** The six rallies from AL Oct 2 to Chillicothe OH
 Oct 28 all resolved No on "AI"/"Artificial Intelligence". The only Yes
