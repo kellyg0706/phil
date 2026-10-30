@@ -8135,6 +8135,17 @@ resolved No.
   source supported. The three legs that broke the rule (0, 1, and modal
   2) all lost to the mid, and the two that followed it (3, 4+) beat it.
   Family net +0.032. The rule is now 5 of 5 ladders.
+  **Sixth ladder, first miss (RETRO-20261030-2045): BanRep Oct 30 hold,
+  against every dated survey** (EME Oct 21 median hike, Anif Oct 13-16
+  13/19 hike, Fedesarrollo hike). The rule-following hold row 0.32 vs
+  0.35 lost (+0.0399). The big losses were the modal-ABOVE rows (+25bp
+  at 0.55 vs 0.37, and 0.58 vs 0.505). Tally 5 of 6. **BanRep-scoped
+  rule (n=2 consecutive analyst-poll misses: Sep 30 hiked against a
+  16/22 hold poll, Oct 30 held against a 13/19 hike poll):** for BanRep,
+  analyst surveys do not license a modal leg above the mid. Record the
+  modal and off-modal legs at the mid unless a board-member statement
+  or a data print dated after the poll supports shading. Other banks keep
+  the general rule (5 of 5). Re-grade at the next BanRep meeting.
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
