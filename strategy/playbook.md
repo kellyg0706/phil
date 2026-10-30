@@ -3492,6 +3492,10 @@ split: 1 decision, own closer on 1. On the 2026-09-25 count (4 of 9)
 this makes 5 of 10, but later touch rows (e.g. BTC dip 82.5K
 `c8853475ea55`, DEEP-2026-10-01) were not folded into that count, so the
 next deep retro re-counts from the ledger. Ruling unchanged.
+Pending-recount list (add each settled touch row here until the deep
+recount folds it in): `c73194d9d0bc` (2y Treasury reach 4.86% Oct, own
+0.42 vs mid 0.66 on a 0.56/0.76 hollow book, resolved No, own closer
+dB -0.2592, also beats the bid; RETRO-20261030-2220).
 
 **2026-09-27 18:1xZ (RETRO-20260927-1815): scheduled-close crypto
 strikes/brackets are a SEPARATE family from touch, and my realized-vol
