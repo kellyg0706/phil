@@ -8345,3 +8345,28 @@ resolved No.
   first recorded at 0.64 against a pool mid of 0.815 with vol24 0. The live
   book was 0.93/0.98 with vol24 111, which fires the two-sided clause, so
   it had to be superseded the same cycle (e9d53df17a51 -> f960029e4376).
+  **Decimal clause per AAA family (RETRO-20261030-1650, LIGHT tick).**
+  Oct 30 printed 4.2046 (-2.12c), and "Will gas hit $4.20 (Low) by
+  October 31?" (782dc7b97c97, own 0.74 vs mid 0.935) resolved YES on it.
+  That market's rules count "only the first two decimal places", so 4.2046
+  is 4.20. My note modelled the exact threshold ("needs -2.58c off
+  4.2258"). The truncated threshold needed only a print below 4.2100
+  (-1.58c), and the same drift model then gives about 0.87, not 0.74. The
+  families differ. By-date touch markets ("hit $X by <date>") TRUNCATE to
+  2 decimals: a Low of X is hit by any print < X+0.01, and a High of X
+  needs a print >= X. Weekly "week of" touch markets (6197899) use the
+  4-decimal print "as published, without rounding". Ladder buckets are
+  4-decimal. Rule: before modelling any AAA touch row, read its decimal
+  clause and put the effective threshold in the note. This is a recording
+  rule and grants no bet. The open week-of-Oct-26 Low rows (4.18/4.16/
+  4.14) are on the no-rounding family and stand as recorded.
+  **Tracking (same retro).** Series: -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/
+  +0.57/+2.25/+0.31/-0.65/-0.34/-1.97/-1.91/-2.13/-2.12, n=15, mean -0.87c,
+  sample sd 1.23c (the n=14 1.2c ruling holds). The Oct 30 ladder is
+  sourced-sd ladder **1 of 5** under ruling (3). The two-sided <4.21 leg
+  (0.93/0.97, vol24 111) beat me: final-row dB +0.105 over 7 rows, own
+  0.80 vs mid 0.95. The GasBuddy pop-weight mean (4.2068) missed the print
+  by only 0.22c, after Oct 28's 0.2c and Oct 26's 1.37c miss. So the
+  conditional error is n=3 and two-thirds tight, while the unconditional
+  1.2c sd still spread the mass too wide. No sd change until the
+  conditional series reaches n=5 with dated GasBuddy reads in the notes.
