@@ -8395,3 +8395,27 @@ resolved No.
   conditional error is n=3 and two-thirds tight, while the unconditional
   1.2c sd still spread the mass too wide. No sd change until the
   conditional series reaches n=5 with dated GasBuddy reads in the notes.
+  **Tight-spread extension of the two-sided clause (RETRO-20261031-1635,
+  LIGHT tick).** Oct 31 printed 4.1837 (-2.09c), in the 4.18-4.1899 bucket.
+  At 02:2xZ that bucket's book was 0.93/0.94 (spread 0.01) with vol24 49,
+  so the vol24 >= 100 gate kept the clause from firing. I recorded 0.25
+  (29052ea982fb) and <4.18 at 0.63 (47754a59c69b). The book was right, and
+  those two final rows cost dB +0.558 and +0.395. That makes the 4th
+  straight AAA ladder (Oct 27/28/30/31) where a book with a real bid beat
+  my model pre-print. Rule: the clause ALSO fires when bid >= 0.40 AND
+  spread <= 0.02, whatever the vol24. A firm one-tick quote at 0.93 carries
+  a view even when little trades. This is a recording rule and grants no
+  bet. The clause's "re-grade after 3 qualifying rows" count includes Oct
+  30 <4.21 (qualified, book right) and now this row (qualifies under the
+  extension, book right), so it stands at 2 of 3.
+  To-test (n=1, not a rule): a partial re-read must not supersede a full
+  one. The 20:0xZ full 50-state+DC pop-weight (-2.16c, mean 4.1830) missed
+  the print by 0.07c. The 02:2xZ re-read covered 30 states (~90% pop) at
+  -2.86c and missed by 0.77c, yet it superseded the better read. The
+  conditional error on full reads is now 1.37/0.20/0.22/0.07c, n=4; the
+  partial read is kept outside that series. No sd change until n=5.
+  **Tracking (same retro).** Series: -0.73/-1.86/-0.97/-0.35/-1.67/-1.42/
+  +0.57/+2.25/+0.31/-0.65/-0.34/-1.97/-1.91/-2.13/-2.12/-2.09, n=16, mean
+  -0.94c, sample sd 1.23c (ruling holds). The Oct 31 ladder is sourced-sd
+  ladder **2 of 5** under ruling (3), graded against a two-sided book and
+  LOST (final rows sum dB +0.97 over 6 legs). `unvalidated-method` stays.
