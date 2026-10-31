@@ -7635,6 +7635,16 @@ handful of alien rows is enough to flip a small-n cell's sign.
 forecast cell, note it contains one NCAAF row (`32f25ca85db8`). Do not
 hand-edit journals to "fix" it — journals are core-written, full stop.
 
+**Canonical tag: company market-cap ranking (RETRO-20261031-1145).** "Will
+<company> be the (Nth-)largest company in the world by market cap on
+<date>?" rows are `market-cap-rank`, every row in the family, supersedes
+included. The 2026-10-30 19:52Z pre-close supersede `561857ac96ff`
+(market 5180417) was recorded as `stock-marketcap`, while its two
+predecessors on the same market were `market-cap-rank`. That split one
+family across two n=1 cells. When quoting either cell, note that
+`stock-marketcap` holds that one alien row. On a supersede, copy the
+category from the row being superseded.
+
 ## DEEP-2026-09-22: where the skill lives — the by-class ledger the next fortnight answers to
 
 All-time settled forecasts by skip_reason (own-side Brier vs the mid at
