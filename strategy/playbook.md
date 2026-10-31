@@ -6191,6 +6191,13 @@ already reversed (Sep 23 spike, last 12h flat). Rule until graded on >=3
 independent events: record the driftless (random-walk, measured sd)
 model; a drift/momentum view is written as "drift view: X" in the note
 and not recorded. Forecast-only as before.
+Tally (RETRO-20261031-1855): 2 of 3 events graded. On the Dem nomination
+odds leader for Oct 31, the driftless 2h-out read (Newsom 0.88 / Ossoff
+0.11 / AOC 0.01) scored a family Brier of 0.027. The wide-book mids
+scored about 0.45, and the 5-days-out driftless read scored 0.786, no
+better than the book. So driftless earns its keep near the window, not
+days out. The Newsom row was a mislabelled `wide-spread-veto` (see that
+retro).
 
 **2026-09-26 00:1xZ retro (RETRO-20260926-0015): an unexplained
 near-certain LIQUID book beats the xtracker API count.** Trump Truth
