@@ -8435,3 +8435,26 @@ resolved No.
   -0.94c, sample sd 1.23c (ruling holds). The Oct 31 ladder is sourced-sd
   ladder **2 of 5** under ruling (3), graded against a two-sided book and
   LOST (final rows sum dB +0.97 over 6 legs). `unvalidated-method` stays.
+  **Two-sided clause re-grade: move to within 0.10 of the mid
+  (RETRO-20261101-1715, LIGHT tick).** Nov 1 printed 4.1732 (-1.05c), in
+  the 4.17-4.1799 bucket. Its book was 0.571/0.956 with vol24 824, so the
+  clause fired, and I moved from the model's 0.175 to 0.47 (1a4555127632).
+  The book was right: dB +0.225. That is the 3rd of 3 qualifying rows and
+  completes the re-grade. All three were book-right (Oct 30 <4.21, Oct 31
+  4.18x, Nov 1 4.17x), and so were both pre-clause rows (d0868cc2fe94,
+  1b0972baed7e): 5 for 5. Rule change: when the clause fires, the
+  recorded est goes **within 0.10 of the mid**, not halfway. The only
+  exception is still a dated source the book could not have seen. This is a
+  recording rule and grants no bet. Re-grade after the next 5 qualifying rows.
+  **Conditional-error ruling at n=5 (same retro).** GasBuddy full-read
+  misses are 1.37/0.20/0.22/0.07/1.19c: mean absolute 0.61c, RMS 0.82c.
+  The two big misses have opposite signs. **No narrowing.** The 1.2c sd
+  stands, and a full read sets the mean only. Re-check at n=10. Partial
+  reads stay outside the series.
+  **Tracking (same retro).** The series adds -1.05: n=17, mean -0.95c,
+  sample sd 1.19c (ruling holds). The Nov 1 ladder is sourced-sd ladder
+  **3 of 5**, LOST against a two-sided book (final rows dB +0.21). Pre-print
+  ladders against a two-sided book are now 0 for 5 (Oct 27, 28, 30, 31, Nov 1).
+  Ruling (4), drift-aware weekly touch, passed its first post-ruling test.
+  The week-of-Oct-26 4.18 Low was recorded at 0.40 drift-aware against
+  touch.py's 0.027, and it won at a week Low of 4.1732.
