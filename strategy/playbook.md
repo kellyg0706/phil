@@ -1568,6 +1568,15 @@ Live tally (RETRO-20261025-0640): 3 distinct markets settled with a shade
 view (002fc923637a, d77c0f595344, 611ea71494f5), and the shade beat the mid
 on all 3. All three are rungs of one Fable 5.2+ launch event, against the
 two launch events the rule was built on, so the rule stays until n=8.
+Live tally (RETRO-20261101-0650): 5 distinct markets, and the shade beat
+the mid on 5 of 5. The two added rows are 2726a5d1bc12 (Fable 5.2+ by
+Oct 31, shade 0.72 vs mid 0.814, No) and e78bc2804312 (GPT-6.1 Astra by
+Oct 31, shade 0.12 vs mid 0.235, No). The five markets come from 3
+launch events (Gemini Argon, Fable 5.2+, Astra). All 5 shades leaned
+LATER than the book, which is the opposite direction from the 7-of-7 the
+rule was built on. ai-model-release forecasts are now n=46, dB +0.0675.
+The rule stays until n=8 distinct markets, 3 to go. At n=8, grade it by
+lean direction (later vs earlier than the book), not as a pooled count.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
