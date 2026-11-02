@@ -8489,3 +8489,19 @@ resolved No.
   Ruling (4), drift-aware weekly touch, passed its first post-ruling test.
   The week-of-Oct-26 4.18 Low was recorded at 0.40 drift-aware against
   touch.py's 0.027, and it won at a week Low of 4.1732.
+  **Spread gate widened, GasBuddy demoted (RETRO-20261102-1744, LIGHT
+  tick).** Nov 2 printed 4.1694 (-0.38c), in the 4.16-4.1699 bucket. Its book
+  was 0.86/0.92 with vol24 25, so the clause did not fire. My 0.6 book / 0.4
+  model blend (0.63, 736259d56225) still cost dB +0.125. Real-bid books are
+  now 6 for 6 against my pre-print reads. Rule: the clause ALSO fires when
+  bid >= 0.40 AND spread <= **0.06** (was 0.02), whatever the vol24. The
+  full GasBuddy read (-2.40c) missed by 2.02c. Conditional full-read misses
+  are 1.37/0.20/0.22/0.07/1.19/2.02c, n=6, RMS 1.12c, which equals the
+  unconditional sd. The last two misses were both too negative while the
+  decline slowed (-2.09, -1.05, -0.38). Rule: a full GasBuddy read may move
+  the ladder mean at most **halfway** from the trailing-3-print mean toward
+  its own value. Re-check at n=10. Both are recording rules and grant no bet.
+  **Tracking (same retro).** The series adds -0.38: n=18, mean -0.92c,
+  sample sd 1.16c (ruling holds). The Nov 2 ladder is sourced-sd ladder
+  **4 of 5**, LOST against a two-sided book (final rows dB +0.17). Pre-print
+  ladders against a two-sided book are now 0 for 6.
