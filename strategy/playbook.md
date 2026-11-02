@@ -7618,6 +7618,21 @@ Update RETRO-20261001-1015: +1, Russia-Ukraine meeting by Sep30
 `a0a3361a49c1` 0.08 vs 0.13, resolved No, own closer (dBrier -0.0105),
 CF +$0.68. Now 4 settled, CF 3W/1L, -$0.55. No change.
 
+**Clause-reading note (RETRO-20261102-1430).** "US imposes new sanctions
+on China by Oct 31" (`c06d3c7c91cf`, market-agrees, own 0.12 vs mid
+0.095) resolved **Yes**. The trigger came 16h after I recorded it: on
+Oct 19, OFAC designated five Chinese entities (MiraclePlus and
+affiliates, Shanghai Zhisuan) under the Protecting American Intellectual
+Property Act of 2022. I had treated new designations as excluded by the
+clause "designating new entities under an existing rule doesn't count".
+The resolver counted a sanctions statute being used for the first time,
+after two UMA proposals. For "new sanctions on X" clauses, the first
+designation under a statute that has never been used counts as new. Only
+designations under a program already in use are excluded. Price that
+path whenever a dormant authority is reported as being readied. This
+does not change the bar above: own was above mid, so the row was outside
+it. n=1, so this is a reading rule, not a weighting rule.
+
 **Re-open condition.** Rows skipped under this bar are graded as their own
 slice at each deep retro. When 10 have settled, lift the bar if their
 forecast brier_delta is at or below 0; keep it otherwise. Until then, the
