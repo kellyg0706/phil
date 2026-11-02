@@ -7405,6 +7405,15 @@ rule predicted:
   recorded-shade breach of DEEP-2026-09-26. The trap: once count_boot has
   the new count print, the slow hours are already in the read. Re-applying
   the slow pace as a shade counts the same hours twice.
+  *Tracking (RETRO-20261102-1919):* **n=87, +0.0228**. Still > 0, so the
+  bar and the cap hold. Musk Oct 31-Nov 2 (2-day) is the **third
+  far-from-close loss in 3 events**: the rows were recorded 26h out, the
+  all-windows count_boot put 0.33 on 90-114 against a 0.495 mid, 90-114
+  settled Yes, and the family lost +0.263. Recent-72h (note only) would
+  have lost about +0.56 more. **Rule (research priority only):** the
+  one-family cap goes to the postcount family closest to its close. A
+  family with more than 24h to close gets the slot only when no family is
+  within 24h of its close. Re-grade at 6 far-from-close events.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
