@@ -6207,6 +6207,14 @@ scored about 0.45, and the 5-days-out driftless read scored 0.786, no
 better than the book. So driftless earns its keep near the window, not
 days out. The Newsom row was a mislabelled `wide-spread-veto` (see that
 retro).
+Tally (RETRO-20261102-0724): 3 of 3 graded, so the condition is met. On the R
+House dip-to-6% market (6439251, No), the 4-row chain scored 0.305 against
+the mid's 0.475. The 11-01 read was 0.22 against a tight 0.43 book. Driftless
+beat the mid on all 3 events, so the recording rule is CONFIRMED and stays.
+It is still forecast-only, because odds-aggregator n=8 is under the
+category bar. Open item before the next House/Senate print read: measure the
+PMO hourly sd. The House sd in event 3 was guessed (~0.8pt/33h), not
+measured.
 
 **2026-09-26 00:1xZ retro (RETRO-20260926-0015): an unexplained
 near-certain LIQUID book beats the xtracker API count.** Trump Truth
