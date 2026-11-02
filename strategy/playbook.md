@@ -6215,6 +6215,14 @@ It is still forecast-only, because odds-aggregator n=8 is under the
 category bar. Open item before the next House/Senate print read: measure the
 PMO hourly sd. The House sd in event 3 was guessed (~0.8pt/33h), not
 measured.
+Tally (RETRO-20261102-0811): 4th event, and the first loss. R Senate
+hit-30% (6439245, No): own 0.37 against the mid's 0.32, dB +0.035. The read
+was 33h out, and it was recorded at the midpoint of a 2.8pt sd branch and a
+robust 2.1pt sd branch, with an unvalidated x0.65 haircut for the
+4-consecutive-print rule. The robust branch alone (0.33) would have matched
+the mid. Driftless now leads 3 of 4, and the rule stays. Until PMO hourly sd
+is measured: when sd estimates disagree, record the robust-sd branch, and
+treat reads a day or more out as no better than the book.
 
 **2026-09-26 00:1xZ retro (RETRO-20260926-0015): an unexplained
 near-certain LIQUID book beats the xtracker API count.** Trump Truth
