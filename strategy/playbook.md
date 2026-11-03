@@ -8000,10 +8000,16 @@ family forecast-only.
   "Outside-view veto: settled counterfactual ledger" stays frozen as
   `core/counterfactual.py reconcile`'s input. Do not append to it.
 - **Rules carried out of the archived sections (unchanged, still live):**
-  - JOLTS: record the LinkUp model centre. Do not tilt past consensus on
-    soft signals. The cap is zero past consensus until there is graded
-    evidence. For StatCan GDP the cap is 0.05 of bracket mass.
-    (RETRO-20260929-1800, n=1, wash.)
+  - JOLTS: ~~record the LinkUp model centre~~ **graded RETRO-20261103-1740
+    (n=2), replaced.** LinkUp model errors: Aug −0.10, Sep −0.45 vs print
+    (7.05 model, 7.5 actual). RMS is about 0.33 with no stable sign. The
+    Sep ladder's book centre (about 7.35) was right, and the family cost
+    +0.41 dB. New rule: when the centre brackets' spread is ≤ 0.10, record
+    each leg at 0.5 × model mass + 0.5 × book mid, with the unblended model
+    value in the note. On placeholder books, record the model with sd ≥
+    0.33. No bet off a LinkUp-only centre. Re-grade at the Oct print. Do
+    not tilt past consensus on soft signals. For StatCan GDP the cap is
+    0.05 of bracket mass. (RETRO-20260929-1800, n=1, wash.)
   - Econ ladders: record every bracket whose book was read, centre
     included. (The Aug JOLTS print landed in an unrecorded bracket.)
   - Unexplained price moves against a public-record-search estimate:
