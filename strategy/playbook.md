@@ -7438,6 +7438,22 @@ rule predicted:
   dB −0.059. The note-only aligned (0.333) and recent-72h (0.135) reads
   would both have lost to it. Near-close tally: 1 win, 0 losses. Grade
   the family once the 380-459 siblings settle (17:00Z Nov 3).
+  *Tracking (RETRO-20261103-1925):* **n=92, +0.0222**. The 380-459
+  siblings (recorded 21h out, 2026-11-02 20:10Z) settled with 380-399
+  Yes. The all-windows reads 0.426/0.326/0.085/0.078 lost to the mids
+  0.46/0.18/0.07/0.025 by +0.121 combined, and the whole family (with
+  360-379) lost by **+0.062**. Near-close tally by family: 0 wins, 1
+  loss. The note-only aligned and recent-72h reads would have lost by
+  more (the recent read put 0.596 on 400-419). A mechanical 0.5 x model
+  + 0.5 x mid on all five legs would have cost about +0.015, a quarter
+  of the raw loss, which matches score.py `blend[disagreement]`
+  w_opt 0.59. **Rule (record, mechanical):** postcount rows record
+  est_prob = 0.5 x count_boot all-windows + 0.5 x book mid, rounded to
+  3dp, with the raw count_boot read in the note as `raw:<p>`. This is the
+  same form as the MrBeast short-window and JOLTS rules. It is not a
+  hand-shade under DEEP-2026-09-26, because the weight is fixed in
+  advance. Re-grade at 5 more families by scoring raw against blended
+  from the notes, and drop the rule if raw wins on net.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
