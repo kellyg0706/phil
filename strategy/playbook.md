@@ -1630,6 +1630,15 @@ Prefer, in order:
      6-quarter no-≥2c-beat record, won +0.95. n=1; keep the evidence bar
      (threshold above consensus AND a multi-quarter record of not clearing
      it), not the shape label alone.
+     **Shape (i) forecast tally (RETRO-20261103-1410):** 1W/0L — YUM
+     (`45d60121ef1d`) own 0.55 Yes vs mid 0.415, line 1.52 at or below every
+     consensus found (1.51-1.57), printed adjusted 1.56, resolved Yes, dB
+     −0.140. It was vetoed (earnings-beat external-consensus blend, HD
+     precedent), and the counterfactual Yes at ask 0.43 would have won
+     about +1.33u. That sub-class now stands at 1W/1L, net about +0.33u.
+     n=2 is no reason to lift the veto. The sub-class should be re-read
+     at n≥5. When the line sits below consensus and PM prices it under
+     0.50, record the estimate and keep tallying these rows.
      **Stale-line variant (RETRO-20261029-0427, n=1 forecast):** a beat
      line set against an older estimate date can outlive a fiscal-calendar
      change or spin-off. FDX (`36f7d480b243`, slug dated 09-16, line 4.05)
