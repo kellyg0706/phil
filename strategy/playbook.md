@@ -7423,6 +7423,14 @@ rule predicted:
   one-family cap goes to the postcount family closest to its close. A
   family with more than 24h to close gets the slot only when no family is
   within 24h of its close. Re-grade at 6 far-from-close events.
+  *Tracking (RETRO-20261103-1553):* **n=88, +0.0219**. Still > 0, so the
+  bar and the cap hold. This is the first near-close row since the
+  closest-to-close rule: Musk wk Oct27-Nov3 360-379 (`ecb3496bf59b`),
+  recorded 21h out at count 354. The all-windows read was 0.054 and the
+  mid was 0.249. It settled No early because the count passed 379, so
+  dB −0.059. The note-only aligned (0.333) and recent-72h (0.135) reads
+  would both have lost to it. Near-close tally: 1 win, 0 losses. Grade
+  the family once the 380-459 siblings settle (17:00Z Nov 3).
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
