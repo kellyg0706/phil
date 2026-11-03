@@ -3271,7 +3271,14 @@ dBrier +0.264): two step-counter reads minutes apart are ONE read, not an
 observed pace (a 10-min 128k/h window under-read a video that held ~173k/h).
 And when a modelled path straddles a bracket edge (there 269.5-270.9M vs
 270M), the honest number sits near 0.5 -- do not shade it off a single
-noisy read.
+noisy read. **Short-window blend (RETRO-20261103-1835, MrBeast
+_c2e1NcI3Sc day-3, 5 rows, all lost to the mid):** a 20-min 175-210k/h
+counter window under-read a video that ran ~248k/h, and my "shaded to
+market" 0.62 still sat 0.27 under a correct 0.888 mid. When the dated
+reads span less than 3h, record est_prob = 0.5*model + 0.5*book mid
+(mechanical, not a hand-shade), and the row stays veto. video-views
+brier_delta is +0.035 at n=28: the book prices pace persistence better
+than my short reads do.
 
 **2026-09-04 update (LIGHT tick 06:29Z, settled by resolve.py; 4 rows,
 two OpenAI Astra release-timeline markets, two sequential snapshots
