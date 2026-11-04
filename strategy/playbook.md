@@ -706,9 +706,13 @@ shade vs the mid on D-won races: Ohio gov 0.76 vs 0.79 (R shade, hurt
 +0.027), TX-35 R 0.45 vs 0.385 (RETRO-20261104-1001: rows anchored on
 stale Cook/Sabato ratings plus a D-sponsor poll that itself showed R+1; the
 market priced D anyway, so the market led the polls; hurt +0.054); Kansas
-Sen 0.40 vs 0.385 (D shade, helped −0.018). Running total after 5 races:
-R-shade 4/4 hurt, net +0.102. (Iowa gov R 286534c42e26 +0.074 is graded
-under Mirror-market coherence, not here.) When the remaining midterm rows
+Sen 0.40 vs 0.385 (D shade, helped −0.018); AZ gov R 0.12 vs 0.095
+(RETRO-20261104-1151: note leaned on "only stale Feb pre-primary data", a
+stale-data row; hurt +0.0054). Running total after 6 races: R-shade 5/5
+hurt, net +0.107. (Iowa gov R 286534c42e26 +0.074 is graded under
+Mirror-market coherence, not here. Oil>=80 AND R Senate 78e5fb76446f
++0.0096 is excluded: it used the market's own R-Senate price, so it is a
+correlation shade, not a poll shade.) When the remaining midterm rows
 settle, a retro sums this tally. If the R-shade rows net worse than +0.01
 across ≥8 races, the next cycle's election rule is: a sponsor-aligned poll
 is down-weighted, never dropped (TX-15's "nonpartisan-only" average of
