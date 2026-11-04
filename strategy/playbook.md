@@ -6240,6 +6240,15 @@ benchmark-unreachable (same property-2 failure as JOLTS/ISM Manufacturing,
 DEEP-2026-08-18), no forecast recorded (never-invent-an-estimate rule).
 Added to schedule.json watch_items alongside the JOLTS/ISM Manufacturing
 cluster for a ~Aug 28-29 re-check.
+**Tracking: no-consensus ISM Services ladder (RETRO-20261104-1720, n=1).**
+The Oct ladder was recorded at N(54.6, 1.9). Its centre came from the
+Sep/Aug prints plus the S&P flash direction. The sd was unsourced, because
+no named consensus was found. The print fell in 54.x, my modal bucket. The
+wide book's mode (56.x, 0.198/0.431) was wrong, and fading it cost
+nothing (No edge 0.07, vetoed). Sum dB over 5 legs was +0.03, which is
+flat. Keep the method as recorded, with the sd labelled unsourced in the
+note. This entry grants no bet. Re-grade when 3 no-consensus ISM ladders
+have settled.
 
 **2026-09-25 18:12Z retro (RETRO-20260925-1812): record the UNSHADED
 bootstrap on countable-metric rows.** The Musk Sep 18-25 weekly settled
@@ -8609,3 +8618,17 @@ resolved No.
   sample sd 1.16c (ruling holds). The Nov 2 ladder is sourced-sd ladder
   **4 of 5**, LOST against a two-sided book (final rows dB +0.17). Pre-print
   ladders against a two-sided book are now 0 for 6.
+  **Tracking + counting clause (RETRO-20261104-1720).** Nov 3 printed
+  4.1493 (-2.01c) and Nov 4 printed 4.1239 (-2.54c). The series is now n=20,
+  mean -1.05c, sample sd 1.18c, and the ruling holds. The Nov 4 ladder
+  (mean 4.1328 = 7-day trend) missed by -0.89c. Trailing-3 (4.1376) would
+  have missed by -1.37c, so the trend convention wins again. Every Nov 4
+  leg had an empty book (bid <= 0.04, ask 0.95), and its sum dB of -1.04 is
+  entirely placeholder-mid artefact. **Counting clause:** a pre-print ladder
+  whose legs all have bid < 0.10 does not count toward ruling (3)'s 5
+  ladders, and its dB is reported as no-signal, not as skill. The count
+  stays at **4 of 5**; Nov 5 is the next candidate. Ruling (4) passed again:
+  the week-of-Nov-2 4.14 Low was 0.78 drift-aware and won on an empty book,
+  so it is outside the tally. The note shaded that row down from the
+  7-day-trend 0.99 because the decline was "slowing", and the next two
+  diffs re-accelerated. n=1, tracking only, no rule.
