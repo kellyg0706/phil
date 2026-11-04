@@ -703,11 +703,19 @@ until the full set settles. Running tally of the direction of my
 shade vs the mid on D-won races: Ohio gov 0.76 vs 0.79 (R shade, hurt
 +0.0135), Ohio Sen 0.63 vs 0.64 (hurt +0.0073), TX-15 0.77 vs 0.84
 (nonpartisan-only average that dropped the D-sponsor +13 poll, hurt
-+0.027); Kansas Sen 0.40 vs 0.385 (D shade, helped −0.018). When the
-remaining midterm rows settle, a retro sums this tally. If the R-shade
-rows net worse than +0.01 across ≥8 races, the next cycle's election rule
-is: a sponsor-aligned poll is down-weighted, never dropped (TX-15's
-"nonpartisan-only" average of +3.5 vs the result is the test case).
++0.027), TX-35 R 0.45 vs 0.385 (RETRO-20261104-1001: rows anchored on
+stale Cook/Sabato ratings plus a D-sponsor poll that itself showed R+1; the
+market priced D anyway, so the market led the polls; hurt +0.054); Kansas
+Sen 0.40 vs 0.385 (D shade, helped −0.018). Running total after 5 races:
+R-shade 4/4 hurt, net +0.102. (Iowa gov R 286534c42e26 +0.074 is graded
+under Mirror-market coherence, not here.) When the remaining midterm rows
+settle, a retro sums this tally. If the R-shade rows net worse than +0.01
+across ≥8 races, the next cycle's election rule is: a sponsor-aligned poll
+is down-weighted, never dropped (TX-15's "nonpartisan-only" average of
++3.5 vs the result is the test case). A second test at grading: split the
+R-shade rows by whether the note leaned on stale race ratings (TX-35) or
+on poll averages (TX-15, Ohio). If the ratings rows lost more, ratings
+older than 30 days get no weight against a moving book.
 
 **Operational trap (2026-08-20 20:1xZ): at step 0, compare `refs/heads/main`
 to `origin/main` — NOT `HEAD`. The container image recurrently starts with a
