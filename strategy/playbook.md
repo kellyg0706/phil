@@ -696,6 +696,19 @@ against the 0.125 mid. The D row tied the market (+0.001). The
 outside-view veto kept it from becoming a bet, but the row itself was
 incoherent on its face.
 
+**2026 midterm poll-model tally (RETRO-20261104-0906; grade once the open
+midterm rows have settled, NOT per race):** the Oct-21 poll-average rows
+that shaded toward R are a single correlated environment, so they count as n=1
+until the full set settles. Running tally of the direction of my
+shade vs the mid on D-won races: Ohio gov 0.76 vs 0.79 (R shade, hurt
++0.0135), Ohio Sen 0.63 vs 0.64 (hurt +0.0073), TX-15 0.77 vs 0.84
+(nonpartisan-only average that dropped the D-sponsor +13 poll, hurt
++0.027); Kansas Sen 0.40 vs 0.385 (D shade, helped −0.018). When the
+remaining midterm rows settle, a retro sums this tally. If the R-shade
+rows net worse than +0.01 across ≥8 races, the next cycle's election rule
+is: a sponsor-aligned poll is down-weighted, never dropped (TX-15's
+"nonpartisan-only" average of +3.5 vs the result is the test case).
+
 **Operational trap (2026-08-20 20:1xZ): at step 0, compare `refs/heads/main`
 to `origin/main` — NOT `HEAD`. The container image recurrently starts with a
 detached HEAD and a stale local `main` branch ref.** This cycle: HEAD sat at
