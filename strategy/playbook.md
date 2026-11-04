@@ -7512,6 +7512,18 @@ rule predicted:
   hand-shade under DEEP-2026-09-26, because the weight is fixed in
   advance. Re-grade at 5 more families by scoring raw against blended
   from the notes, and drop the rule if raw wins on net.
+  *Tracking (RETRO-20261104-1910):* **n=95, +0.0215**. Still > 0, so the
+  bar and the cap hold. Musk Nov 2-4 (2-day) finished at 83, so 65-89 won.
+  The 22h rows were raw (they came before the rule) and beat the mids by
+  −0.042. Near-close tally: 2 wins, 1 loss. The 8h and 5h re-checks on
+  65-89 (all-windows 0.654 and 0.786 against mids 0.83 and 0.87) both lost
+  to the mid. **Blend re-grade 1 of 5: the blend wins net** (about −0.049
+  across 5 snapshots, +0.021 at 22h and −0.069 at 5-8h). Both re-checks
+  breached the rule: one recorded 0.70 as a hand-shade, the other recorded
+  raw 0.79. Together that cost +0.032 against the blend. **Enforcement
+  clause:** a postcount row's note must carry `raw:<p> blend:<p>`, computed
+  before est_prob is typed, and est_prob must equal the blend. This applies
+  to re-check supersedes as well as first records.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
