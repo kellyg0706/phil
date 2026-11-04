@@ -683,6 +683,19 @@ intent. fe954ed9f325 itself stays on the books as recorded (forecast
 rows are immutable) — the watch item's manual exclusion at ~Aug28
 settlement is still required, this guard only prevents the next instance.
 
+**Mirror-market coherence (RETRO-20261104-0731):** before recording a
+forecast on a mirror market (for example "Republicans win X" next to "Democrats
+win X", or a hold/cut pair), grep `journal/forecasts.jsonl` for my open row on
+the paired market. The new est_prob must equal 1 − that row's est_prob, less
+any explicit third-party or other-outcome residual stated in the note, unless
+the note cites evidence NEWER than the paired row. Never re-derive it from
+older evidence. Evidence: 286534c42e26 (Iowa gov R, 2026-10-24) recorded 0.30
+from "stale Aug polling" three days after my own Oct-poll read 3d97c587ee24
+(Iowa gov D 0.88) implied 0.12. The R row lost, with brier_delta +0.074
+against the 0.125 mid. The D row tied the market (+0.001). The
+outside-view veto kept it from becoming a bet, but the row itself was
+incoherent on its face.
+
 **Operational trap (2026-08-20 20:1xZ): at step 0, compare `refs/heads/main`
 to `origin/main` — NOT `HEAD`. The container image recurrently starts with a
 detached HEAD and a stale local `main` branch ref.** This cycle: HEAD sat at
