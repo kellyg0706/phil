@@ -1691,6 +1691,11 @@ Prefer, in order:
      n=2 is no reason to lift the veto. The sub-class should be re-read
      at n≥5. When the line sits below consensus and PM prices it under
      0.50, record the estimate and keep tallying these rows.
+     **Above-consensus mirror (RETRO-20261104-2340):** APP (`eb0739b05227`,
+     GAAP line 4.09 above the 3.95-4.03 consensus) had own 0.48 vs mid
+     0.575 and resolved Yes, dB +0.090. The veto blocked a No at 0.45 that
+     would have lost 1u. Own direction across the external-consensus rows
+     (HD, YUM, APP) is 1W/2L, so keep the veto.
      **Stale-line variant (RETRO-20261029-0427, n=1 forecast):** a beat
      line set against an older estimate date can outlive a fiscal-calendar
      change or spin-off. FDX (`36f7d480b243`, slug dated 09-16, line 4.05)
@@ -1754,6 +1759,14 @@ Prefer, in order:
      the line" is not a named signal against the quarter. Without a guide
      cut, rising opex, or a peer miss, put own at or above the mid when the
      line sits at the guide's good end. Bets still n=1, so do not size up.
+     **Tally update (RETRO-20261104-2340): 4/5 cleared.** AMPL
+     (`c0029803cb03`, line 0.03 = guide top, own 0.30 vs mid 0.13) cleared,
+     dB -0.267. GTM (`904e9a764fcd`, line 0.29 = guide top) did NOT clear.
+     own 0.50 vs mid 0.70, dB -0.240. GTM's named signal was the beat over
+     the guide top shrinking +3c -> +1c -> 0c across three quarters. A
+     monotone shrink to zero over at least 3 quarters counts as an
+     admissible named signal against the quarter. One flat quarter alone
+     does not.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
