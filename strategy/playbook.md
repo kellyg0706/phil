@@ -708,8 +708,11 @@ stale Cook/Sabato ratings plus a D-sponsor poll that itself showed R+1; the
 market priced D anyway, so the market led the polls; hurt +0.054); Kansas
 Sen 0.40 vs 0.385 (D shade, helped −0.018); AZ gov R 0.12 vs 0.095
 (RETRO-20261104-1151: note leaned on "only stale Feb pre-primary data", a
-stale-data row; hurt +0.0054). Running total after 6 races: R-shade 5/5
-hurt, net +0.107. (Iowa gov R 286534c42e26 +0.074 is graded under
+stale-data row; hurt +0.0054); MI-04 R 0.55 vs 0.485 (RETRO-20261104-2150:
+fresh ratings but an explicit "D-internal discount" on the only recent poll,
+a sponsor-discount row; hurt +0.067). Running total after 7 races: R-shade
+6/6 hurt, net +0.174. The Alaska Peltola/Sullivan mirror pair counts as ONE
+race (the 8th) when it settles, not two. (Iowa gov R 286534c42e26 +0.074 is graded under
 Mirror-market coherence, not here. Oil>=80 AND R Senate 78e5fb76446f
 +0.0096 is excluded: it used the market's own R-Senate price, so it is a
 correlation shade, not a poll shade.) When the remaining midterm rows
