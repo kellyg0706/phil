@@ -1657,6 +1657,17 @@ Prefer, in order:
      from the headline beat or miss, assume the book has read the basis
      you did not. Find the diluted GAAP EPS in the release (or call it
      benchmark-unreachable) before recording any estimate.
+     **GAAP-derivation tally (RETRO-20261104-1436), 1W/0L forecast:**
+     no GAAP consensus is not always benchmark-unreachable. For an
+     issuer whose GAAP-to-non-GAAP gap is dominated by equity-stake
+     revaluation, reconstruct the gap from last quarter's reconciliation
+     plus the 10-Q fair value of each listed stake × its quarter price
+     move. UBER (`b24c68e68203`, GAAP line 0.98): the reconstruction gave
+     about −490M, and the 8-K reported −476M pre-tax. GAAP printed 0.25,
+     the row resolved No, own 0.07 vs mid 0.205, dB −0.037. The
+     outside-view veto still fired; the counterfactual No at ask 0.80
+     was about +0.25u. Keep the veto. Re-read it at n≥5 rows of this
+     method.
    - **"Consensus clears the threshold" is not an edge when PM already
      prices it ≥~0.80** (CRCL 0.845, OXY 0.91): the market has the same
      consensus. The tradeable shapes are (i) PM price *contradicting* the
