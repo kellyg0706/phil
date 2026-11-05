@@ -8414,6 +8414,31 @@ resolved No.
   modal and off-modal legs at the mid unless a board-member statement
   or a data print dated after the poll supports shading. Other banks keep
   the general rule (5 of 5). Re-grade at the next BanRep meeting.
+  **Seventh ladder, second miss (RETRO-20261105-2138): Banxico Nov 5,
+  25bp cut against the dated survey** (Citi Oct 20: 25/37 hold; Reuters
+  poll hold through 2026-27). All the rule-following rows lost to the mid:
+  the hold bet e4eb762eada2 at 0.93 vs 0.88 (LOST -5.00, dB +0.09), the
+  hold re-record at 0.83 vs 0.73 (+0.156), and the cut leg at 0.055 vs
+  0.1175 (+0.114). Tally 5 of 7. Both misses were LatAm boards that split
+  against an analyst poll. The contrary evidence was public at entry and I
+  missed it: the Oct 8 minutes had 3 of 5 members open to a cut, the May
+  cut was a 3-2 vote, and Bankaool, Finamex and UBS had named November
+  cut calls. **Rule (all central banks, n=2 misses):**
+  (1) **Minutes and the last vote are a dated contrary source.** If the
+  last decision was a split vote, or the latest minutes show a board
+  majority open to a move the survey modal excludes, the survey does not
+  license a modal leg above the mid. Record the modal leg at the mid.
+  (2) **Entry check.** The note of any central-bank bet must cite the
+  latest minutes' lean and the last vote split. Without them there is no
+  bet. At entry I knew only "three unanimous holds", and that is why 0.93
+  stood.
+  (3) **Re-research against an active book.** If an active book (vol24
+  over about 10% of liquidity) has moved >= 0.10 against my leg since my
+  last record, and no trigger is found, move at least halfway to the new
+  mid. Evidence: score.py blend[disagreement] w_opt 0.55 (n=707). The
+  0.83-vs-0.73 row kept the full gap and was the family's worst row. Same
+  lesson as Copom: an active book that disagrees is not lagging.
+  Re-grade at the next settled central-bank ladder.
 - **USGS daily-max ladder, in-progress Poisson: first settled event
   (RETRO-20261001-2015).** Sep 30 ladder (c7cceb5a2381, 603ce1291e65,
   e879bdcdfa8c, 1150efff6222): observed max 5.6 with 3.7h left, 365d
