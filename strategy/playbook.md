@@ -1929,6 +1929,10 @@ Prefer, in order:
      0fca593b0f9f (own 0.60 vs mid 0.77, beat count only) printed 0.40
      against 0.35. Both were recorded after the rules above already
      forbade count-only moves, so count-only deviations are now 0-for-7.
+     TDAY 1ac71d7f37fa (own 0.64 vs mid 0.675, "Q3 historically weak")
+     printed -0.03 against a -0.05 line, Yes, dB +0.024, so the tally is
+     0-for-8 (RETRO-20261105-1555). Seasonal-quarter history ("Q3 is
+     always weak") is a count too and never qualifies as a signal.
      Every earnings forecast note MUST include the literal line
      `gate: line=<x> lowcons=<y> low+typbeat=<z> signal=<named|none>`.
      If `signal=none`: own = book mid, skip = market-agrees, with no
