@@ -8726,3 +8726,25 @@ resolved No.
   so it is outside the tally. The note shaded that row down from the
   7-day-trend 0.99 because the decline was "slowing", and the next two
   diffs re-accelerated. n=1, tracking only, no rule.
+  **Ruling (3) CLOSED: 1 of 5 (RETRO-20261105-1735, LIGHT tick).** Nov 5
+  printed 4.1003 (−2.36c), in the 4.10-4.1099 bucket. The model
+  N(4.1069, 1.2c) missed by −0.66c, and its largest bucket won. The <4.10
+  real-bid leg (0.65/0.78) was wrong by 0.03c, so real-bid books are now
+  **6 for 7** against my pre-print reads. The halfway shade (model 0.28 →
+  0.50) cost about 0.33 of ladder dB; n=1 against, so the shade
+  conventions stand. Sourced-sd pre-print ladders graded against a
+  two-sided book: Oct 30 L, Oct 31 L, Nov 1 L, Nov 2 L, Nov 5 W. That is
+  **1 of 5**, so the method FAILED validation, and pre-print AAA ladders
+  against any real-bid leg stay `unvalidated-method` on merit. No bet path
+  opens for them. Keep recording them for calibration, and re-open only
+  if a rolling 5 of the most recent qualifying ladders reaches 4 of 5.
+  Pre-print ladders against a two-sided book are now 1 for 7.
+  **Ruling (4) clarified (same retro).** "Slowing decline" is not grounds
+  to move a weekly touch row off its 7-day-trend drift-aware number unless
+  the note quotes a dated source. Both such shades lost: the 4.14 Low
+  went 0.99→0.78 and the 4.12 Low (5dcbc7a691a7) went 0.90→0.45, and both
+  were hit within two prints. Both books were empty, so this is a
+  conformance fix to ruling (4), not a new tally. It is a recording rule
+  and grants no bet.
+  **Tracking (same retro).** The series adds −2.36: n=21, mean −1.12c,
+  sample sd 1.18c (ruling holds).
