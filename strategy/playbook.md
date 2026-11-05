@@ -1872,7 +1872,15 @@ Prefer, in order:
      21 quarters (+4c). The print was 1.02, so both resolved No (dB
      -0.071 and -0.097). The outside-view veto cost two CF No wins. Named
      signal: a line beyond (lower consensus + historical max surprise)
-     may move own toward No. **Timeshare/VOI names (HGV, VAC, TNL):**
+     may move own toward No. **3-for-3 (RETRO-20261105-0820):** MET
+     959bb15528c6 put own at 0.50 against a 0.785 mid. The line was 2.80,
+     above lower consensus 2.54 plus the max recent beat (+0.14). The print
+     was 2.78 adjusted, so it resolved No (wide-spread-veto, CF No at 0.40
+     about +7.50 USD). Check for insurers and others that report "excluding
+     notable items": MET's ex-notable figure was 2.85, which would have
+     cleared the line. Name both figures in the note, and do not push own
+     past about 0.40 toward No while the resolver's figure choice is the
+     swing. **Timeshare/VOI names (HGV, VAC, TNL):**
      HGV b904c5f580fe put own at 0.32 against a 0.485 mid on a 1.13 line.
      The print was 4.03 adjusted. That included a 3.76/share net
      construction RECOGNITION on the Hawaii project, whose deferral the
