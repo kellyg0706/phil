@@ -1931,8 +1931,15 @@ Prefer, in order:
      forbade count-only moves, so count-only deviations are now 0-for-7.
      TDAY 1ac71d7f37fa (own 0.64 vs mid 0.675, "Q3 historically weak")
      printed -0.03 against a -0.05 line, Yes, dB +0.024, so the tally is
-     0-for-8 (RETRO-20261105-1555). Seasonal-quarter history ("Q3 is
-     always weak") is a count too and never qualifies as a signal.
+     0-for-8 (RETRO-20261105-1555). SG 19199f9fde84 (own 0.15 vs mid 0.31,
+     "0/12 cleared consensus", recorded before this gate) printed a beat,
+     for dB +0.246: **0-for-9** (RETRO-20261105-2320). In the same batch,
+     guide-arithmetic signals went right twice. BZFD 564d50a56dc9 used guided
+     Q3 restructuring per share against the line, and OPEN 6fae3157c08f
+     built GAAP EPS from the SBC guide. Both resolved No, at dB -0.025 each,
+     so the arithmetic class is 5-for-5 (TW x2, FCN, BZFD, OPEN).
+     Seasonal-quarter history ("Q3 is always weak") is a count too and never
+     qualifies as a signal.
      Every earnings forecast note MUST include the literal line
      `gate: line=<x> lowcons=<y> low+typbeat=<z> signal=<named|none>`.
      If `signal=none`: own = book mid, skip = market-agrees, with no
