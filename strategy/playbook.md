@@ -1941,6 +1941,18 @@ Prefer, in order:
      absolute surprises of a few cents dwarf the line, so the named
      signal must clear the line by more than the largest recent absolute
      surprise (DNUT: -3c, -1c, +7c).
+     **Tie mass, provisional (RETRO-20261105-1509, n=1):** a tie resolves
+     No. BGC bet 65827985ad39 (No, own 0.40 vs No ask 0.35, line 0.34 =
+     consensus, 6 ties in 12q, Q3 pre-tax range guide 172-190M whose
+     midpoint mapped onto the line) printed exactly 0.34 and won +9.29
+     USD. When the line EQUALS consensus AND a point- or range-guide maps
+     onto the line, the company's tie frequency is a named signal toward
+     No (`signal=tie-mass+guide`). Tie history alone is a count and never
+     qualifies. Guide-to-EPS mapping: BGC pre-tax 187.5M (86pct up the
+     range) still printed the midpoint EPS, so show the tax-rate and
+     share-count arithmetic and do not assume a linear "top of guide = +X
+     cents". Standard stake only, and the note stays provisional until 3
+     graded cases exist.
      **Yes-side mirror, provisional (RETRO-20261030-1325, n=1):** CL
      6e72822888ca put own at 0.28 against a 0.21 mid on a 0.96 line that
      sat at the top of the analyst range. The named signal was H1 base-EPS
