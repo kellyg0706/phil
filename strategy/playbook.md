@@ -1923,6 +1923,24 @@ Prefer, in order:
      inside lower consensus plus the max recent beat (7.46 + about 0.45 =
      7.91), so own belonged at the mid. Only point- or range-style guides
      produce the implied-range named signal.
+     **Earnings note gate (RETRO-20261105-1416; mandatory format):** DNUT
+     bet 80de2c978e91 (No, own 0.68 vs mid 0.595, line 0.01 = consensus,
+     reason "two straight misses") printed 0.06 and lost -5.00 USD. SHAK
+     0fca593b0f9f (own 0.60 vs mid 0.77, beat count only) printed 0.40
+     against 0.35. Both were recorded after the rules above already
+     forbade count-only moves, so count-only deviations are now 0-for-7.
+     Every earnings forecast note MUST include the literal line
+     `gate: line=<x> lowcons=<y> low+typbeat=<z> signal=<named|none>`.
+     If `signal=none`: own = book mid, skip = market-agrees, with no
+     shade of any size. An earnings BET also requires `signal` to be an
+     accepted named signal: a point- or range-guide implied range, a line
+     beyond lower consensus + max surprise, a dated consensus cut, a
+     pre-announcement, or a run-rate on the year-ago quarter with the
+     arithmetic shown. A beat or miss streak or count is never a signal,
+     in either direction. Near-zero lines (|consensus| <= 0.05): recent
+     absolute surprises of a few cents dwarf the line, so the named
+     signal must clear the line by more than the largest recent absolute
+     surprise (DNUT: -3c, -1c, +7c).
      **Yes-side mirror, provisional (RETRO-20261030-1325, n=1):** CL
      6e72822888ca put own at 0.28 against a 0.21 mid on a 0.96 line that
      sat at the top of the analyst range. The named signal was H1 base-EPS
