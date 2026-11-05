@@ -1911,6 +1911,18 @@ Prefer, in order:
      mechanically implied range are now 3-for-3 (TW x2, FCN). GAAP lines
      also carry a one-sided special-charge downside that adjusted lines
      don't.
+     **Floor guides are not ranges (RETRO-20261105-1322):** CI
+     5f0b500f8fb6 put own at 0.28 against a 0.365 mid on a 7.73 line
+     (consensus 7.46-7.50). The note read Q3 as "near consensus" from an
+     "at least 30.45" FY guide split evenly over H2. The print was 7.98
+     adjusted, so it resolved Yes, for dB +0.115. The FY floor was raised to
+     at least 30.60 on the same release. An "at least X" (or "X or better")
+     guide bounds only the downside, so the quarter it implies is a floor
+     and never the "beyond a mechanically implied range" signal above.
+     Applied correctly, the existing tests gave market-agrees: the line sat
+     inside lower consensus plus the max recent beat (7.46 + about 0.45 =
+     7.91), so own belonged at the mid. Only point- or range-style guides
+     produce the implied-range named signal.
      **Yes-side mirror, provisional (RETRO-20261030-1325, n=1):** CL
      6e72822888ca put own at 0.28 against a 0.21 mid on a 0.96 line that
      sat at the top of the analyst range. The named signal was H1 base-EPS
