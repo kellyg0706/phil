@@ -8322,6 +8322,18 @@ resolved No.
   toward an undated venue page or the economist consensus. The bet
   f52cd5a57e1c was recorded at 0.27 against OIS at 0.32-0.37, and it hit
   (WON +21.04, dB -0.1273).
+  **(2) scoped, RETRO-20261105-0035 (Copom Nov 4 hold, bet 496bb975eb84
+  LOST -5.00, family dB +0.0965, 0/3 rows beat the mid):** clarification
+  (2) is now 1W/1L. Both cases were off-modal legs with PM below the
+  derivative read. BoC's book was stale (vol24 29 USD), and the Copom
+  book was active (vol24 1790 USD, 1 day out) when I anchored on B3
+  digital options 0.72 hold against PM 0.83. The override now needs the
+  PM book to be SHOWN stale in the note: vol24 under about 10% of
+  liquidity, or no mid move since the derivative read. An active book
+  that disagrees is not lagging. In that case the general rule governs:
+  record the survey-modal leg at or above the mid and quote the
+  derivative read as "deriv: X" in the note. n=1 each way. Re-grade at
+  the next active-book disagreement.
   The RBA 4ed738b2045b ">72h futures read" observation now has a
   counter-instance. The BoC read was 11-12 days out and won, but in the
   other shape (PM below futures). Tally 1W/1L, so still no 72h rule.
