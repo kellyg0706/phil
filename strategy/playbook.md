@@ -5717,6 +5717,14 @@ input. Flagging only: don't read the NFP win as validating wide sds, and
 don't read the UR loss as validating tight ones, until more of this exact
 shape (sourced-sd self-model, standard floor, headline econ print)
 settles.
+Tally update (RETRO-20261106-1550, Oct 2026 release): the NFP set used N(65,72),
+sourced sd, 50/50 blended with the mid. The print landed >=100k, the model's
+fat-tail side beat the mid on 5 of 6 legs, and the set summed dB -0.076. Reading:
+WIDER. The UR set used an unsourced sd of 0.11-0.14 and a centre of 4.195. The print
+was 4.1, the wide sd beat the market's 0.405 on 4.2, and the set summed dB -0.032.
+Reading: WIDER, but it is a direction-only row because the sd was unsourced.
+Running tally: 3 wider vs 1 tighter (n=4, 2 releases). That is still flag-only.
+Re-read the tally at n=6 before touching any sd input.
 
 **Pre-registered kill switch:** after 4 settled carve-out EVENTS or 6
 settled carve-out BETS (whichever comes first), if net realizable P&L
