@@ -7634,6 +7634,17 @@ rule predicted:
   clause:** a postcount row's note must carry `raw:<p> blend:<p>`, computed
   before est_prob is typed, and est_prob must equal the blend. This applies
   to re-check supersedes as well as first records.
+  *Tracking (RETRO-20261106-1902):* **n=100, +0.0180**. Still > 0, so the
+  bar and the cap hold. **Blend re-grade 4 of 5:** Cruz Oct30-Nov6 (raw
+  +0.190 better), Zelenskyy (blend −0.012 better), and CZ (raw +0.004
+  better). Running net: raw leads by about +0.133, but without the Cruz
+  outlier the blend leads by 0.057. Family 5 is Musk Oct30-Nov6 (3 legs
+  still open). It decides the re-grade, and the margin is reported with
+  and without Cruz. **Label clause:** CZ fe2be84b515f was recorded as
+  `countable-metric` with a hand-shade (0.93 vs raw 0.946, no
+  `raw:/blend:`). Any post or tweet count is `social-media-postcount`
+  whatever the market tags it, and a count row under another label is a
+  breach of this enforcement clause, the same as a missing blend.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
