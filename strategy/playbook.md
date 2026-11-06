@@ -1939,7 +1939,21 @@ Prefer, in order:
      built GAAP EPS from the SBC guide. Both resolved No, at dB -0.025 each,
      so the arithmetic class is 5-for-5 (TW x2, FCN, BZFD, OPEN).
      Seasonal-quarter history ("Q3 is always weak") is a count too and never
-     qualifies as a signal.
+     qualifies as a signal. DKNG 2c02eaff5fa7 (own 0.45 vs mid 0.735,
+     "3/10 strict beats" plus a qualitative hold headwind, recorded before
+     this gate) resolved No, for dB -0.338. It was right, so the tally is
+     **1-for-10** (RETRO-20261106-0010). One hit in ten does not make
+     counts a signal. Sportsbook hold becomes a named signal only as
+     arithmetic (handle times hold rate, mapped to EPS against the line).
+     **Stale snapshots, Yes side, provisional (RETRO-20261106-0010, n=1):**
+     FNF 8364d20cff8b put own at 0.55 against a 0.34 mid, because the 1.33
+     line sat below every consensus snapshot (1.37-1.44). The same note
+     recorded a -12pct revision drift. It resolved No, for dB +0.187. When
+     the note shows a downward revision drift, or snapshots that disagree
+     by more than the typical surprise, a line below the lowest snapshot is
+     the freshest consensus. Set lowcons = line, and `signal=none` unless a
+     dated snapshot newer than the line says otherwise. This is the mirror
+     of the lower-snapshot clause (NET, MCHP: own = mid, both dB 0).
      Every earnings forecast note MUST include the literal line
      `gate: line=<x> lowcons=<y> low+typbeat=<z> signal=<named|none>`.
      If `signal=none`: own = book mid, skip = market-agrees, with no
