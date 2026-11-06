@@ -7645,6 +7645,22 @@ rule predicted:
   `raw:/blend:`). Any post or tweet count is `social-media-postcount`
   whatever the market tags it, and a count row under another label is a
   breach of this enforcement clause, the same as a missing blend.
+  *Tracking (RETRO-20261106-1955):* **n=103, +0.0167**. Still > 0, so the
+  bar and the cap hold. **Blend re-grade 5 of 5, complete:** Musk
+  Oct30-Nov6 went to raw by +0.074 (300-319 won; raw 0.39 vs blend 0.32).
+  Net raw **+0.207**, and **+0.017** without Cruz. Raw won 3 families to
+  2. **The pre-registered drop condition is met, so the mechanical blend
+  record rule above is RETIRED.** **Rule (record, mechanical, from
+  2026-11-06 19:55Z):** postcount rows record est_prob = count_boot
+  all-windows read, rounded to 3dp. The note still carries
+  `raw:<p> blend:<p>`, with the blend 0.5 × raw + 0.5 × mid kept as
+  note-only. The enforcement clause carries over with "est_prob must equal
+  the raw read". Hand-shades and non-postcount labels are still breaches.
+  **Reverse test:** reinstate the blend if it beats raw on net over the
+  next 5 families, reported with and without the largest single family.
+  The margin without Cruz is thin, and pooled `blend[disagreement]`
+  w_opt is 0.546, so this reverse test is live and not a formality.
+  Dropping the blend grants no bet. The category bar is unchanged.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
