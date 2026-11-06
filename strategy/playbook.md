@@ -8813,3 +8813,21 @@ resolved No.
   and grants no bet.
   **Tracking (same retro).** The series adds −2.36: n=21, mean −1.12c,
   sample sd 1.18c (ruling holds).
+  **Clause-version check (RETRO-20261106-1730, LIGHT tick).** Nov 6 printed
+  4.0688 (−3.15c, the largest daily move so far), in the <4.08 bucket. That
+  leg's book was 0.83/0.92 with vol24 1786, and model 0.36 vs mid 0.875, so
+  the two-sided clause FIRED. The row (5f03c95ddde7) was recorded at 0.62
+  with the note "moved past halfway to mid". That applies the superseded
+  pre-Nov-1 halfway rule. The current rule is **within 0.10 of the mid**,
+  so at least 0.775. The miss cost about 0.094 dB on that leg, and the
+  ladder total was +0.18. Rule: when a gas note says the clause fired, it
+  must state |est − mid|, and that value must be <= 0.10. Writing "halfway"
+  is a violation on its face. This is a recording rule and grants no bet.
+  The row is qualifying row **1 of 5** toward the clause re-grade, and the
+  book was right. Real-bid books are now **7 for 8**.
+  **Tracking (same retro).** The series adds −3.15: n=22, mean −1.21c,
+  sample sd 1.23c (ruling holds). The model mean −1.60c missed by −1.55c.
+  Trailing-3 (−2.30c) would have missed by −0.85c and the 7-day trend by
+  −1.36c. That is n=1 each way against the Nov 4 read, so tracking only.
+  The rolling 5 of qualifying ladders is Oct 31 L, Nov 1 L, Nov 2 L,
+  Nov 5 W, Nov 6 L, which is 1 of 5. Ruling (3) stays CLOSED.
