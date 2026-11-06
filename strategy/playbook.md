@@ -1618,6 +1618,17 @@ LATER than the book, which is the opposite direction from the 7-of-7 the
 rule was built on. ai-model-release forecasts are now n=46, dB +0.0675.
 The rule stays until n=8 distinct markets, 3 to go. At n=8, grade it by
 lean direction (later vs earlier than the book), not as a pooled count.
+Live tally (RETRO-20261106-0730): 7 distinct markets, later lean beat the
+mid on 7 of 7. The two added rows are e7ada8b47218 (Astra by Nov 5, 0.12
+vs mid 0.30, No) and 433917a177a4 (Astra on Nov 5, 0.12 vs mid 0.26, No).
+Both are one lead on one day, so treat them as nearly one observation.
+**Both BREACHED the rule:** the 0.12 lean, built from a The Information
+leak plus "not out yet", went into est_prob instead of the shade view.
+The breach was right this time, and it is still a breach. A leak-based
+lean goes in "shade view: X" however strong it feels, because the n=8
+grade needs est = mid on every row. #8 is the open Astra by-Nov-15 rung
+(adad4f0cc6bf, est = mid 0.71, shade 0.65). ai-model-release forecasts
+are now n=48, dB +0.0620.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
