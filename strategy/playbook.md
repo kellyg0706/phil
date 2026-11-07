@@ -7739,6 +7739,15 @@ The next deep retro to see ≥ 8 independent events re-grades this rule. If
 shades are winning by then, relax it. This changes recording, not bet
 eligibility: every existing gate still decides whether a row can bet.
 
+**Shade views carry a number (RETRO-20261107-0000).** A note that names
+a shade must write it as "shade view: X" with a probability, even when
+the shade is only directional. In that case write your best number for
+it. Evidence: Virtus–Dubai `47621ff90736` recorded the stale cross-book
+devig 0.457 (mid 0.38) and noted "unmeasured shade (note only) ... likely
+Dubai drift" with no number. Dubai won (dBrier +0.0644). The direction was
+right, but with no number the row cannot be scored raw vs shade, so the
+tally lost an event. This is a recording rule and grants no bet.
+
 **RETRO-20261029-0656: series-winner futures with no book benchmark.**
 When the odds key is unavailable, the named read for a best-of-N series
 futures row is a per-game series model: a home/away win probability per
