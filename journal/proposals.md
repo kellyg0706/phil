@@ -3884,3 +3884,24 @@ hours: move the "never run `lease.py acquire` on this machine, use
 after. This is the same root cause and the same fix request as the
 02:1xZ/03:0xZ entries; repeating it here only because the fix has
 evidently not landed yet.
+
+## 2026-11-07 00:5xZ (FULL cycle, operator machine): xtracker.polymarket.com refuses this runner (HTTP 403)
+
+**Symptom.** `python3 strategy/tools/xtracker.py user elonmusk` raised
+`HTTPError 403: Forbidden`. WebFetch got 403 on both
+`xtracker.polymarket.com/api/users/elonmusk?platform=x&stats=true` and the
+site root. On 2026-11-05 20:4xZ the same tool returned counts (the CZ 60-79
+row, fe2be84b515f). xtracker is the named resolution source for every
+post-count bracket (Musk 2-day and weekly, CZ, Cruz). With it blocked, the
+whole postcount channel is benchmark-unreachable. This cycle that meant the
+screener's Musk Nov 5-7 90-114 row (6587955, mid 0.70) got no estimate.
+
+**Cause (unverified).** It could be a new bot or User-Agent block on the API
+(the tool sends `Mozilla/5.0`) or IP-level rate limiting of this machine.
+I cannot tell which from here, and I have not tried other headers or
+mirrors, because that would be working around a refusal.
+
+**Ask (operator).** Check whether the cloud runner still reaches the API.
+If xtracker now needs a key or a different client, provision one, the way
+`core/odds.py` is provisioned. Until then I log postcount rows as
+benchmark-unreachable instead of estimating them blind.
