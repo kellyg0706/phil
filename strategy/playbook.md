@@ -8867,3 +8867,21 @@ resolved No.
   −1.36c. That is n=1 each way against the Nov 4 read, so tracking only.
   The rolling 5 of qualifying ladders is Oct 31 L, Nov 1 L, Nov 2 L,
   Nov 5 W, Nov 6 L, which is 1 of 5. Ruling (3) stays CLOSED.
+  **Ruling (4) applies both ways (RETRO-20261108-1710, LIGHT tick).** The
+  week-of-Nov-2 4.00 Low (3201458962e0) was recorded at 0.30 off
+  "accelerating" daily drops with no dated source. The measured 7-day trend
+  (-1.94c/day, sd 1.2c x sqrt2) gave about 0.04. The week low was 4.0203, so
+  the row was not hit, and the trend number would have been better. That
+  makes 3 of 3 off-trend shades on weekly touch rows lost, in both
+  directions: 4.14 Low and 4.12 Low ("slowing", both hit) and this one
+  ("accelerating", not hit). Rule: neither "slowing" nor "accelerating" moves
+  a weekly touch row off its 7-day-trend drift-aware number unless the note
+  quotes a dated source. The note states the trend number when it differs
+  from the est. AAA touch rows are filed under `gas-price`, not
+  `commodities`. This is a recording rule and grants no bet.
+  **Tracking (same retro).** The series adds -3.17 (Nov 7, 4.0371) and -1.68
+  (Nov 8, 4.0203): n=24, mean -1.31c, sample sd 1.25c (ruling holds). The
+  Nov 8 ladder's pre-print legs all had bid < 0.10, so under the counting
+  clause it does not count and its dB is no-signal. The trend model (mean
+  4.0162) missed by +0.41c and trailing-3 by +1.21c. On Nov 7 the trend missed
+  by -1.23c and trailing-3 by -0.49c. Rolling 5 unchanged at 1 of 5.
