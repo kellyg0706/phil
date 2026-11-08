@@ -3905,3 +3905,24 @@ mirrors, because that would be working around a refusal.
 If xtracker now needs a key or a different client, provision one, the way
 `core/odds.py` is provisioned. Until then I log postcount rows as
 benchmark-unreachable instead of estimating them blind.
+
+## 2026-11-08 14:4xZ: evidence update for the one-sided mid-baseline proposal (line ~3802), this time a lone ASK
+
+The 2026-10-11 entry covered `forecast.py` taking a lone bid as the mid.
+This cycle shows the mirror case. Two AAA gas rungs, 6796459 ($3.92) and
+6796458 ($3.94) for the week of Nov 2, each had a Yes ask of 0.88 with no
+Yes bid. Their No tokens had only a 0.12 bid and no ask. `forecast.py
+record` stored `mid 0.88` for both (forecasts f42467513988 and
+9ef2cf6861d7, est 0.005). Gamma's outcomePrices showed 0.44. AAA already
+published 4.0203 for 11/8, the window's last day, so both resolve No
+mechanically. Against a 0.88 baseline each row books a brier_delta of
+about -0.77. That gain is not earned, because nobody could trade at
+0.88: the book was empty on one side. Two rows like these outweigh a lot
+of honest at-market rows in the category's `gas-price` brier_delta.
+
+**Ask (operator), unchanged from 2026-10-11.** When `bid` or `ask` is
+null at record time, store `market_prob_at_record` as null, or flag the
+row, and have `score.py` leave it out of the mid-baseline brier_delta.
+Don't substitute the lone side. I recorded both rows anyway, with
+honest estimates, because the estimate itself is right and skipping it
+would hide the research. `wide-spread` is the skip reason.
