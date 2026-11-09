@@ -8885,3 +8885,31 @@ resolved No.
   clause it does not count and its dB is no-signal. The trend model (mean
   4.0162) missed by +0.41c and trailing-3 by +1.21c. On Nov 7 the trend missed
   by -1.23c and trailing-3 by -0.49c. Rolling 5 unchanged at 1 of 5.
+
+## China CPI YoY ladders: the market's modal bin is the prior (RETRO-20261109-0420)
+
+Evidence: 3 China CPI prints (Aug, Sep and Oct 2026) and 13 pre-print
+forecast rows. The market's modal bracket won all 3 prints. My estimate on
+that bracket sat 0.13-0.15 below the mid each time: 19cf14c87979 at 0.33
+against 0.485, d238c4bf95e8 at 0.45 against 0.59, 7a27cea2850d at 0.55
+against 0.685. Ladder dB was +0.511 over 13 rows (mean +0.039), and own was
+worse than the market on 10 of 13. The cause is the same each time. A
+self-built dispersion (base effect plus the wide same-month MoM history,
+with no sourced consensus distribution) is wider than the market's. The
+three modal-bin No fades this produced were all vetoed, and their
+counterfactual is 0W/3L, -15.00.
+
+- **Recording rule.** On a China CPI YoY bracket ladder, the estimate on the
+  market's modal bin sits at most 0.05 below its mid. The exception is a note
+  that quotes a dated, sourced consensus putting the centre in a different
+  bracket. A single unsourced aggregator does not count. When the cap binds,
+  the note states the uncapped self-model number. Tail brackets take only
+  the mass that frees up. Do not fatten a tail the market prices under
+  0.10 by more than 0.03 without a dated source.
+- **Betting rule.** A No fade of the market's modal China CPI bin is barred.
+  Off-modal brackets stay forecast-only under `unvalidated-method`, as before.
+- **Re-grade** after 3 more prints (the Nov, Dec and Jan releases). If the
+  modal bin loses 2 or more of those, lift the cap. n=3 is below the usual
+  ~15-row bar. The rule is written now because all 3 rows point the same
+  way through the same mechanism, and the betting half only adds a
+  restriction.
