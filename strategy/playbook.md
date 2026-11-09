@@ -1793,6 +1793,27 @@ Prefer, in order:
      monotone shrink to zero over at least 3 quarters counts as an
      admissible named signal against the quarter. One flat quarter alone
      does not.
+     **Tally update (RETRO-20261109-2330): 5/8 cleared.** Three Nov 9 rows.
+     TTD (`c03066f06e09`, non-GAAP line 0.26, above the guide-implied
+     ~0.21) CLEARED by a wide margin: 0.33 actual, EBITDA 266M vs the
+     ~160M guide, revenue 736M vs "at least 650M". Own was 0.20 vs mid
+     0.395, dB +0.274, outside-view-veto CF -1u. RKLB (`dd7823f41e2c`,
+     GAAP line at the top of every guide range) did NOT clear: own 0.15 vs
+     mid 0.39, dB -0.130. HIMS (`a803b59df7ba`, GAAP line needing ~15M
+     over the guide-implied breakeven) did NOT clear: own 0.12 vs mid
+     0.16, dB -0.011. **Sub-rule (n=1, revisable): a prior-quarter miss of
+     the company's own guide is NOT an admissible named signal against
+     the next quarter.** TTD's named signal was "Q2 missed its 260M guide
+     by 7pct". The next guide was a reset: it implied a 34pct sequential
+     EBITDA drop (241M -> 160M) with no stated cause, and it was beaten by
+     66pct. When a post-miss guide implies a sequential drop of more than
+     20pct in the guided metric with no stated cause, read it as a reset
+     floor. Do not build own below the mid from it, and keep own within
+     0.10 of the mid until n>=3 such rows. The GAAP lines that sat at or
+     beyond the guide top (RKLB, HIMS) failed to clear as the
+     construction said. Non-GAAP lines carry exclusion levers (TTD dropped
+     44M of restructuring) that GAAP lines do not, so apply the guide
+     construction with more confidence on GAAP lines.
      **Recheck stop rule (DEEP-2026-08-13):** after a market-confirms /
      no-edge log, a recheck is warranted only by NEW information (fresh
      guidance, a filing, a named headline) — never by elapsed time alone.
@@ -8459,8 +8480,13 @@ resolved No.
   wrong side of the mid. Rule: for Thursday or earlier openers, centre on
   Fri-Sun only, put P(fold) at 0.15 or less, and write the regime weight
   in the note. Revisit on the first counter-instance. Sunday-to-final
-  revisions are now +4%, -3.2% and +3.35% (n=3). There is still no
-  direction, and the 5% sd stands.
+  revisions are now +4%, -3.2%, +3.35% and -2.43% (n=4, the last being
+  Cat in the Hat, RETRO-20261109-2330). There is still no direction, and
+  the 5% sd stands. Apply it, because the Cat Sunday >=20 row recorded
+  0.84 where 5% sd gives 0.69 (688c6d938ca9). Family-animation Friday
+  multipliers are now Wild Robot 3.44 and Cat in the Hat 4.0 (5.0M Fri
+  incl previews -> 20.0M). The 2.7-3.5x band of 0f1f3d4355b6 and
+  0b778b5f3633 was too low.
 - **BanRep Sep ladder, tails over-weighted (RETRO-20260930-2215).** 3 of
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
