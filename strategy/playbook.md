@@ -8419,6 +8419,15 @@ resolved No.
   by more than 10% (THR 14.2m here), centre between them and widen to
   cover both. Weather/closure-cited Sunday estimates: no direction assumed
   yet (n=1 revised up).
+  **Second instance, conformance miss (RETRO-20261109-1845):** Godzilla
+  Minus Zero opening, Sunday estimate 31.61m, final 30.59m (The Numbers,
+  -3.2%), resolved 28-31m. I recorded 0.81 on 31-34m (5e4b9a07bc3d, mid
+  0.765, dBrier +0.071), with P(<31) 0.18. That implies an sd near 2%, not
+  the 5% this rule already required. At 5% the 31-34 rung is about 0.59
+  and P(<31) about 0.35. The two revisions so far are +4% and -3.2%, so
+  there is still no direction. CHECK before recording: write the z-score
+  of the nearest bin edge in the note ("edge 31.0 = -0.39 sd at 5%"). A
+  rung within 1 sd of the estimate never gets more than 0.70.
 - **BanRep Sep ladder, tails over-weighted (RETRO-20260930-2215).** 3 of
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
