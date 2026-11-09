@@ -1629,6 +1629,21 @@ lean goes in "shade view: X" however strong it feels, because the n=8
 grade needs est = mid on every row. #8 is the open Astra by-Nov-15 rung
 (adad4f0cc6bf, est = mid 0.71, shade 0.65). ai-model-release forecasts
 are now n=48, dB +0.0620.
+**Graded at n=10 (RETRO-20261109-2108): the rule is PERMANENT.** Fable 5.2+
+launched Nov 9. Three rungs that had breached the rule resolved Yes:
+cd72944f6d07 (by Nov 19, 0.50 vs mid 0.675), 091c61d2f40d (on Nov 9, 0.08 vs
+0.254) and eb80da59dbd6 (by Nov 9, 0.08 vs 0.355), summed dB +0.865. Later
+leans beat the mid on 7 of 10 markets. But the five rows where a lean went into
+est_prob net **+0.736** (the two Astra wins added only -0.13). A later lean
+wins every rung until launch day, then loses heavily on the rest. That is a
+short tail, not an edge. Rules from here on: (a) est = the rung's OWN live mid
+unless a POSITIVE primary source exists, and the lean goes only in "shade
+view: X". (b) **No chaining**: a sibling's est can never be a hazard or anchor
+input. 091c61d2f40d took its "daily hazard" from cd72's breached 0.50, then
+eb80da59dbd6 copied 091c. One breach became three. (c) Any cycle that records
+an ai-model-release row runs `python3 strategy/tools/fc.py --anchor-audit`
+at step 5b. Each listed row is superseded to the mid, or its note cites the
+positive source. The shade-view tally is closed and needs no further grading.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
