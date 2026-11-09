@@ -8890,6 +8890,18 @@ resolved No.
   clause it does not count and its dB is no-signal. The trend model (mean
   4.0162) missed by +0.41c and trailing-3 by +1.21c. On Nov 7 the trend missed
   by -1.23c and trailing-3 by -0.49c. Rolling 5 unchanged at 1 of 5.
+  **Tracking + conformance (RETRO-20261109-1710).** Nov 9 printed 4.0093
+  (-1.10c), in the 4.00-4.0099 bucket, which was the model's largest leg
+  (0.52). The series is now n=25, mean -1.30c, sample sd 1.22c (ruling
+  holds). Every leg had bid < 0.10, so under the counting clause the ladder
+  does not count and its dB (-0.65) is no-signal. Rolling 5 unchanged at 1
+  of 5. The trend (-1.6c) missed by +0.50c and trailing-3 (-2.67c) by
+  +1.57c. A PARTIAL GasBuddy read (5-6 states, -1.2c) missed by only +0.10c,
+  but the supersede also narrowed the sd to 0.6c and moved the mean past
+  the halfway cap. Both break the Nov 1-2 rulings: no sd narrowing, and
+  partial reads stay outside the series. Conformance: a partial read moves
+  neither the mean nor the sd. n=1 favourable is tracking only. This is a
+  recording rule and grants no bet.
 
 ## China CPI YoY ladders: the market's modal bin is the prior (RETRO-20261109-0420)
 
