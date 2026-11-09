@@ -8450,6 +8450,17 @@ resolved No.
   capped by the rule above, the neighbour that shares the edge gets at
   least Phi(z of the edge) minus its far-tail mass (here about 0.33, not
   0.18). Record both rungs in the same cycle from the same sd.
+  **Thursday-opener basis (RETRO-20261109-2244, n=1).** Ramayana opened
+  Thursday: Wed premieres plus Thu came to 3.51M, and The Numbers shows 4
+  days in release. The resolver figure was the Fri-Sun 3-day, 8,939,505
+  USD, with Thursday NOT folded in, and the ladder resolved 8-9m. My
+  pre-Sunday rows weighted a "Wed/Thu folded" regime at P(fold) 0.5. That
+  cost +0.226 on the 8-9 rung (9d440d1b9e69) and kept 38c2e2ce7990 on the
+  wrong side of the mid. Rule: for Thursday or earlier openers, centre on
+  Fri-Sun only, put P(fold) at 0.15 or less, and write the regime weight
+  in the note. Revisit on the first counter-instance. Sunday-to-final
+  revisions are now +4%, -3.2% and +3.35% (n=3). There is still no
+  direction, and the 5% sd stands.
 - **BanRep Sep ladder, tails over-weighted (RETRO-20260930-2215).** 3 of
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
