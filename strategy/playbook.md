@@ -7661,6 +7661,11 @@ rule predicted:
   The margin without Cruz is thin, and pooled `blend[disagreement]`
   w_opt is 0.546, so this reverse test is live and not a formality.
   Dropping the blend grants no bet. The category bar is unchanged.
+  *Tracking (RETRO-20261109-1300):* **n=104, +0.0149**. Still > 0, so the
+  bar and the cap hold. **Reverse test family 1 of 5: raw wins by −0.080.**
+  Musk Nov7-9 40-64 (`cb05cc07b12d`) was recorded 15h out at count 40, raw
+  0.562 vs blend 0.629 vs mid 0.695. A 12-tweet burst at 10Z broke the
+  ceiling, so the leg resolved No. Running net: raw +0.080 ahead.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
