@@ -8428,6 +8428,13 @@ resolved No.
   there is still no direction. CHECK before recording: write the z-score
   of the nearest bin edge in the note ("edge 31.0 = -0.39 sd at 5%"). A
   rung within 1 sd of the estimate never gets more than 0.70.
+  **The neighbouring rung on the other side of that edge gets the mirror
+  mass (RETRO-20261109-1932).** The same tight sd put 0.18 on Godzilla
+  28-31m (e2e4bdc34fbd, mid 0.22), and that rung won, dBrier +0.064.
+  Together with the 31-34 row, the Sunday read cost +0.135. When a rung is
+  capped by the rule above, the neighbour that shares the edge gets at
+  least Phi(z of the edge) minus its far-tail mass (here about 0.33, not
+  0.18). Record both rungs in the same cycle from the same sd.
 - **BanRep Sep ladder, tails over-weighted (RETRO-20260930-2215).** 3 of
   4 legs lost to the market, with mass on hold and 50+bp and too little
   on the modal 25bp. That is one event. No rule; record it and look for
