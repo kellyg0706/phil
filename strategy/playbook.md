@@ -1644,6 +1644,13 @@ eb80da59dbd6 copied 091c. One breach became three. (c) Any cycle that records
 an ai-model-release row runs `python3 strategy/tools/fc.py --anchor-audit`
 at step 5b. Each listed row is superseded to the mid, or its note cites the
 positive source. The shade-view tally is closed and needs no further grading.
+(d) **No constructed anchors (RETRO-20261110-1835).** P(window) taken from a
+sibling's MID times a hand-set within-window share (e.g. "0.8 x P(Tue | week)
+~0.5") is a self-model, not an anchor, and goes only in "shade view". Gemini
+Carbon (launched Nov 10) settled 9 rows Yes. The four off-mid rows (b508, fa17
+built this way, 34030 chained from fa17, 01adb2) lost to the mid by +0.29
+summed. The four live rows at the mid scored 0, because the rule-(c) audit
+superseded them 4h before settlement.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
