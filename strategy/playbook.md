@@ -8994,6 +8994,19 @@ resolved No.
   partial reads stay outside the series. Conformance: a partial read moves
   neither the mean nor the sd. n=1 favourable is tracking only. This is a
   recording rule and grants no bet.
+  **GasBuddy full read demoted to zero weight (RETRO-20261110-1745).** Nov 10
+  printed 3.9788 (-3.05c). The Nov 9 full 52-row read (about -0.5c,
+  "flattening") missed by -2.55c. It also drove the week-of-Nov-9 4.00 Low
+  supersede 0.94 -> 0.82 (6daff90ac433). That row won anyway, while the
+  7-day trend gave about 0.99. Full-read absolute misses are now
+  1.37/0.20/0.22/0.07/1.19/2.02/2.55c, n=7, RMS **1.41c**. That is above the
+  unconditional sd of 1.24c, so the read is worse than no read. Rule: a full
+  GasBuddy read moves neither a ladder mean nor a weekly touch row off its
+  7-day-trend number (this replaces the Nov 2 halfway cap). Record it in the
+  note for the series only. It regains weight only if the n=10 re-check
+  shows RMS below the unconditional sd. This is a recording rule and grants
+  no bet. **Tracking:** the series adds -3.05, n=26, mean -1.37c, sample sd
+  1.24c (ruling holds).
 
 ## China CPI YoY ladders: the market's modal bin is the prior (RETRO-20261109-0420)
 
