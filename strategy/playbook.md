@@ -2008,6 +2008,14 @@ Prefer, in order:
      **1-for-10** (RETRO-20261106-0010). One hit in ten does not make
      counts a signal. Sportsbook hold becomes a named signal only as
      arithmetic (handle times hold rate, mapped to EPS against the line).
+     SONO 7643b18220e8 (own 0.75 vs mid 0.915, "Sept-qtr 0/3") was recorded
+     2026-11-07, AFTER this gate, and printed +0.04 non-GAAP against a -0.18
+     line (Yes, dB +0.055), so counts are now **1-for-11**. It was a gate
+     violation, not a new finding: with no named signal, own belongs at the
+     mid. In the same tick, STUB 8ec257e5bf94 (GAAP EPS built from the
+     reiterated EBITDA guide less SBC, interest and D&A, own 0.20 vs a hollow
+     0.69 mid) resolved No, for dB -0.436, so the arithmetic class is
+     **6-for-6** (RETRO-20261110-2345).
      **Stale snapshots, Yes side, provisional (RETRO-20261106-0010, n=1):**
      FNF 8364d20cff8b put own at 0.55 against a 0.34 mid, because the 1.33
      line sat below every consensus snapshot (1.37-1.44). The same note
