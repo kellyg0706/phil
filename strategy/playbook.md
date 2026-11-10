@@ -7733,6 +7733,20 @@ rule predicted:
   Musk Nov7-9 40-64 (`cb05cc07b12d`) was recorded 15h out at count 40, raw
   0.562 vs blend 0.629 vs mid 0.695. A 12-tweet burst at 10Z broke the
   ceiling, so the leg resolved No. Running net: raw +0.080 ahead.
+  *Tracking (RETRO-20261110-1925):* **n=109, +0.0149**. Still > 0, so the
+  bar and the cap hold. **Reverse test families 2-5:** Trump Nov3-10 60-79
+  (blend +0.093 better; 3+ posts in the last 2.9h, raw 0.805), CZ (raw
+  −0.040), Cruz (raw −0.011), WH 160-179 (blend +0.028). **The reverse
+  test is complete:** raw leads by 0.009 net, and by 0.102 without Trump.
+  **The blend is NOT reinstated, and the raw record rule stands.** The
+  margin is thin, so this is no evidence for the blend rather than proof
+  for raw. **Breaches:** none of the 6 rows carried `raw:/blend:`. CZ
+  (0.84 vs raw 0.80), Cruz (0.96 vs 1.000) and WH `2f7a1fac43f7` (0.76 vs
+  0.732) recorded hand-shades. They netted −0.027, so they helped, but they
+  are still breaches. **Pre-type checklist (binding):** write the note's
+  `raw:<p> blend:<p>` FIRST, then type `--est-prob` equal to raw. If a
+  shade feels right, it goes in the note as `shade:<p> why:<...>` so it can
+  be graded later as its own column.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
