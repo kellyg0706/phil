@@ -1686,6 +1686,15 @@ Prefer, in order:
      from the headline beat or miss, assume the book has read the basis
      you did not. Find the diluted GAAP EPS in the release (or call it
      benchmark-unreachable) before recording any estimate.
+     **Pre-print version (RETRO-20261110-1500, ETOR `61dc1e6b3cff`):**
+     own 0.37 vs mid 0.28 on a GAAP 0.36 line. The lean came from the
+     adjusted beat streak and the higher of two conflicting adjusted
+     consensus numbers. It resolved No, dB +0.059. An adjusted-EPS beat
+     streak is not evidence for a GAAP line. With no GAAP consensus,
+     subtract the issuer's recent GAAP-to-adjusted gap from the adjusted
+     consensus (use the midpoint when sources conflict), and lean only in
+     the direction that construction points. Adjusted-streak leans on GAAP
+     lines are 0W/2L (SBUX, ETOR).
      **GAAP-derivation tally (RETRO-20261104-1436), 1W/0L forecast:**
      no GAAP consensus is not always benchmark-unreachable. For an
      issuer whose GAAP-to-non-GAAP gap is dominated by equity-stake
