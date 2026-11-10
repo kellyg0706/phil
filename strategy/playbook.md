@@ -5832,6 +5832,21 @@ gate-1-compatible adjustment; substituting a recalled-from-memory SD for
 the market's implied one is not, and should not be treated as
 "benchmarked" just because the mean half of the same model is sourced.
 
+**Shutdown gap-year seasonals, October CPI print (RETRO-20261110-1555,
+provisional, n=1 print):** BLS never collected October 2025 data, and the
+Oct 2026 release published no 12-month changes for that reason. On that
+print, the Cleveland Fed nowcast (0.24 headline / 0.21 core) missed by
++0.16 / +0.09 (prints 0.4 / 0.3). The miss came through the October seasonal
+factor: NSA gasoline -0.7% became SA +1.0%. The book and I both priced
+headline >=0.4 near 0.10. Rule: when the year-ago month is a collection gap
+(Oct 2025, and check Nov 2025 before the Dec 2026 release), never centre
+TIGHTER than the book off a single nowcast. Carry the gasoline NSA-to-SA
+seasonal swing explicitly into the modal-vs-next-bin split, not only the
+low tail, and keep CPI MoM ladders forecast-only. Also follow my own lean:
+the core 0.2 row noted "recent prints lean 0.3" and still sat above the
+book (dB +0.025). Re-grade on the November CPI print. Drop the rule if that
+print lands within 0.05 of the nowcast.
+
 **Tail-bracket dispersion caution, China Q3 GDP print (RETRO-20261019-0430):**
 the carve-out bet itself (fc91f6ce5593, No on the modal 4.3-4.6% bracket)
 is a separate, still-open row — this note is about its two flanking
