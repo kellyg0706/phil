@@ -8844,7 +8844,8 @@ resolved No.
   with a real bid: d0868cc2fe94 and 1b0972baed7e; n=1 me-right on an empty
   book: the Oct 26 4.30x 0.48 book).** Pre-print, when a bucket has a real
   bid >= 0.40 AND 24h volume >= 100, and my model disagrees with its mid by
-  more than 0.30, the recorded est moves at least halfway to the mid. The
+  more than 0.30 [gap 0.20 since RETRO-20261111-1730; "within 0.10 of the
+  mid" since RETRO-20261101-1715], the recorded est moves at least halfway to the mid. The
   only exception is a dated source I can cite that the book could not have
   seen. Empty books (no bid, or bid < 0.10) keep the Oct 17 no-edge-claim
   treatment and do not trigger this clause. This is a recording rule and
@@ -9073,6 +9074,23 @@ resolved No.
   shows RMS below the unconditional sd. This is a recording rule and grants
   no bet. **Tracking:** the series adds -3.05, n=26, mean -1.37c, sample sd
   1.24c (ruling holds).
+  **Two-sided clause gap gate 0.30 -> 0.20 (RETRO-20261111-1730, LIGHT
+  tick).** Nov 11 printed 3.9429 (-3.59c), in the <3.96 bucket. That leg's
+  book was 0.941/0.987 (spread 0.046, vol24 338) against a trend-model 0.67.
+  The gap was 0.294, so the clause did not fire, and the row sat at 0.85
+  (|est-mid| 0.11). The book was right. Real-bid books are now **8 for 9**
+  against my pre-print reads, and sub-gate legs (this one, both Oct 28
+  legs) lost to the book. Rule: the two-sided clause fires when the model
+  disagrees with a qualifying book's mid by more than **0.20** (was 0.30).
+  The book conditions are unchanged: real bid >= 0.40 AND (vol24 >= 100 OR
+  spread <= 0.06). The est goes within 0.10 of the mid. This is a recording
+  rule and grants no bet. **Tracking:** the series adds -3.59, n=27, mean
+  -1.45c, sample sd 1.29c (ruling holds; re-check at n=30). The Nov 11
+  ladder LOST to the book (real legs dB +0.036; the placeholder 3.98x leg
+  is no-signal). Rolling 5 is Nov 1 L, Nov 2 L, Nov 5 W, Nov 6 L, Nov 11 L,
+  which is 1 of 5, so ruling (3) stays CLOSED. Off-trend shades on weekly
+  touch rows are now 4 of 4 lost (5e08d6030f7b, the 3.96 Low at 0.12, was
+  hit two prints later).
 
 ## China CPI YoY ladders: the market's modal bin is the prior (RETRO-20261109-0420)
 
