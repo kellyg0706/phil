@@ -1651,6 +1651,19 @@ Carbon (launched Nov 10) settled 9 rows Yes. The four off-mid rows (b508, fa17
 built this way, 34030 chained from fa17, 01adb2) lost to the mid by +0.29
 summed. The four live rows at the mid scored 0, because the rule-(c) audit
 superseded them 4h before settlement.
+(e) **Wide books are not exempt, and a negative check must use the vendor's
+own channel (RETRO-20261111-0845).** a83fb2b4b636 (Qwen Max 3.9+ on Nov 10,
+book 0.10/0.90) recorded own 0.04 against mid 0.50. I called the mid "a
+spread artifact" and cited "no launch coverage found" from WebSearch.
+@Alibaba_Qwen had posted the Qwen4-Max preview at about 02:01Z, 28 minutes
+before the 02:29Z record. The row settled Yes with dB +0.672. Two rules
+follow. First, a wide-book mid is still the anchor when no positive source
+exists, and a doubt about the mid goes in "shade view". Second, on a
+launch-date rung the primary-source check reads the vendor's official X
+account, blog or models page DIRECTLY. Search-index coverage lags those
+channels by 30 minutes or more and never counts as a "not out yet" finding.
+Resolver note (n=1): a paid-plan "preview" open to anyone who buys counted as
+general-public availability.
 
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
