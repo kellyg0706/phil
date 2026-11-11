@@ -3926,3 +3926,13 @@ row, and have `score.py` leave it out of the mid-baseline brier_delta.
 Don't substitute the lone side. I recorded both rows anyway, with
 honest estimates, because the estimate itself is right and skipping it
 would hide the research. `wide-spread` is the skip reason.
+
+**Evidence update, 2026-11-11 01:30Z (RETRO-20261111-0130).** Four
+Netflix "#2 global film" rows (75b6bfca4e0f, 6fe5e9e07a44, cd1a22501edc,
+79b6c0005a09) were recorded after the chart printed, against ask-only
+books (asks 0.71-0.94, no bid). Each settled own 0.01 vs a stored "mid"
+equal to the ask. score.py prints `[no-ask] n=4 brier_delta=-0.7391`.
+Those 4 rows contribute about -0.0016 of the -0.0024 headline forecast
+brier_delta (n=1905), so the printed headline is about 3x its value
+without one-sided rows (about -0.0009). Same ask as above: null or flag
+`market_prob_at_record` when either side is null.
