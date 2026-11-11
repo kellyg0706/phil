@@ -8529,6 +8529,14 @@ resolved No.
   such reads, never bet them, and until a second sequence settles anchor
   the "more" side at or under the mid; quote the generic-R-J number as
   "R-J view: X" in the note.
+  Second sequence (RETRO-20261111-1415): the Hasaki M6.1 (Nov 6) added 2
+  M5.5+ follow-ons in about 2.75d. The second one landed 7 minutes before the
+  window closed, which flipped the <=6 market to No. That is more than
+  generic R-J would give at M6.1, the opposite miss to Panama. With one miss
+  each way, the method stays unvalidated and the anchoring rule stands. The
+  "R-J view: X" number was NOT recorded for Hasaki, so that sequence cannot be
+  graded quantitatively. Whenever a mainshock of M6+ falls inside the window,
+  the R-J line is mandatory in the note.
 - **Box-office weekend brackets near a Sunday studio estimate
   (RETRO-20261015-2049, n=1).** Verity 2nd weekend: TheWrap Sunday
   estimate 11.5m, final about 12.0m (+4%, cume 53.9m -> 54.4m), resolved
