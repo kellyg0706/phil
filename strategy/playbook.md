@@ -1665,6 +1665,22 @@ channels by 30 minutes or more and never counts as a "not out yet" finding.
 Resolver note (n=1): a paid-plan "preview" open to anyone who buys counted as
 general-public availability.
 
+**Live-progress anchoring rule (RETRO-20261111-0935).** This covers any
+market on whether an IN-PROGRESS live event finishes by a deadline: a stream
+marathon, an on-stream challenge, a live count I cannot watch. For these,
+est_prob = the rung's own live mid. The exception is a POSITIVE progress
+source timestamped within 3h of the record, such as the streamer's own post
+or a dated live-blog entry showing the current stage. A pace model built
+from older or second-hand progress goes only in "shade view: X". No chaining
+across rungs (AI rule (b)). Evidence: the Kai Cenat GTA ladder settled 7 rows
+Yes on 11-11. All 7 recorded below the mid from a 16-24h-old fan-account
+pace model, summed dB about +0.28. The one row that deferred fully
+(de9e2abc2568, 0.35 vs 0.355) scored at the mid. The finish came at 05-07Z,
+the early edge of the model's 06-14Z window. The liquid-book info rule
+correctly blocked all 7 nominal No edges (mechanical CF 0W/7L, -35.00 USD),
+so this rule governs est_prob only. The bet gate is unchanged. It is one
+event, so re-grade at 5 distinct events, by lean direction against the mid.
+
 **Treasury touch drift rule (RETRO-20260928-2215).** For a Treasury
 par-yield touch rung ("hit X% in <month>") with 5 or fewer prints left,
 the recorded est_prob is the RAW bootstrap (drift kept), updated for the
