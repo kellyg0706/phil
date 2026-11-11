@@ -7810,6 +7810,7 @@ shaded-vs-raw tally they pre-asked for, one row per independent event:
 | Musk tweets Oct 13-20 weekly (`86f0e7918ca5`, added RETRO-20261020-1825) | all-windows bootstrap 0.482 | 0.52 (RECORDED, rule breach) | recent-72h windows (0.938) | worse (+0.038); raw beat the mid (−0.062) |
 | Musk tweets Oct 20-27 weekly 25h rows (`b5d0c83dab98`, `2d01bf29f1fa`, `6bfd94d058f1`, added RETRO-20261027-1845) | count_boot all 0.02 / 0.63 / 0.36 | 0.12 / 0.55 / 0.28 (RECORDED, second rule breach) | slow-regime persistence (+7 in 4.5h, already inside count_boot) | worse (+0.028 net); raw beat the mid (−0.088) |
 | Musk tweets Oct 26-28 2-day 90-114 (`48d5bfdd36ee`, added RETRO-20261028-1850) | count_boot aligned 0.500/0.462, all 0.512/0.536 | 0.48 recorded; recent-72h 0.922/0.960 (note only) | recent-72h windows | better (about −0.267 vs raw); raw lost the mid (+0.130) |
+| Musk tweets Nov 9-11 2-day (`65235a13481f` settled; `cbd2bc78da93` <40, `08575e464a03` 40-64 provisional at xtracker count ~30, added RETRO-20261111-1910) | count_boot all 0.236 / 0.15 / 0.605 | raw recorded; recent-72h 0.143 / 0.231 / 0.75 (note only) | recent-72h windows (pace 0.35/h vs month 1.5/h) | 65-89 better (−0.035 vs raw), <40 better, 40-64 worse (provisional); raw lost the mid on 65-89 (+0.033) |
 
 **Diurnal-band exception (RETRO-20261009-1603, n=1 event, re-grade at 3).**
 The Khamenei row was a defective input, not a shade. Its last-7-day
