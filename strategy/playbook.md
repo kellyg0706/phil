@@ -8006,6 +8006,15 @@ still negative and n=3; no change. Revisit at 10 settled rows.
 Update RETRO-20261001-1015: +1, Russia-Ukraine meeting by Sep30
 `a0a3361a49c1` 0.08 vs 0.13, resolved No, own closer (dBrier -0.0105),
 CF +$0.68. Now 4 settled, CF 3W/1L, -$0.55. No change.
+Update RETRO-20261112-0805: the mechanical tally is 8 rows / 7 events,
+CF 5W/2L, +$2.91, dBrier -0.0165, held-out -0.13. The newest event is
+Huang out by Nov 11 (`e7813568d633` CF +$6.11, `e2929c5fe4af` CF +$2.35,
+one event). It resolved No on the clause: the market wanted an official
+announcement before 23:59 ET, and a late board meeting did not produce
+one in time. That makes it a deadline-hours official-announcement No,
+not a "process may not finish" No. The bar applied as written, so no
+change at 7 events. At the 10-row revisit, test whether that sub-shape
+should be a named exception.
 
 **Clause-reading note (RETRO-20261102-1430).** "US imposes new sanctions
 on China by Oct 31" (`c06d3c7c91cf`, market-agrees, own 0.12 vs mid
