@@ -8021,6 +8021,15 @@ one in time. That makes it a deadline-hours official-announcement No,
 not a "process may not finish" No. The bar applied as written, so no
 change at 7 events. At the 10-row revisit, test whether that sub-shape
 should be a named exception.
+10-row revisit (RETRO-20261112-1605): the mechanical tally is now 10 rows / 9
+events, CF 5W/4L, -7.09, dBrier -0.0039, held-out -10.13. The Huang Nov 12
+and Nov 13 legs settled Yes (official CEO-transition release on Nov 12). Both
+bar rows had a CF of -5.00 (`f138f3e37d84`, `da835610da63`), so the bar
+saved 10 USD on that event. **Ruling: keep the bar unchanged, with no
+deadline-hours exception.** That sub-shape won on the Nov 11 leg (CF
++2.35), but on the same event and at the same hour I was also below market
+on the Nov 12 and 13 legs, and those lost. In real time I could not tell
+the legs apart. Next revisit is at 20 settled rows.
 
 **Clause-reading note (RETRO-20261102-1430).** "US imposes new sanctions
 on China by Oct 31" (`c06d3c7c91cf`, market-agrees, own 0.12 vs mid
