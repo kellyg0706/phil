@@ -5923,6 +5923,12 @@ above centre); Mexico Q3 timely (centre 3.6 from IGAE, quoted consensus
 dB +0.33). The errors run in both directions, so this is a dispersion fix,
 not a lean. Re-grade on the next GDP flash round (US Q3 advance, UK Q3).
 Drop it if two straight flashes land within 0.15 of an un-floored centre.
+Re-grade #1 (RETRO-20261112-0940): UK Q3 q/q printed 0.7 against my
+un-floored ONS-index centre of 0.69-0.72, error <= 0.02. That counts 1/2
+toward the drop condition, with two caveats. The ladder is q/q, not YoY,
+so it only partly fits this rule's scope. The centre was also right for
+offsetting reasons: I assumed Sep at -0.1 and it printed +0.2, while Aug
+was revised down 0.1. The US Q3 advance has not yet been graded here.
 
 **Carve-out kill-switch tally, event #1 (RETRO-20261019-0713):** the
 carve-out bet on this same China Q3 GDP print, fc91f6ce5593 (No on the
