@@ -9135,3 +9135,23 @@ counterfactual is 0W/3L, -15.00.
   ~15-row bar. The rule is written now because all 3 rows point the same
   way through the same mechanism, and the betting half only adds a
   restriction.
+
+## Trump daily-insult markets: base rate is not evidence (RETRO-20261112-1335)
+
+Evidence: 2 settled rows. a6a8177980af (Sep 9) recorded 0.98 after a
+confirmed, reported same-day insult, and it WON. fd479e7449b1 (Nov 11,
+Veterans Day) recorded 0.87 on a posting-rate base rate with no same-day
+coverage, against a mid of 0.68. It resolved No (dB +0.2945; veto CF
+-5.00 avoided). The resolver needs a qualifying personal insult (policy
+criticism excluded), confirmed by a consensus of credible reporting. A
+high posting rate does not guarantee one on a given ET day.
+
+- **Recording rule.** On a "Will Trump publicly insult someone on <date>"
+  row, if the note quotes no dated report of a qualifying statement on that
+  date, the estimate sits at most 0.10 above the mid. When the cap binds,
+  the note states the uncapped base-rate number. Ceremonial days (Veterans
+  Day, Memorial Day, funerals) get no upward shade above the mid at all.
+- **Betting rule.** A Yes bet requires a dated, reported qualifying
+  statement in the rationale. A base rate alone is never the edge.
+- **Re-grade** after 5 more settled rows of this market type. If the
+  base-rate-only rows beat the mid, lift the cap.
