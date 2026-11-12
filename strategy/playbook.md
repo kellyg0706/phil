@@ -2030,6 +2030,14 @@ Prefer, in order:
      Q3 restructuring per share against the line, and OPEN 6fae3157c08f
      built GAAP EPS from the SBC guide. Both resolved No, at dB -0.025 each,
      so the arithmetic class is 5-for-5 (TW x2, FCN, BZFD, OPEN).
+     CBRS 59d2d2632139 / bet 73b5a69320cf (GAAP = core minus SBC minus
+     warrant amortization against a line set at the non-GAAP consensus)
+     resolved No, +0.88 USD, dB -0.021: **6-for-6** (RETRO-20261112-2313).
+     In the same batch, SPCE e7202083fea8 shaded BELOW the mid (0.75 vs
+     0.81) on an unquantified "dilution risk", although its own inputs
+     (line 0.04 easier than consensus, 10/12 beats) pointed up. It beat,
+     dB +0.026. A qualitative shade against your own quantified inputs is
+     not a signal: hold such rows at the mid.
      Seasonal-quarter history ("Q3 is always weak") is a count too and never
      qualifies as a signal. DKNG 2c02eaff5fa7 (own 0.45 vs mid 0.735,
      "3/10 strict beats" plus a qualitative hold headwind, recorded before
