@@ -9116,6 +9116,22 @@ resolved No.
   which is 1 of 5, so ruling (3) stays CLOSED. Off-trend shades on weekly
   touch rows are now 4 of 4 lost (5e08d6030f7b, the 3.96 Low at 0.12, was
   hit two prints later).
+  **Per-leg book quote in ladder notes (RETRO-20261112-1735).** Nov 12
+  printed 3.9081 (-3.48c). The <3.92 leg (3e83af6c5e34) had a trend model of
+  0.60 and a recorded book of 0.70/0.97, mid 0.835, and the book was right
+  (dB +0.133; the unvalidated-method veto saved CF -5.00). Its note said
+  "Every leg empty book 0.01/0.98". The recorded field says bid 0.70. Rule:
+  a ladder note never asserts a ladder-wide book condition. It quotes each
+  leg's own bid/ask, and any leg with bid >= 0.10 is named as counting under
+  the counting clause. This is a recording rule and grants no bet. Ruling (4)
+  weekly touch rows on trend both won (3.94 Low 0.96, 3.92 Low 0.95 vs mid
+  0.76). **Tracking:** the series adds -3.48: n=28, mean -1.52c, sample sd
+  about 1.32c (ruling holds; re-check at n=30). The trend mean missed by
+  -0.89c and trailing-3 by -0.90c. The last three prints are
+  -3.05/-3.59/-3.48 against a 7-day trend of -2.59, so "the 7-day trend
+  under-reads a steady acceleration" is n=1 and tracking only. Real-bid
+  books are now **9 of 10**. Rolling 5 is Nov 2 L, Nov 5 W, Nov 6 L, Nov 11 L,
+  Nov 12 L, which is 1 of 5, so ruling (3) stays CLOSED.
 
 ## China CPI YoY ladders: the market's modal bin is the prior (RETRO-20261109-0420)
 
