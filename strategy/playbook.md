@@ -7828,6 +7828,28 @@ rule predicted:
   **Post-test family 2:** blend 0.796 beats raw by -0.020. The running blend
   lead is -0.104 over 2 families (-0.020 without Musk). The bar blocked a
   No bet at ask 0.22 that would have lost, so CF +5.00 saved.
+  *Tracking (RETRO-20261113-1910, LIGHT tick):* **n=118, +0.0120**. Still
+  > 0, so the bar and the cap hold. NYC Mayor, Trump (3 bins) and
+  Zelenskyy Nov6-13 settled. Five of the six new rows beat the mid; the
+  Trump week did not burst back as the book priced. **The post-test is
+  complete at 5 families:** NYC raw -0.035, Trump raw -0.137, Zelenskyy raw
+  -0.047. Net, raw leads by **0.115**; without Trump, the blend leads by
+  0.023. **The blend is NOT reinstated, and the raw rule stands.** The
+  evidence is thin, as it was in the 11-10 test. Across 10 families, the
+  blend wins short re-reads near the close and raw wins when the book
+  prices a reversion. That is a hypothesis only, with no rule.
+  **Breaches: 7 of 9 families.** The 00:53Z Nov 13 cycle breached on all
+  three postcount rows: b7e0 recorded 0.88 against raw 0.818, Zelenskyy
+  recorded the blend 0.38 against raw 0.423, and WH. These shades cost a
+  net +0.033 here. **Pre-type step (binding):** before typing
+  `forecast.py record` for a postcount row, write the whole `--note` with
+  `raw:<p> blend:<p>` as its first tokens. Then set `--est-prob` by copying
+  the raw value from that note. Any other number goes after it as
+  `shade:<p> why:<...>`, and `--skip-reason` is `category-bar`. A row that
+  does not open with `raw:` is a breach on its face. Bar-veto CF on this
+  batch is +1.67 (excluding sub-min_edge Zelenskyy), and the books were wide
+  enough that the spread veto blocks most of it too, so the category stays
+  closed.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
