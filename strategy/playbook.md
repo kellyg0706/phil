@@ -7810,6 +7810,17 @@ rule predicted:
   `raw:<p> blend:<p>` FIRST, then type `--est-prob` equal to raw. If a
   shade feels right, it goes in the note as `shade:<p> why:<...>` so it can
   be graded later as its own column.
+  *Tracking (RETRO-20261113-1650):* **n=111, +0.0163**. Still > 0, so the
+  bar and the cap hold. Musk Nov6-13 weekly finished at 229, so 220-239
+  won. The 4.2h re-check put raw 0.444 on 200-219 against a 0.335 mid, and
+  then 12 posts came in 3h (dB +0.095). **Post-test raw/blend tally,
+  family 1:** the blend would have beaten raw by -0.084 across the two
+  4.2h legs. Reinstate the blend only if it leads after 5 families,
+  reported with and without the largest. **Breaches:** both 4.2h rows
+  shaded away from the mid without `raw:/blend:` (0.455 vs 0.444, 0.54 vs
+  0.553), costing about +0.02. Since the checklist became binding, 4 of 5
+  families have breached it. The fix is procedural: type the
+  `raw:<p> blend:<p>` note string first.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
