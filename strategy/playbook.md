@@ -2871,6 +2871,18 @@ the market's own apparent mode. Practical notes for reuse:
 2. **SD calibration is thin** (n=2: May consensus-miss +0.4pp, June
    -0.3pp) — used sd=0.45pp, deliberately on the wide/conservative side.
    Revisit once more monthly misses are observed.
+   **Update (RETRO-20261113-1557, Oct 2026 print 6.5 NSA):** the misses are now
+   May +0.4, Jun -0.3, Sep +0.8 and Oct -0.1, with RMS about 0.47, so the sd
+   stays at 0.3-0.5. The arithmetic matched the print exactly for the second
+   time: 6.3 x 1.003 / 1.001 = 6.51, so with the actual MoM all of the error
+   is the consensus miss. Tracking only, with no rule at n=1: a >=threshold
+   tail bet that rests only on our sd being wider than the market's (implied
+   about 0.17) is 0W/1L (83a63701da5e, >=6.8 at 0.31, LOST -5.00). The ladder
+   dB was +0.107 over 4 rows, mostly the near-centre 6.5 bin, which the market
+   priced 0.175 and we priced 0.11. The vetoed 6.5 No fade's counterfactual is
+   0W/1L. This is the same mechanism as the China CPI modal-bin ruling. If a
+   second dispersion-only PPI bet or modal-adjacent fade loses, extend that
+   ruling's recording and betting caps to US PPI ladders.
 3. **This event's book was bumpy/non-monotonic across adjacent 0.1pt
    brackets** (Yes prices ...0.073, 0.168, 0.0485... not smoothly
    decreasing away from the mode) and summed to ~1.14 — a thinner,
