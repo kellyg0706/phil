@@ -7821,6 +7821,13 @@ rule predicted:
   0.553), costing about +0.02. Since the checklist became binding, 4 of 5
   families have breached it. The fix is procedural: type the
   `raw:<p> blend:<p>` note string first.
+  *Tracking (RETRO-20261113-1740, LIGHT tick):* WH Nov6-13 200+
+  (`d53d612b9fc6`, 16h out at count 189) won Yes. It was recorded at 0.72
+  against raw 0.752 and mid 0.84 (dB +0.053). **Breach 5 of 6:** there was no
+  `raw:/blend:`, and the row was shaded away from the mid (+0.017 vs raw).
+  **Post-test family 2:** blend 0.796 beats raw by -0.020. The running blend
+  lead is -0.104 over 2 families (-0.020 without Musk). The bar blocked a
+  No bet at ask 0.22 that would have lost, so CF +5.00 saved.
 - ai-model-release +0.0838 (n=35), weather +0.0495 (n=34), news
   +0.0246 (n=32), market-microstructure +0.0750 (n=9): unchanged in kind.
 
@@ -9163,6 +9170,18 @@ resolved No.
   under-reads a steady acceleration" is n=1 and tracking only. Real-bid
   books are now **9 of 10**. Rolling 5 is Nov 2 L, Nov 5 W, Nov 6 L, Nov 11 L,
   Nov 12 L, which is 1 of 5, so ruling (3) stays CLOSED.
+  **Tracking (RETRO-20261113-1740, LIGHT tick).** Nov 13 printed 3.8724
+  (-3.57c), in the <3.89 bucket. That was the model's largest leg (0.76).
+  Every leg had a recorded bid of 0.01, so under the counting clause the
+  ladder does not count (dB about -1.27, no-signal). The trend mean (3.8806)
+  missed by -0.82c and trailing-3 (3.8744) by -0.20c. "The 7-day trend
+  under-reads a steady acceleration" is now **n=2** (Nov 12 -0.89c, Nov 13
+  -0.82c), and it is still tracking only, because trailing-3 lost on Nov 7
+  and Nov 9. If Nov 14 also prints more than 0.5c below the trend mean while
+  trailing-3 is closer, pre-register a test. The week-of-Nov-9 3.90 Low
+  ruling-(4) row won at 0.95 (on trend). **Series:** n=29, mean -1.59c,
+  sample sd about 1.35c (the n=30 re-check is due on the next print). Rolling 5
+  and real-bid books (9 of 10) are unchanged.
 
 ## China CPI YoY ladders: the market's modal bin is the prior (RETRO-20261109-0420)
 
